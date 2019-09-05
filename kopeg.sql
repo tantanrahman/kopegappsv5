@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2018 at 09:03 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 5.6.34
+-- Waktu pembuatan: 06 Sep 2019 pada 01.37
+-- Versi server: 10.1.31-MariaDB
+-- Versi PHP: 5.6.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aora`
+-- Struktur dari tabel `aora`
 --
 
 CREATE TABLE `aora` (
@@ -49,7 +49,7 @@ CREATE TABLE `aora` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `arindo_input`
+-- Struktur dari tabel `arindo_input`
 --
 
 CREATE TABLE `arindo_input` (
@@ -62,7 +62,7 @@ CREATE TABLE `arindo_input` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `arindo_tempat`
+-- Struktur dari tabel `arindo_tempat`
 --
 
 CREATE TABLE `arindo_tempat` (
@@ -72,7 +72,7 @@ CREATE TABLE `arindo_tempat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `arindo_tempat`
+-- Dumping data untuk tabel `arindo_tempat`
 --
 
 INSERT INTO `arindo_tempat` (`user`, `kode_user`, `tempat`) VALUES
@@ -109,7 +109,7 @@ INSERT INTO `arindo_tempat` (`user`, `kode_user`, `tempat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `arindo_trx`
+-- Struktur dari tabel `arindo_trx`
 --
 
 CREATE TABLE `arindo_trx` (
@@ -144,7 +144,7 @@ CREATE TABLE `arindo_trx` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `arindo_trx`
+-- Dumping data untuk tabel `arindo_trx`
 --
 
 INSERT INTO `arindo_trx` (`kode_user`, `tanggal`, `pln_lembar`, `pln_trx`, `telepon_lembar`, `telepon_trx`, `indovision_lembar`, `indovision_trx`, `halo_lembar`, `halo_trx`, `pulsa_lembar`, `pulsa_trx`, `pdam_lembar`, `pdam_trx`, `adira_lembar`, `adira_trx`, `baf_lembar`, `baf_trx`, `fif_lembar`, `fif_trx`, `bpjs_lembar`, `bpjs_trx`, `plnp_lembar`, `plnp_trx`, `wom_lembar`, `wom_trx`, `total_lembar`, `total_trx`) VALUES
@@ -409,7 +409,7 @@ INSERT INTO `arindo_trx` (`kode_user`, `tanggal`, `pln_lembar`, `pln_trx`, `tele
 -- --------------------------------------------------------
 
 --
--- Table structure for table `biaya_pln`
+-- Struktur dari tabel `biaya_pln`
 --
 
 CREATE TABLE `biaya_pln` (
@@ -418,7 +418,7 @@ CREATE TABLE `biaya_pln` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `biaya_pln`
+-- Dumping data untuk tabel `biaya_pln`
 --
 
 INSERT INTO `biaya_pln` (`biaya_admin`, `fee`) VALUES
@@ -429,7 +429,7 @@ INSERT INTO `biaya_pln` (`biaya_admin`, `fee`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `biaya_voucher`
+-- Struktur dari tabel `biaya_voucher`
 --
 
 CREATE TABLE `biaya_voucher` (
@@ -439,7 +439,7 @@ CREATE TABLE `biaya_voucher` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `biaya_voucher`
+-- Dumping data untuk tabel `biaya_voucher`
 --
 
 INSERT INTO `biaya_voucher` (`denom`, `harga_jual`, `fee_kopegtel`) VALUES
@@ -452,7 +452,7 @@ INSERT INTO `biaya_voucher` (`denom`, `harga_jual`, `fee_kopegtel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `coba`
+-- Struktur dari tabel `coba`
 --
 
 CREATE TABLE `coba` (
@@ -463,7 +463,7 @@ CREATE TABLE `coba` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `coba`
+-- Dumping data untuk tabel `coba`
 --
 
 INSERT INTO `coba` (`a`, `b`, `c`, `d`) VALUES
@@ -474,7 +474,7 @@ INSERT INTO `coba` (`a`, `b`, `c`, `d`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fax`
+-- Struktur dari tabel `fax`
 --
 
 CREATE TABLE `fax` (
@@ -486,7 +486,7 @@ CREATE TABLE `fax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fax`
+-- Dumping data untuk tabel `fax`
 --
 
 INSERT INTO `fax` (`id`, `tanggal`, `lokasi`, `fax`, `lainlain`) VALUES
@@ -495,7 +495,7 @@ INSERT INTO `fax` (`id`, `tanggal`, `lokasi`, `fax`, `lainlain`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fee_admin`
+-- Struktur dari tabel `fee_admin`
 --
 
 CREATE TABLE `fee_admin` (
@@ -504,7 +504,7 @@ CREATE TABLE `fee_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fee_admin`
+-- Dumping data untuk tabel `fee_admin`
 --
 
 INSERT INTO `fee_admin` (`tanggal`, `fee_admin`) VALUES
@@ -567,7 +567,7 @@ INSERT INTO `fee_admin` (`tanggal`, `fee_admin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fee_akses`
+-- Struktur dari tabel `fee_akses`
 --
 
 CREATE TABLE `fee_akses` (
@@ -576,7 +576,7 @@ CREATE TABLE `fee_akses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fee_akses`
+-- Dumping data untuk tabel `fee_akses`
 --
 
 INSERT INTO `fee_akses` (`tanggal`, `fee_akses`) VALUES
@@ -671,7 +671,7 @@ INSERT INTO `fee_akses` (`tanggal`, `fee_akses`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fee_arindo`
+-- Struktur dari tabel `fee_arindo`
 --
 
 CREATE TABLE `fee_arindo` (
@@ -686,7 +686,7 @@ CREATE TABLE `fee_arindo` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fee_pdam`
+-- Struktur dari tabel `fee_pdam`
 --
 
 CREATE TABLE `fee_pdam` (
@@ -697,7 +697,7 @@ CREATE TABLE `fee_pdam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fee_pdam`
+-- Dumping data untuk tabel `fee_pdam`
 --
 
 INSERT INTO `fee_pdam` (`pdam`, `regional`, `biaya_admin`, `fee_mitra`) VALUES
@@ -771,7 +771,7 @@ INSERT INTO `fee_pdam` (`pdam`, `regional`, `biaya_admin`, `fee_mitra`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `harga_pulsa`
+-- Struktur dari tabel `harga_pulsa`
 --
 
 CREATE TABLE `harga_pulsa` (
@@ -784,7 +784,7 @@ CREATE TABLE `harga_pulsa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `harga_pulsa`
+-- Dumping data untuk tabel `harga_pulsa`
 --
 
 INSERT INTO `harga_pulsa` (`kode_pulsa`, `produk`, `harga_arindo`, `harga_jual`, `fee_kopeg`, `penyedia`) VALUES
@@ -846,7 +846,7 @@ INSERT INTO `harga_pulsa` (`kode_pulsa`, `produk`, `harga_arindo`, `harga_jual`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `indovision`
+-- Struktur dari tabel `indovision`
 --
 
 CREATE TABLE `indovision` (
@@ -868,7 +868,7 @@ CREATE TABLE `indovision` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `indovision`
+-- Dumping data untuk tabel `indovision`
 --
 
 INSERT INTO `indovision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode_loket`, `loket`, `nama_biller`, `account`, `customer`, `tagihan`, `surcharge`, `fee_ca`, `fee_finnet`, `kewajiban`, `kode_biller`) VALUES
@@ -883,7 +883,7 @@ INSERT INTO `indovision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kaliuser`
+-- Struktur dari tabel `kaliuser`
 --
 
 CREATE TABLE `kaliuser` (
@@ -896,7 +896,7 @@ CREATE TABLE `kaliuser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kaliuser`
+-- Dumping data untuk tabel `kaliuser`
 --
 
 INSERT INTO `kaliuser` (`id`, `lokasi`, `user`, `xfee`, `xtitip`, `xadmin`) VALUES
@@ -945,7 +945,7 @@ INSERT INTO `kaliuser` (`id`, `lokasi`, `user`, `xfee`, `xtitip`, `xadmin`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kinerja_user`
+-- Struktur dari tabel `kinerja_user`
 --
 
 CREATE TABLE `kinerja_user` (
@@ -962,7 +962,7 @@ CREATE TABLE `kinerja_user` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kode_awal`
+-- Struktur dari tabel `kode_awal`
 --
 
 CREATE TABLE `kode_awal` (
@@ -971,7 +971,7 @@ CREATE TABLE `kode_awal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kode_awal`
+-- Dumping data untuk tabel `kode_awal`
 --
 
 INSERT INTO `kode_awal` (`nomor_awal`, `produk`) VALUES
@@ -1015,7 +1015,7 @@ INSERT INTO `kode_awal` (`nomor_awal`, `produk`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `konpensasi`
+-- Struktur dari tabel `konpensasi`
 --
 
 CREATE TABLE `konpensasi` (
@@ -1053,7 +1053,7 @@ CREATE TABLE `konpensasi` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_aoratv`
+-- Struktur dari tabel `k_aoratv`
 --
 
 CREATE TABLE `k_aoratv` (
@@ -1067,7 +1067,7 @@ CREATE TABLE `k_aoratv` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo`
+-- Struktur dari tabel `k_arindo`
 --
 
 CREATE TABLE `k_arindo` (
@@ -1081,7 +1081,7 @@ CREATE TABLE `k_arindo` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_adira`
+-- Struktur dari tabel `k_arindo_adira`
 --
 
 CREATE TABLE `k_arindo_adira` (
@@ -1095,7 +1095,7 @@ CREATE TABLE `k_arindo_adira` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_adiratv`
+-- Struktur dari tabel `k_arindo_adiratv`
 --
 
 CREATE TABLE `k_arindo_adiratv` (
@@ -1109,7 +1109,7 @@ CREATE TABLE `k_arindo_adiratv` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_baf`
+-- Struktur dari tabel `k_arindo_baf`
 --
 
 CREATE TABLE `k_arindo_baf` (
@@ -1123,7 +1123,7 @@ CREATE TABLE `k_arindo_baf` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_bigtv`
+-- Struktur dari tabel `k_arindo_bigtv`
 --
 
 CREATE TABLE `k_arindo_bigtv` (
@@ -1137,7 +1137,7 @@ CREATE TABLE `k_arindo_bigtv` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_bpjs`
+-- Struktur dari tabel `k_arindo_bpjs`
 --
 
 CREATE TABLE `k_arindo_bpjs` (
@@ -1151,7 +1151,7 @@ CREATE TABLE `k_arindo_bpjs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_fif`
+-- Struktur dari tabel `k_arindo_fif`
 --
 
 CREATE TABLE `k_arindo_fif` (
@@ -1165,7 +1165,7 @@ CREATE TABLE `k_arindo_fif` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_indovision`
+-- Struktur dari tabel `k_arindo_indovision`
 --
 
 CREATE TABLE `k_arindo_indovision` (
@@ -1179,7 +1179,7 @@ CREATE TABLE `k_arindo_indovision` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_pdam`
+-- Struktur dari tabel `k_arindo_pdam`
 --
 
 CREATE TABLE `k_arindo_pdam` (
@@ -1193,7 +1193,7 @@ CREATE TABLE `k_arindo_pdam` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_pln`
+-- Struktur dari tabel `k_arindo_pln`
 --
 
 CREATE TABLE `k_arindo_pln` (
@@ -1207,7 +1207,7 @@ CREATE TABLE `k_arindo_pln` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_toptv`
+-- Struktur dari tabel `k_arindo_toptv`
 --
 
 CREATE TABLE `k_arindo_toptv` (
@@ -1221,7 +1221,7 @@ CREATE TABLE `k_arindo_toptv` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_voucher`
+-- Struktur dari tabel `k_arindo_voucher`
 --
 
 CREATE TABLE `k_arindo_voucher` (
@@ -1235,7 +1235,7 @@ CREATE TABLE `k_arindo_voucher` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_arindo_wom`
+-- Struktur dari tabel `k_arindo_wom`
 --
 
 CREATE TABLE `k_arindo_wom` (
@@ -1249,7 +1249,7 @@ CREATE TABLE `k_arindo_wom` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_indovision`
+-- Struktur dari tabel `k_indovision`
 --
 
 CREATE TABLE `k_indovision` (
@@ -1261,7 +1261,7 @@ CREATE TABLE `k_indovision` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `k_indovision`
+-- Dumping data untuk tabel `k_indovision`
 --
 
 INSERT INTO `k_indovision` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `lokasi`, `nominal`) VALUES
@@ -1271,7 +1271,7 @@ INSERT INTO `k_indovision` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `l
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_pdam`
+-- Struktur dari tabel `k_pdam`
 --
 
 CREATE TABLE `k_pdam` (
@@ -1285,7 +1285,7 @@ CREATE TABLE `k_pdam` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_pln`
+-- Struktur dari tabel `k_pln`
 --
 
 CREATE TABLE `k_pln` (
@@ -1299,7 +1299,7 @@ CREATE TABLE `k_pln` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_sopp`
+-- Struktur dari tabel `k_sopp`
 --
 
 CREATE TABLE `k_sopp` (
@@ -1311,7 +1311,7 @@ CREATE TABLE `k_sopp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `k_sopp`
+-- Dumping data untuk tabel `k_sopp`
 --
 
 INSERT INTO `k_sopp` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `lokasi`, `nominal`) VALUES
@@ -1320,7 +1320,7 @@ INSERT INTO `k_sopp` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `lokasi`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_transvision`
+-- Struktur dari tabel `k_transvision`
 --
 
 CREATE TABLE `k_transvision` (
@@ -1334,7 +1334,7 @@ CREATE TABLE `k_transvision` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_voucher_smart`
+-- Struktur dari tabel `k_voucher_smart`
 --
 
 CREATE TABLE `k_voucher_smart` (
@@ -1348,7 +1348,7 @@ CREATE TABLE `k_voucher_smart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_voucher_tri`
+-- Struktur dari tabel `k_voucher_tri`
 --
 
 CREATE TABLE `k_voucher_tri` (
@@ -1362,7 +1362,7 @@ CREATE TABLE `k_voucher_tri` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `k_voucher_tsel`
+-- Struktur dari tabel `k_voucher_tsel`
 --
 
 CREATE TABLE `k_voucher_tsel` (
@@ -1376,7 +1376,7 @@ CREATE TABLE `k_voucher_tsel` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lokasi`
+-- Struktur dari tabel `lokasi`
 --
 
 CREATE TABLE `lokasi` (
@@ -1389,7 +1389,7 @@ CREATE TABLE `lokasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `lokasi`
+-- Dumping data untuk tabel `lokasi`
 --
 
 INSERT INTO `lokasi` (`user_id`, `lokasi`, `loket`, `tempat`, `user`, `tempat_arindo`) VALUES
@@ -1445,7 +1445,7 @@ INSERT INTO `lokasi` (`user_id`, `lokasi`, `loket`, `tempat`, `user`, `tempat_ar
 -- --------------------------------------------------------
 
 --
--- Table structure for table `loket`
+-- Struktur dari tabel `loket`
 --
 
 CREATE TABLE `loket` (
@@ -1455,7 +1455,7 @@ CREATE TABLE `loket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `loket`
+-- Dumping data untuk tabel `loket`
 --
 
 INSERT INTO `loket` (`loket`, `nama_user`, `tanggal`) VALUES
@@ -1511,7 +1511,7 @@ INSERT INTO `loket` (`loket`, `nama_user`, `tanggal`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nomor`
+-- Struktur dari tabel `nomor`
 --
 
 CREATE TABLE `nomor` (
@@ -1519,7 +1519,7 @@ CREATE TABLE `nomor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `nomor`
+-- Dumping data untuk tabel `nomor`
 --
 
 INSERT INTO `nomor` (`nomor`) VALUES
@@ -1528,7 +1528,7 @@ INSERT INTO `nomor` (`nomor`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pdam`
+-- Struktur dari tabel `pdam`
 --
 
 CREATE TABLE `pdam` (
@@ -1548,7 +1548,7 @@ CREATE TABLE `pdam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pdam`
+-- Dumping data untuk tabel `pdam`
 --
 
 INSERT INTO `pdam` (`tanggal`, `jam`, `kopegtel`, `loket`, `virtual_account`, `nama_area`, `fee_admin`, `no_pdam`, `trx`, `bill`, `amount`, `total_fee`, `total_kopeg`) VALUES
@@ -5374,7 +5374,7 @@ INSERT INTO `pdam` (`tanggal`, `jam`, `kopegtel`, `loket`, `virtual_account`, `n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pengawasan`
+-- Struktur dari tabel `pengawasan`
 --
 
 CREATE TABLE `pengawasan` (
@@ -5391,7 +5391,7 @@ CREATE TABLE `pengawasan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pengawasan`
+-- Dumping data untuk tabel `pengawasan`
 --
 
 INSERT INTO `pengawasan` (`transfer1`, `transfer2`, `transfer3`, `transfer4`, `biaya`, `tarik_tunai`, `jasa giro`, `pph`, `kel giro`, `tanggal`) VALUES
@@ -5412,7 +5412,7 @@ INSERT INTO `pengawasan` (`transfer1`, `transfer2`, `transfer3`, `transfer4`, `b
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pln`
+-- Struktur dari tabel `pln`
 --
 
 CREATE TABLE `pln` (
@@ -5430,7 +5430,7 @@ CREATE TABLE `pln` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pln`
+-- Dumping data untuk tabel `pln`
 --
 
 INSERT INTO `pln` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `loket`, `nomor`, `trx`, `bill`, `amount`, `fee_admin`, `total_kopeg`) VALUES
@@ -6638,7 +6638,7 @@ INSERT INTO `pln` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `loket`, `no
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rincian_sopp_input`
+-- Struktur dari tabel `rincian_sopp_input`
 --
 
 CREATE TABLE `rincian_sopp_input` (
@@ -6648,7 +6648,7 @@ CREATE TABLE `rincian_sopp_input` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rincian_sopp_input`
+-- Dumping data untuk tabel `rincian_sopp_input`
 --
 
 INSERT INTO `rincian_sopp_input` (`tanggal`, `lokasi`, `fee_finnet`) VALUES
@@ -6681,7 +6681,7 @@ INSERT INTO `rincian_sopp_input` (`tanggal`, `lokasi`, `fee_finnet`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rk`
+-- Struktur dari tabel `rk`
 --
 
 CREATE TABLE `rk` (
@@ -6692,7 +6692,7 @@ CREATE TABLE `rk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rk`
+-- Dumping data untuk tabel `rk`
 --
 
 INSERT INTO `rk` (`id`, `tanggal`, `usser`, `jumlah_rk`) VALUES
@@ -6721,7 +6721,7 @@ INSERT INTO `rk` (`id`, `tanggal`, `usser`, `jumlah_rk`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rk_input`
+-- Struktur dari tabel `rk_input`
 --
 
 CREATE TABLE `rk_input` (
@@ -6731,7 +6731,7 @@ CREATE TABLE `rk_input` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rk_input`
+-- Dumping data untuk tabel `rk_input`
 --
 
 INSERT INTO `rk_input` (`tanggal`, `tempat`, `jumlah`) VALUES
@@ -6914,7 +6914,7 @@ INSERT INTO `rk_input` (`tanggal`, `tempat`, `jumlah`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `saldo`
+-- Struktur dari tabel `saldo`
 --
 
 CREATE TABLE `saldo` (
@@ -6923,7 +6923,7 @@ CREATE TABLE `saldo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `saldo`
+-- Dumping data untuk tabel `saldo`
 --
 
 INSERT INTO `saldo` (`tanggal`, `saldo`) VALUES
@@ -6933,7 +6933,7 @@ INSERT INTO `saldo` (`tanggal`, `saldo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sopp`
+-- Struktur dari tabel `sopp`
 --
 
 CREATE TABLE `sopp` (
@@ -6954,7 +6954,7 @@ CREATE TABLE `sopp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sopp`
+-- Dumping data untuk tabel `sopp`
 --
 
 INSERT INTO `sopp` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `trx`, `bill`, `amount`, `surcharge`, `fee_admin`, `total_kopeg`, `divre_bill`, `user`) VALUES
@@ -8883,7 +8883,7 @@ INSERT INTO `sopp` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `kode_loket
 -- --------------------------------------------------------
 
 --
--- Table structure for table `status_tanggal`
+-- Struktur dari tabel `status_tanggal`
 --
 
 CREATE TABLE `status_tanggal` (
@@ -8892,7 +8892,7 @@ CREATE TABLE `status_tanggal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `status_tanggal`
+-- Dumping data untuk tabel `status_tanggal`
 --
 
 INSERT INTO `status_tanggal` (`tanggal`, `status`) VALUES
@@ -8901,7 +8901,7 @@ INSERT INTO `status_tanggal` (`tanggal`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `titipan`
+-- Struktur dari tabel `titipan`
 --
 
 CREATE TABLE `titipan` (
@@ -8912,7 +8912,7 @@ CREATE TABLE `titipan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `titipan`
+-- Dumping data untuk tabel `titipan`
 --
 
 INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
@@ -9460,7 +9460,7 @@ INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `titipan2`
+-- Struktur dari tabel `titipan2`
 --
 
 CREATE TABLE `titipan2` (
@@ -9469,7 +9469,7 @@ CREATE TABLE `titipan2` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `titipan2`
+-- Dumping data untuk tabel `titipan2`
 --
 
 INSERT INTO `titipan2` (`tanggal`, `nominal`) VALUES
@@ -9494,7 +9494,7 @@ INSERT INTO `titipan2` (`tanggal`, `nominal`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_trx`
+-- Struktur dari tabel `total_trx`
 --
 
 CREATE TABLE `total_trx` (
@@ -9504,7 +9504,7 @@ CREATE TABLE `total_trx` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `total_trx`
+-- Dumping data untuk tabel `total_trx`
 --
 
 INSERT INTO `total_trx` (`tanggal`, `tempat`, `total`) VALUES
@@ -10133,7 +10133,7 @@ INSERT INTO `total_trx` (`tanggal`, `tempat`, `total`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transvision`
+-- Struktur dari tabel `transvision`
 --
 
 CREATE TABLE `transvision` (
@@ -10155,7 +10155,7 @@ CREATE TABLE `transvision` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `transvision`
+-- Dumping data untuk tabel `transvision`
 --
 
 INSERT INTO `transvision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode_loket`, `loket`, `nama_biller`, `account`, `customer`, `tagihan`, `surcharge`, `fee_ca`, `fee_finnet`, `kewajiban`, `kode_biller`) VALUES
@@ -10458,7 +10458,7 @@ INSERT INTO `transvision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode
 -- --------------------------------------------------------
 
 --
--- Table structure for table `upload`
+-- Struktur dari tabel `upload`
 --
 
 CREATE TABLE `upload` (
@@ -10468,7 +10468,7 @@ CREATE TABLE `upload` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `upload`
+-- Dumping data untuk tabel `upload`
 --
 
 INSERT INTO `upload` (`tanggal`, `nama`, `pen`) VALUES
@@ -11133,30 +11133,29 @@ INSERT INTO `upload` (`tanggal`, `nama`, `pen`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
-  `user_id` int(4) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `nama` varchar(40) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `tipe_user` enum('admin','operator') NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `tipe_user`) VALUES
-(3, 'admin', 'admin', 'admin'),
-(2, 'kopeg', 'kopeg123', 'admin'),
-(4, 'loket', 'loket123', 'operator'),
-(5, 'tantan', 'tantan1994', 'admin');
+INSERT INTO `user` (`id_user`, `username`, `nama`, `password`, `tipe_user`) VALUES
+(1, 'tantan', 'ED SNOWDEN', '2b3235efc1ec93e3437fdaa7a11ba212', 'admin'),
+(2, 'admin', 'ADMIN APPS', '21232f297a57a5a743894a0e4a801fc3', 'admin');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voucher`
+-- Struktur dari tabel `voucher`
 --
 
 CREATE TABLE `voucher` (
@@ -11178,7 +11177,7 @@ CREATE TABLE `voucher` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `voucher`
+-- Dumping data untuk tabel `voucher`
 --
 
 INSERT INTO `voucher` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `user`, `denom`, `no_telp`, `nama_cust`, `amount`, `surcharge`, `fee_ca`, `total_kopeg`, `kode_biller`) VALUES
@@ -15023,7 +15022,7 @@ INSERT INTO `voucher` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kode_lo
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voucher_smart`
+-- Struktur dari tabel `voucher_smart`
 --
 
 CREATE TABLE `voucher_smart` (
@@ -15047,7 +15046,7 @@ CREATE TABLE `voucher_smart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voucher_tri`
+-- Struktur dari tabel `voucher_tri`
 --
 
 CREATE TABLE `voucher_tri` (
@@ -15069,7 +15068,7 @@ CREATE TABLE `voucher_tri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `voucher_tri`
+-- Dumping data untuk tabel `voucher_tri`
 --
 
 INSERT INTO `voucher_tri` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `user`, `denom`, `no_telp`, `nama_cust`, `amount`, `surcharge`, `fee_ca`, `total_kopeg`, `kode_biller`) VALUES
@@ -15086,7 +15085,7 @@ INSERT INTO `voucher_tri` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kod
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voucher_tsel`
+-- Struktur dari tabel `voucher_tsel`
 --
 
 CREATE TABLE `voucher_tsel` (
@@ -15112,98 +15111,98 @@ CREATE TABLE `voucher_tsel` (
 --
 
 --
--- Indexes for table `arindo_tempat`
+-- Indeks untuk tabel `arindo_tempat`
 --
 ALTER TABLE `arindo_tempat`
   ADD PRIMARY KEY (`kode_user`);
 
 --
--- Indexes for table `biaya_pln`
+-- Indeks untuk tabel `biaya_pln`
 --
 ALTER TABLE `biaya_pln`
   ADD PRIMARY KEY (`biaya_admin`);
 
 --
--- Indexes for table `fax`
+-- Indeks untuk tabel `fax`
 --
 ALTER TABLE `fax`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `fee_pdam`
+-- Indeks untuk tabel `fee_pdam`
 --
 ALTER TABLE `fee_pdam`
   ADD PRIMARY KEY (`pdam`);
 
 --
--- Indexes for table `harga_pulsa`
+-- Indeks untuk tabel `harga_pulsa`
 --
 ALTER TABLE `harga_pulsa`
   ADD PRIMARY KEY (`kode_pulsa`);
 
 --
--- Indexes for table `kaliuser`
+-- Indeks untuk tabel `kaliuser`
 --
 ALTER TABLE `kaliuser`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kode_awal`
+-- Indeks untuk tabel `kode_awal`
 --
 ALTER TABLE `kode_awal`
   ADD PRIMARY KEY (`nomor_awal`);
 
 --
--- Indexes for table `lokasi`
+-- Indeks untuk tabel `lokasi`
 --
 ALTER TABLE `lokasi`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `rk`
+-- Indeks untuk tabel `rk`
 --
 ALTER TABLE `rk`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `fax`
+-- AUTO_INCREMENT untuk tabel `fax`
 --
 ALTER TABLE `fax`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `kaliuser`
+-- AUTO_INCREMENT untuk tabel `kaliuser`
 --
 ALTER TABLE `kaliuser`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT for table `lokasi`
+-- AUTO_INCREMENT untuk tabel `lokasi`
 --
 ALTER TABLE `lokasi`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT for table `rk`
+-- AUTO_INCREMENT untuk tabel `rk`
 --
 ALTER TABLE `rk`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
