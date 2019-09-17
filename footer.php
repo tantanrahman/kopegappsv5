@@ -1,6 +1,8 @@
 
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/vendors/base/vendor.bundle.base.js"></script>
+   
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
     <script src="assets/vendors/chart.js/Chart.min.js"></script>
     <script src="assets/js/off-canvas.js"></script>
     <script src="assets/js/hoverable-collapse.js"></script>
@@ -8,10 +10,17 @@
     <script src="assets/js/todolist.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script>
-		$('#datepicker').datepicker({
-            format: 'dd/mm/yyyy'
+      $(function() {
+        $("#datepicker").datepicker({
+          dateFormat: 'dd-mm-yy'
         });
-	</script>   
+      });
+      $(function() {
+        $("#datepicker2").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+      });
+    </script>
 </body>
 
 </html>

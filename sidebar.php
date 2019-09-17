@@ -37,13 +37,13 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="index.php"  >
               <i class="ti-shield menu-icon"></i>
               <span class="menu-title"><b>Dashboard</b></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="index.php?id=2">
               <i class="ti-files menu-icon"></i>
               <span class="menu-title"><b>Lembar Pendapatan</b></span>
             </a>
@@ -61,5 +61,19 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title"><b>Keuangan</b></span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"><b>Keuangan</b></a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"><b>Pengawasan</b></a></li>
+              </ul>
+            </div>
+          </li>
+
         </ul>
       </nav>

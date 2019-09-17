@@ -6,7 +6,7 @@
 
   include 'header.php';
   include 'sidebar.php';
-  include 'halamanutama.php';
+  include 'switch.php';
   include 'footer.php';
 
   } else {
