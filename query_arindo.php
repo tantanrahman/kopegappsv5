@@ -93,9 +93,7 @@ $date = explode("-", $tanggal1);
 $insertTable= mysql_query($query);
 
 
-$msg = 'Data Arindo Sudah Ditambahkan';
 }
-echo "<i class='glyphicon glyphicon-ok'></i>".$msg."<br>";
 
 
 ?>

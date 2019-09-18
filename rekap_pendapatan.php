@@ -80,8 +80,9 @@
             ?>
         </b>
     </div>
+    
     <div class="table-responsive">
-        <table class="table table-fixed table-bordered table-hover table-striped table-fixed mb-3 mr-3">
+        <table class="table table-bordered table-hover table-striped mb-3 mr-3" >
         <thead>
             <tr>
                 <th rowspan="2" align="center" valign="middle">No</th>

@@ -62,6 +62,11 @@
         $("#datepicker17").datepicker({
           dateFormat: 'dd-mm-yy'
         });
+        $(document).ready(function() {
+            var table = $('#example').DataTable( {
+                fixedHeader: true
+            } );
+        });
       });
 
     </script>

@@ -2,11 +2,17 @@
     <div class="alert alert-dark text-center">
         <b>Lembar Keuangan</b>
     </div>
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+      <strong>WAJIB PERHATIKAN!</strong> HARAP CEK TERLEBIH DAHULU <strong>RINCIAN SOPP</strong> SETELAH UPLOAD, AGAR DATA SEMUA TERINPUT DENGAN PASTI.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <div class="row">
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Rekap Pendapatan</h4>
+                    <h4>REKAP PENDAPATAN</h4>
                     <br>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRekap">LIHAT</a>
                     <a href="#" class="btn btn-primary">PRINT</a>
@@ -16,7 +22,7 @@
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Surat Transfer</h4>
+                    <h4>SURAT TRANSFER</h4>
                     <br>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalTransfer">PILIH TANGGAL</a>
                 </div>
@@ -25,7 +31,7 @@
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Rincian Transfer</h3>
+                    <h4>RINCIAN TRANSFER</h3>
                     <br>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRincianTransfer">PILIH TANGGAL</a>
                 </div>
@@ -34,7 +40,7 @@
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Rincian SOPP</h4>
+                    <h4>RINCIAN SOPP</h4>
                     <br>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRincianSOPP">LIHAT</a>
                     <a href="#" class="btn btn-primary">PRINT</a>

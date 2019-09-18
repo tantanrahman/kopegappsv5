@@ -74,11 +74,8 @@ $pecah2 = explode("/", $tanggal);
         $insertTable= mysql_query($query);
             }
       }
-
-$msg = 'Data PDAM Sudah Ditambahkan';
  
 }
-echo "<i class='glyphicon glyphicon-ok'></i>".$msg."<br>";
 
 
 ?>

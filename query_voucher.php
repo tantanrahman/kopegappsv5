@@ -71,12 +71,8 @@ $date = explode("-", $tampil);
       
 $insertTable= mysql_query($query);
 
-
-
-$msg = 'Data Voucher Sudah Ditambahkan';
  
 }
-echo "<i class='glyphicon glyphicon-ok'></i>".$msg."<br>";
 
 
 ?>

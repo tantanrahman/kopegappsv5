@@ -61,12 +61,8 @@ $total_kopeg = trim($allDataInSheet[$i]["K"]);
 $sql = "INSERT into pln values('$tampil_date','$divre','$kode_kopegtel','$kopegtel','$loket','$nomor',$trx,$bill,$amount,$fee_admin,$total_kopeg);";
 $insertTable= mysql_query($sql);
 
-
-
-$msg = 'Data PLN Sudah Ditambahkan';
  
 }
-echo "<i class='glyphicon glyphicon-ok'></i>".$msg."<br>";
 //}
 
 ?>

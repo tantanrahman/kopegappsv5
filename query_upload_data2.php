@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 define ("DB_HOST", "localhost"); // set database host
 define ("DB_USER", "root"); // set database user
 define ("DB_PASS",""); // set database password
@@ -89,5 +89,8 @@ include 'assets/Classes/PHPExcel/IOFactory.php';
         echo "Folder Tidak ada";
     }
     include ("hapus_file.php");
-   
 ?>
+    <script language="JavaScript">
+            window.alert ("Upload Data Telah Berhasil");
+            window.location.href="index.php?id=8";
+    </script>

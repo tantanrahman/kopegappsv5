@@ -54,16 +54,10 @@ $tanggal = trim($allDataInSheet[$i]["A"]);
       $user       		= trim($allDataInSheet[$i]["N"]);
 
       $query = "INSERT into sopp values('$tampil_date','$divre','$kode_kopegtel','$kopegtel','$kodeloket','$loket',$trx,$bill,$amount,$surcharge,$fee_admin,$total_kopeg,$divre_bill,'$user')";
-        
-
 
 $insertTable= mysql_query($query);
-
-
-$msg = 'Data SOPP Sudah Ditambahkan';
  
 }
-echo "<i class='glyphicon glyphicon-ok'></i>".$msg."<br>";
 
 
 ?>

@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <form method="GET" action="query_upload_data2.php">
-                    <input autocomplete="off" id="datepicker" class="form-control mt-3" type="text" name="nilai" placeholder="Tanggal">                    
+                    <input autocomplete="off" id="datepicker" class="form-control mt-3" type="text" name="nilai" placeholder="Tanggal">            
                     <br>
                     <input class="btn btn-success" type="submit" value="UPLOAD SEKARANG">
                 </form>
