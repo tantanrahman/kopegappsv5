@@ -43,6 +43,9 @@
         case 13:
         include "query_hapus_pendapatan.php";
         break;
+        case 14:
+        include "lembar_pengaturan.php";
+        break;
 
         default :
         include "halamanutama.php";

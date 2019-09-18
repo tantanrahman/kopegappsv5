@@ -71,6 +71,11 @@
               <span class="menu-title"><b>Keuangan</b></span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="index.php?id=14">
+              <i class="ti-settings menu-icon"></i>
+              <span class="menu-title"><b>Pengaturan</b></span>
+            </a>
+          </li>
         </ul>
       </nav>
