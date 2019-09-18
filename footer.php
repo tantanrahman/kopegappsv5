@@ -14,12 +14,56 @@
         $("#datepicker").datepicker({
           dateFormat: 'dd-mm-yy'
         });
-      });
-      $(function() {
         $("#datepicker2").datepicker({
           dateFormat: 'dd-mm-yy'
         });
+        $("#datepicker3").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker4").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker5").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker6").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker7").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker8").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker9").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker10").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker11").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker12").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker13").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker14").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker15").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker16").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker17").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
       });
+
     </script>
 </body>
 

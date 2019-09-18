@@ -5,7 +5,7 @@
 
 <div class="container-fluid mt-3">
     <div class="alert alert-dark text-center">
-        <b>Lembar Pendapatan Finnet
+        <b>Lembar Pendapatan PLN Finnet
             <?php 
                 if($tanggal1==$tanggal2) {
                     echo $tanggal1;
@@ -16,7 +16,8 @@
         </b>
     </div>
 
-    <table class="table table-bordered table-hover table-striped mb-3">
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped table-fixed mb-3">
         <tr>
             <th>No</th>
             <th>Lokasi</th>
@@ -113,4 +114,5 @@ $tampildatabayar5 =  number_format($fee_finnet, $jumlah_desimal, $pemisah_desima
                    <td align="right"><?php echo "<b>"."$tampildatabayar7";?></td>
                </tr>
     </table>
+</div>
 </div>
