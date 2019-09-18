@@ -25,7 +25,7 @@ if(! $koneksi )
 }
 
 
-$sql = " Select A.tempat,A.amount,A.feenonadmin,A.adminjastel,A.tanggal as tanggal,( Case when A.amount is NULL then '0' else A.amount END)+(Case when A.adminjastel is NULL then '0' else A.adminjastel END) as jumlahjastel 
+$sql = " SELECT A.tempat,A.amount,A.feenonadmin,A.adminjastel,A.tanggal as tanggal,( Case when A.amount is NULL then '0' else A.amount END)+(Case when A.adminjastel is NULL then '0' else A.adminjastel END) as jumlahjastel 
 		FROM
 		(SELECT lokasi.tempat as tempat, lokasi.loket as loket,lokasi.lokasi as lokasi,sopp.tanggal as tanggal,  sum(sopp.amount) as amount, CASE when lokasi.loket='lembong1' then 0 when lokasi.loket='lembong2' then 0 when lokasi.loket='lembong3' then 0  END as feenonadmin,sum(sopp.surcharge) as adminjastel from lokasi left join sopp on lokasi.loket=sopp.user AND tanggal BETWEEN '$tampil_date' AND '$tampil_date2' group by lokasi.tempat) AS A";
 
@@ -188,7 +188,7 @@ $total= $row['jumlahjastel']+$row2['hasil']+$row2['hasil2']+$row3['penpdam']+$ro
 	
 }
 
-$cari2 = "select sum(pln_trx) as pln_trx,sum(telepon_trx) as telepon_trx,sum(indovision_trx) as indovision_trx,sum(halo_trx) as halo_trx,sum(pulsa_trx) as pulsa_trx,sum(pdam_trx) as pdam_trx,sum(adira_trx) as adira_trx,sum(baf_trx) as baf_trx,sum(fif_trx) as fif_trx,sum(bpjs_trx) as bpjs_trx, sum(plnp_trx) as plnp_trx, sum(wom_trx) as wom_trx,sum(total_trx) as total_trx from arindo_trx where tanggal between '$tampil_date' and '$tampil_date2'";
+$cari2 = "SELECT sum(pln_trx) as pln_trx,sum(telepon_trx) as telepon_trx,sum(indovision_trx) as indovision_trx,sum(halo_trx) as halo_trx,sum(pulsa_trx) as pulsa_trx,sum(pdam_trx) as pdam_trx,sum(adira_trx) as adira_trx,sum(baf_trx) as baf_trx,sum(fif_trx) as fif_trx,sum(bpjs_trx) as bpjs_trx, sum(plnp_trx) as plnp_trx, sum(wom_trx) as wom_trx,sum(total_trx) as total_trx from arindo_trx where tanggal between '$tampil_date' and '$tampil_date2'";
 $eksekusi2 = mysql_query($cari2);
 $row2=mysql_fetch_array($eksekusi2,MYSQL_ASSOC);
 

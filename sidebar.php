@@ -13,15 +13,19 @@
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              Login Sebagai, <b><?php echo $_SESSION['nama']; ?></b></b>
+              Login Sebagai, <b><?php echo $_SESSION['nama' ] ; ?></b> <i class="ti-settings"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
-                <i class="ti-settings text-primary"></i>
+                <i class="ti-settings"></i>
                 Settings
               </a>
+              <a class="dropdown-item" href="index.php?id=12">
+                <i class="ti-trash"></i>
+                Hapus Pendapatan
+              </a>
               <a class="dropdown-item" href="logout.php">
-                <i class="ti-power-off text-primary"></i>
+                <i class="ti-power-off"></i>
                 Logout
               </a>
             </div>

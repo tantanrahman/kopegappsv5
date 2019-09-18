@@ -16,7 +16,7 @@
         </b>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover table-striped table-fixed mb-3">
+        <table class="table table-bordered table-hover table-striped mb-3">
             <tr>
                 <th>NO</th>
                 <th>LOKASI</th>

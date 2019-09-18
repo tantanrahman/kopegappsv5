@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED); 
+error_reporting(E_ERROR | E_PARSE); 
 $folder = "uploads/";
     if (is_dir($folder))
     {
@@ -7,8 +7,9 @@ $folder = "uploads/";
             {   
                 while (($file=readdir($open))!== FALSE) 
                 {
-                //   unlink($folder.$file);
+                    unlink($folder.$file);
                 }
             }
     }
+
 ?>

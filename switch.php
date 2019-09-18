@@ -37,6 +37,12 @@
         case 11:
         include "pen_arindo.php";
         break;
+        case 12:
+        include "lembar_hapus.php";
+        break;
+        case 13:
+        include "query_hapus_pendapatan.php";
+        break;
 
         default :
         include "halamanutama.php";

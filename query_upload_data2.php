@@ -90,5 +90,4 @@ include 'assets/Classes/PHPExcel/IOFactory.php';
     }
     include ("hapus_file.php");
    
-echo "$insert";
 ?>
