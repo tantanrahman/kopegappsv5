@@ -46,6 +46,21 @@
         case 14:
         include "lembar_pengaturan.php";
         break;
+        case 15:
+        include "pen_pengawasan.php";
+        break;
+        case 16:
+        include "input_rk.php";
+        break;
+        case 17:
+        include "query_rk.php";
+        break;
+        case 18:
+        include "input_titipan.php";
+        break;
+        case 19:
+        include "query_titipan.php";
+        break;
 
         default :
         include "halamanutama.php";

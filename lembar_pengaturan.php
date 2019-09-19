@@ -53,7 +53,7 @@
                 <div class="card-body">
                     <h4>INPUT REKENING KORAN</h4>
                     <br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalTransfer">PILIH TANGGAL</a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRekKoran">PILIH TANGGAL</a>
                 </div>
             </div>
         </div>
@@ -62,17 +62,7 @@
                 <div class="card-body">
                     <h4>INPUT TITIPAN / TALANGAN</h3>
                     <br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRincianTransfer">PILIH TANGGAL</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 grid-margin stretch-card">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h4>Rincian SOPP</h4>
-                    <br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRincianSOPP">LIHAT</a>
-                    <a href="#" class="btn btn-primary">PRINT</a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalTitipan">PILIH TANGGAL</a>
                 </div>
             </div>
         </div>
@@ -98,6 +88,52 @@
                     <td><input class="form-control" type="text" name="saldo" placeholder="Saldo" autocomplete="off"></td>
                 </tr>
             </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> SIMPAN</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL UNTUK Rekening Koran -->
+<div class="modal fade" id="modalRekKoran" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Silakan pilih tanggal Rekening Koran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <form action="index.php?id=16" method="POST">
+            <input class="form-control" autocomplete="off" type="text" id="datepicker2" name="nilai" placeholder="Tanggal"></<input>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> SIMPAN</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL UNTUK TITIPAN TALANGAN -->
+<div class="modal fade" id="modalTitipan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Silakan pilih tanggal untuk Input Titipan dan Talangan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <form action="index.php?id=18" method="POST">
+          <input class="form-control" autocomplete="off" type="text" id="datepicker3" name="nilai" placeholder="Tanggal"></td>      
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
