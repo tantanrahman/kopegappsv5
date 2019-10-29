@@ -6,7 +6,8 @@ class moneyFormat {
         $rupiah = number_format($angka ,2, ',' , '.' );
         return $rupiah;
     }
- 
+    
+    
     public function terbilang ($angka) {
         $angka = (float)$angka;
         $bilangan = array('','Satu','Dua','Tiga','Empat','Lima','Enam','Tujuh','Delapan','Sembilan','Sepuluh','Sebelas');

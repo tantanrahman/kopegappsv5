@@ -37,7 +37,7 @@
         $date = explode("-", $tanggal1);
         $arr = array("$date[2]","$date[1]","$date[0]");
         $tampil_date = implode("-", $arr);
-        $cari = "select lokasi.tempat,titipan.titipan, titipan.tanggal,titipan.talangan from lokasi left join titipan on lokasi.tempat=titipan.tempat and tanggal='$tampil_date' group by tempat";
+        $cari = "SELECT lokasi.tempat,titipan.titipan, titipan.tanggal,titipan.talangan from lokasi left join titipan on lokasi.tempat=titipan.tempat and tanggal='$tampil_date' group by tempat";
         $eksekusi = mysql_query($cari);
     ?>
     <form action="indexphp?id=19" method="POST">

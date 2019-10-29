@@ -16,6 +16,18 @@
               Login Sebagai, <b><?php echo $_SESSION['nama' ] ; ?></b> <i class="ti-settings"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="index.php?id=20">
+                <i class="ti-arrow-circle-right"></i>
+                Fee PDAM
+              </a>
+              <a class="dropdown-item" href="index.php?id=12">
+                <i class="ti-quote-right"></i>
+                Kode Awal
+              </a>
+              <a class="dropdown-item" href="index.php?id=12">
+                <i class="ti-mobile"></i>
+                Harga Pulsa
+              </a>
               <a class="dropdown-item" href="index.php?id=12">
                 <i class="ti-trash"></i>
                 Hapus Pendapatan
@@ -57,7 +69,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="index.php?id=5">Upload Data</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Upload Fee Arindo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="index.php?id=24">Upload Fee Arindo</a></li>
               </ul>
             </div>
           </li>
@@ -65,6 +77,18 @@
             <a class="nav-link" href="index.php?id=8">
               <i class="ti-files menu-icon"></i>
               <span class="menu-title"><b>Keuangan</b></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php?id=8">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title"><b>Colfee</b></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php?id=8">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title"><b>Kinerja</b></span>
             </a>
           </li>
           <li class="nav-item">

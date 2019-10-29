@@ -61,6 +61,21 @@
         case 19:
         include "query_titipan.php";
         break;
+        case 20:
+        include "fee_pdam.php";
+        break;
+        case 21:
+        include "edit_fee_pdam.php";
+        break;
+        case 22:
+        include "tambah_fee_pdam.php";
+        break;
+        case 23:
+        include "hapus_fee_pdam.php";
+        break;
+        case 24:
+        include "fee_arindo.php";
+        break;
 
         default :
         include "halamanutama.php";

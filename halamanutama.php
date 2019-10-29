@@ -10,7 +10,7 @@
         <h4><strong>SETELAH UPLOAD WAJIB TERLEBIH DAHULU MEMBUKA RINCIAN SOPP</strong></h4>
     </div>
     <hr>
-    <h4 class="text-center">Data Terakhir yang Terupload</h4>
+    <h4 class="text-center">Data yang Terupload</h4>
     <?php 
         include "koneksi.php";
 

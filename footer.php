@@ -61,6 +61,45 @@
         $("#datepicker17").datepicker({
           dateFormat: 'dd-mm-yy'
         });
+        $("#datepicker18").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker19").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker20").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker21").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker22").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker23").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker24").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker25").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker26").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker27").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker28").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker29").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+        $("#datepicker30").datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
       });
 
     </script>
