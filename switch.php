@@ -76,6 +76,39 @@
         case 24:
         include "fee_arindo.php";
         break;
+        case 25:
+        include "lembar_colfee.php";
+        break;
+        case 26:
+        include "lembar_kinerja.php";
+        break;
+        case 27:
+        include "kinerja_perloker.php";
+        break;
+        case 28:
+        include "kinerja_peruser.php";
+        break;
+        case 29:
+        include "input_kinerja_user.php";
+        break;
+        case 30:
+        include "proses_input_kinerja_user.php";
+        break;
+        case 31:
+        include "lembar_konpensasi.php";
+        break;
+        case 32:
+        include "input_konpensasi.php";
+        break;
+        case 33:
+        include "cetak_konpensasi.php";
+        break;
+        case 34:
+        include "lihat_konpensasi.php";
+        break;
+        case 35:
+        include "hapus_konpensasi.php";
+        break;
 
         default :
         include "halamanutama.php";

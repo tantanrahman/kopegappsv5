@@ -80,15 +80,21 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?id=8">
+            <a class="nav-link" href="index.php?id=25">
               <i class="ti-files menu-icon"></i>
               <span class="menu-title"><b>Colfee</b></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?id=8">
+            <a class="nav-link" href="index.php?id=26">
               <i class="ti-files menu-icon"></i>
               <span class="menu-title"><b>Kinerja</b></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php?id=31">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title"><b>Konpensasi</b></span>
             </a>
           </li>
           <li class="nav-item">

@@ -91,7 +91,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> SIMPAN</button>
+        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> PILIH</button>
       </div>
       </form>
     </div>
@@ -114,7 +114,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> SIMPAN</button>
+        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> PILIH</button>
       </div>
       </form>
     </div>
@@ -137,7 +137,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> SIMPAN</button>
+        <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-search fa-fw"></i> PILIH</button>
       </div>
       </form>
     </div>
