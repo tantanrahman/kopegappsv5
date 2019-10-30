@@ -109,6 +109,75 @@
         case 35:
         include "hapus_konpensasi.php";
         break;
+        case 36:
+        include "lembar_kode_awal.php";
+        break;
+        case 37:
+        include "lihat_kode_awal.php";
+        break;
+        case 38:
+        include "edit_kode_awal.php";
+        break;
+        case 39:
+        include "tambah_kode_awal.php";
+        break;
+        case 40:
+        include "hapus_kode_awal.php";
+        break;
+        case 41:
+        include "lihat_harga_pulsa.php";
+        break;
+        case 42:
+        include "lembar_harga_pulsa.php";
+        break;
+        case 43:
+        include "edit_harga_pulsa.php";
+        break;
+        case 44:
+        include "tambah_harga_pulsa.php";
+        break;
+        case 45:
+        include "hapus_harga_pulsa.php";
+        break;
+        case 46:
+        include "lembar_lokasi.php";
+        break;
+        case 47:
+        include "lihat_lokasi.php";
+        break;
+        case 48:
+        include "edit_lokasi.php";
+        break;
+        case 49:
+        include "tambah_lokasi.php";
+        break;
+        case 50:
+        include "hapus_lokasi.php";
+        break;
+        case 51:
+        include "lembar_lokasi_arindo.php";
+        break;
+        case 52:
+        include "lihat_lokasi_arindo.php";
+        break;
+        case 53:
+        include "edit_lokasi_arindo.php";
+        break;
+        case 54:
+        include "tambah_lokasi_arindo.php";
+        break;
+        case 55:
+        include "hapus_lokasi_arindo.php";
+        break;
+        case 56:
+        include "admin_user.php";
+        break;
+        case 57:
+        include "edit_admin_user.php";
+        break;
+        case 58:
+        include "ubah_admin_user.php";
+        break;
 
         default :
         include "halamanutama.php";

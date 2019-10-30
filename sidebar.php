@@ -20,13 +20,25 @@
                 <i class="ti-arrow-circle-right"></i>
                 Fee PDAM
               </a>
-              <a class="dropdown-item" href="index.php?id=12">
+              <a class="dropdown-item" href="index.php?id=36">
                 <i class="ti-quote-right"></i>
                 Kode Awal
               </a>
-              <a class="dropdown-item" href="index.php?id=12">
+              <a class="dropdown-item" href="index.php?id=42">
                 <i class="ti-mobile"></i>
                 Harga Pulsa
+              </a>
+              <a class="dropdown-item" href="index.php?id=46">
+                <i class="ti-direction"></i>
+                LOKASI
+              </a>
+              <a class="dropdown-item" href="index.php?id=51">
+                <i class="ti-direction"></i>
+                Lokasi Arindo
+              </a>
+              <a class="dropdown-item" href="index.php?id=56">
+                <i class="ti-envelope"></i>
+                Admin User
               </a>
               <a class="dropdown-item" href="index.php?id=12">
                 <i class="ti-trash"></i>
