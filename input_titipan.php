@@ -40,7 +40,7 @@
         $cari = "SELECT lokasi.tempat,titipan.titipan, titipan.tanggal,titipan.talangan from lokasi left join titipan on lokasi.tempat=titipan.tempat and tanggal='$tampil_date' group by tempat";
         $eksekusi = mysql_query($cari);
     ?>
-    <form action="indexphp?id=19" method="POST">
+    <form action="index.php?id=19" method="POST">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <table class="table table-bordered table-hover">
