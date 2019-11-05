@@ -52,7 +52,7 @@ include 'assets/Classes/PHPExcel/IOFactory.php';
                         $sql=mysqli_query($konek,$insert);  
                         include('query_sopp.php');
                     }
-                    if (stripos($file, "rindo"))
+                    if (stripos($file, "rindi"))
                     {
                         $insert = "INSERT INTO `kopeg`.`upload` 
                                    VALUES ('$tampil_date','$file','ARINDO')";

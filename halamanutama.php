@@ -14,35 +14,12 @@
     <?php 
         include "koneksi.php";
 
-        $query = $con->query("SELECT * FROM pln GROUP BY tanggal");
+        $query = $con->query("SELECT * FROM voucher GROUP BY tanggal DESC LIMIT 1");
         while($row = $query->fetch_assoc()){
             $tanggal = $row['tanggal'];
-            echo "<table class='table table-bordered'><tr><th>PLN</th><th>PDAM</th><th>SOPP</th><th>VOUCHER</th><th>ARINDO</th></tr><tr><td>".date("d-F-Y", strtotime($tanggal))."</td>";
+            echo "Data terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal));
         }
 
-        $query = $con->query("SELECT * FROM pdam GROUP BY tanggal");
-        while($row = $query->fetch_assoc()){
-            $tanggal = $row['tanggal'];
-            echo "<td>".date("d-F-Y", strtotime($tanggal))."</td>";
-        }
-
-        $query = $con->query("SELECT * FROM sopp GROUP BY tanggal");
-        while($row = $query->fetch_assoc()){
-            $tanggal = $row['tanggal'];
-            echo "<td>".date("d-F-Y", strtotime($tanggal))."</td>";
-        }
-
-        $query = $con->query("SELECT * FROM voucher GROUP BY tanggal");
-        while($row = $query->fetch_assoc()){
-            $tanggal = $row['tanggal'];
-            echo "<td>".date("d-F-Y", strtotime($tanggal))."</td>";
-        }
-
-        $query = $con->query("SELECT * FROM arindo_trx GROUP BY tanggal");
-        while($row = $query->fetch_assoc()){
-            $tanggal = $row['tanggal'];
-            echo "<td>".date("d-F-Y", strtotime($tanggal))."</td>";
-        }
     ?>
         
 </div>

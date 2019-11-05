@@ -32,9 +32,11 @@
         $eksekusi2 = mysql_query($query2,$konek);
     
         if ($eksekusi) {
-            echo "Hapus Data berhasil";
+            echo "<script>alert('Berhasil Hapus Data');location.href='index.php';</script>";
         } else {
-            echo "Hapus Data gagal";
+            echo "<div class='container-fluid mt-3'><div class='alert alert-danger text-center' role='alert'>
+            <b>Hapus Data Gagal</b>
+          </div>";
         }
     }
 

@@ -35,9 +35,16 @@ for ($i=0;$i<count($_POST['talangan']);$i++) {
     $konek = mysqli_connect('localhost','root','','kopeg');
     mysql_select_db('kopeg');
 
-	$insert = 	"UPDATE titipan set talangan=$talangan WHERE tanggal ='$pecah[0]' and tempat='$pecah[1]'";
-	$insert2 = mysqli_query($konek,$insert);
-	echo "$insert<br>";
+	$insert = "UPDATE titipan set talangan=$talangan WHERE tanggal ='$pecah[0]' and tempat='$pecah[1]'";
+    $insert2 = mysqli_query($konek,$insert);
+    
+	if ($insert) {
+        echo "<script>alert('Berhasil Menambah Data');location.href='index.php?id=8';</script>";
+    } else {
+        echo "<div class='container-fluid mt-3'><div class='alert alert-danger text-center' role='alert'>
+        <b>Gagal Menambah Data</b>
+      </div>";
+    }
 
 }
 

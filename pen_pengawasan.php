@@ -1,3 +1,9 @@
+<style type="text/css">
+	table td,th 
+	{
+		font-size: 9pt!important;
+	}
+</style>
 <div class="container-fluid mt-3">
     <div class="alert alert-dark text-center">
         <b>Lembar Pengawasan
@@ -128,7 +134,7 @@
                 $jumlah_desimal ="0";
                 $pemisah_desimal =",";
                 $pemisah_ribuan =".";
-                $k = "select saldo from saldo where tanggal='$tanggal_akhir'";
+                $k = "SELECT saldo from saldo where tanggal='$tanggal_akhir'";
                 $queri = mysql_query($k);
                 $data = mysql_fetch_array($queri,MYSQL_ASSOC);
                 $i=1;
@@ -168,9 +174,8 @@
                 $tampilpenvoucher =  number_format($row['penvoucher'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
                 $tampilfeevoucher =  number_format($row['feevoucher'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
                 
-                $titipan = $row['titipan'];
-                $talangan = $row['talangan'];
-                
+                $titipan =  number_format($row['titipan'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
+                $talangan =  number_format($row['talangan'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
                 
                 $tampiljumlahjastel =  number_format($row['jumlahjastel'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
                 $tampilarindofee =  number_format($row['arindo_fee'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);

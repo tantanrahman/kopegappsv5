@@ -19,7 +19,6 @@
                                     <option value = "sopp"> SOPP </option>
                                     <option value = "voucher"> VOUCHER </option>
                                     <option value = "indovision"> INDOVISION </option>
-                                    <option value = "arindo"> ARINDO </option>
                                     <option value = "transvision"> TRANSVISION </option>
                                 </select>
                             </td>
