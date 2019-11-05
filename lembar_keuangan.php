@@ -9,7 +9,7 @@
       </button>
     </div>
     <div class="alert alert-danger text-center" role="alert">
-      UNTUK<strong> REKAP PENDAPATAN </strong>LAYAR TIDAK AKAN CUKUP MENANYANGKAN SEMUA KOLOM. MAKA DARI ITU LEBIH BAIK DICETAK.
+      UNTUK<strong> REKAP PENDAPATAN </strong>LAYAR TIDAK AKAN CUKUP MENANYANGKAN <strong>SEMUA KOLOM</strong>. MAKA DARI ITU LEBIH BAIK DICETAK.
     </div>
     <div class="row">
         <div class="col-md-3 grid-margin stretch-card">
