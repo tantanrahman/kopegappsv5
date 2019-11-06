@@ -139,5 +139,12 @@ $data = mysql_fetch_array($eksekusi,MYSQL_ASSOC);
 		$insert = "UPDATE `kopeg`.`pengawasan` set transfer1=$transfer1, transfer2=$transfer2,transfer3=$transfer3, transfer4=$transfer4, biaya=$biaya, tarik_tunai=$tarik_tunai,`jasa giro`=$jasa_giro,pph=$pph,`kel giro`=$kel_giro where tanggal='$tanggal'";
 	}
 		$sql=mysqli_query($konek,$insert);
-		echo "$insert";
+        
+        if ($insert) {
+            echo "<script>alert('Berhasil Menambah Data');location.href='index.php?id=8';</script>";
+        } else {
+            echo "<div class='container-fluid mt-3'><div class='alert alert-danger text-center' role='alert'>
+            <b>Gagal Menambah Data</b>
+          </div>";
+        }
 ?>
