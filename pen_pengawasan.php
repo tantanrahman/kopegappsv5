@@ -142,6 +142,7 @@ if(! $ambildata )
             ?>
         </b>
     </div>
+<div class="table-responsive">
 <table class="table table-bordered table-hover mb-4">
                     <thead class="header">
 	<tr>
