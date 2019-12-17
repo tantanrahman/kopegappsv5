@@ -10,7 +10,7 @@ $tampil_date2 = implode("-", $arr2);
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED); 
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Rincian-Surat-Permohonan-Transfer-$tanggal1.xls");
+header("Content-Disposition: attachment; filename=Rincian-Surat-Permohonan-Transfer-$tanggal2.xls");
 
 $dbhost = 'localhost';
 $dbuser = 'root';
@@ -297,7 +297,15 @@ $tampil3 = number_format($total3, $jumlah_desimal, $pemisah_desimal, $pemisah_ri
 <tr><td></td></tr>
 
 <tr><td colspan=5>RINCIAN ATAS TRANSFER PENDAPATAN SOPP </td></tr>
-<tr><td colspan="5">TGL <?php echo "$tanggal1";?></td></tr><tr></tr></table>
+<tr><td colspan="5">TGL 
+			<?php 
+                if($tanggal1==$tanggal2) {
+                    echo $tanggal1;
+                } else {
+                    echo "$tanggal2";
+                }
+            ?>
+</td></tr><tr></tr></table>
 
 
 <table border="1">

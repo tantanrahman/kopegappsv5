@@ -14,10 +14,45 @@
     <?php 
         include "koneksi.php";
 
-        $query = $con->query("SELECT * FROM voucher GROUP BY tanggal DESC LIMIT 1");
+        $query = $con->query("SELECT * FROM sopp GROUP BY tanggal DESC LIMIT 1");
         while($row = $query->fetch_assoc()){
             $tanggal = $row['tanggal'];
-            echo "Data terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal));
+            echo "Data <strong>SOPP</strong> terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal))."</b>";
+        }
+    ?>
+    <br>
+    <?php
+        $query2 = $con->query("SELECT * FROM pdam GROUP BY tanggal DESC LIMIT 1");
+        while($row = $query2->fetch_assoc()){
+            $tanggal = $row['tanggal'];
+            echo "Data <strong>PDAM</strong> terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal))."</b>";
+        }
+
+    ?>
+    <br>
+    <?php
+        $query3 = $con->query("SELECT * FROM pln GROUP BY tanggal DESC LIMIT 1");
+        while($row = $query3->fetch_assoc()){
+            $tanggal = $row['tanggal'];
+            echo "Data <strong>PLN</strong> terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal))."</b>";
+        }
+
+    ?>
+    <br>
+    <?php
+        $query4 = $con->query("SELECT * FROM voucher GROUP BY tanggal DESC LIMIT 1");
+        while($row = $query4->fetch_assoc()){
+            $tanggal = $row['tanggal'];
+            echo "Data <strong>VOUCHER</strong> terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal))."</b>";
+        }
+
+    ?>
+    <br>
+    <?php
+        $query4 = $con->query("SELECT * FROM arindo_trx GROUP BY tanggal DESC LIMIT 1");
+        while($row = $query4->fetch_assoc()){
+            $tanggal = $row['tanggal'];
+            echo "Data <strong>ARINDO</strong> terakhir yang diupload Tanggal <b>".date("d-F-Y", strtotime($tanggal))."</b>";
         }
 
     ?>

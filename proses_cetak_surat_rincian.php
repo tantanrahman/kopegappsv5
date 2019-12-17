@@ -261,7 +261,13 @@ $terbilang2 = $moneyFormat->terbilang($total2);
 <tr><td></td></tr><tr><td></td></tr>
 <tr><td></td></tr>
 <tr><td colspan="5">RINCIAN ATAS TRANSFER PENDAPATAN SOPP</td></tr>
-<tr><td colspan="5">TGL <?php echo "$tanggal1";?></td></tr></table>
+<tr><td colspan="5">TGL <?php 
+                if($tanggal1==$tanggal2) {
+                    echo $tanggal1;
+                } else {
+                    echo "$tanggal2";
+                }
+            ?></td></tr></table>
 <table border="1">
 	<tr>
 		<td rowspan="2" align="center">NO</td>

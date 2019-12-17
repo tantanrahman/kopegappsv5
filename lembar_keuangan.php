@@ -194,7 +194,7 @@
         <form action="index.php?id=15" method="POST">
             <table class="text-center">
                 <tr>
-                    <td><input class="form-control" autocomplete="off" type="text" id="datepicker9" name="nilai" placeholder="Tanggal"></td>
+                    <td><input class="form-control" autocomplete="off" type="text" id="datepicker9" name="nilai" placeholder="Tanggal Awal"></td>
                 </tr>
             </table>
       </div>

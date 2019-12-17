@@ -19,17 +19,14 @@ if(! $koneksi )
 {
   die('Gagal Koneksi: ' . mysql_error());
 }
-$tanggal1 = $_POST['nilai'];
+	$tanggal1 = $_POST['nilai'];
+	$tanggal2 = $_POST['nilai2'];
 
-$date = explode("-", $tanggal1);
-$arr = array("$date[2]","$date[1]","$date[0]");
-$tampil_date = implode("-", $arr);
+	$date = explode("-", $tanggal1);
+	$arr = array("$date[2]","$date[1]","$date[0]");
+	$tampil_date = implode("-", $arr);
 
-
-
-
-
-                    $date2 = date('d-m-Y', strtotime('-1 days', strtotime($tanggal1)));
+          $date2 = date('d-m-Y', strtotime('-1 days', strtotime($tanggal1)));
                     
                     $date3 = explode("-", $date2);
                     $arr_date = array("$date3[2]","$date3[1]","$date3[0]");
@@ -133,11 +130,11 @@ if(! $ambildata )
 <div class="container-fluid mt-3 mr-3">
     <div class="alert alert-dark text-center">
         <b>Lembar Pengawasan
-            <?php 
+			<?php 
                 if($tanggal1==$tanggal2) {
                     echo $tanggal1;
                 } else {
-                    echo "$tanggal1";
+                    echo "$tanggal1 - $tanggal2";
                 }
             ?>
         </b>

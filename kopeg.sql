@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Nov 2019 pada 08.32
--- Versi server: 10.1.31-MariaDB
--- Versi PHP: 5.6.34
+-- Generation Time: Dec 18, 2019 at 12:20 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 5.6.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aora`
+-- Table structure for table `aora`
 --
 
 CREATE TABLE `aora` (
@@ -49,7 +49,7 @@ CREATE TABLE `aora` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `arindo_input`
+-- Table structure for table `arindo_input`
 --
 
 CREATE TABLE `arindo_input` (
@@ -62,7 +62,7 @@ CREATE TABLE `arindo_input` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `arindo_tempat`
+-- Table structure for table `arindo_tempat`
 --
 
 CREATE TABLE `arindo_tempat` (
@@ -72,7 +72,7 @@ CREATE TABLE `arindo_tempat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `arindo_tempat`
+-- Dumping data for table `arindo_tempat`
 --
 
 INSERT INTO `arindo_tempat` (`user`, `kode_user`, `tempat`) VALUES
@@ -109,7 +109,7 @@ INSERT INTO `arindo_tempat` (`user`, `kode_user`, `tempat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `arindo_trx`
+-- Table structure for table `arindo_trx`
 --
 
 CREATE TABLE `arindo_trx` (
@@ -143,10 +143,52 @@ CREATE TABLE `arindo_trx` (
   `total_trx` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `arindo_trx`
+--
+
+INSERT INTO `arindo_trx` (`kode_user`, `tanggal`, `pln_lembar`, `pln_trx`, `telepon_lembar`, `telepon_trx`, `indovision_lembar`, `indovision_trx`, `halo_lembar`, `halo_trx`, `pulsa_lembar`, `pulsa_trx`, `pdam_lembar`, `pdam_trx`, `adira_lembar`, `adira_trx`, `baf_lembar`, `baf_trx`, `fif_lembar`, `fif_trx`, `bpjs_lembar`, `bpjs_trx`, `plnp_lembar`, `plnp_trx`, `wom_lembar`, `wom_trx`, `total_lembar`, `total_trx`) VALUES
+('CJA2002', '2019-10-01', 1, 179806, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 179806),
+('CLK1001', '2019-10-01', 2, 477898, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 477898),
+('KPO2002', '2019-10-01', 1, 408328, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 102500, 0, 0, 2, 510828),
+('LEM1001', '2019-10-01', 3, 397934, 1, 64860, 0, 0, 0, 0, 1, 14100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 52500, 0, 0, 6, 529394),
+('SMD1001', '2019-10-01', 4, 901929, 0, 0, 0, 0, 0, 0, 3, 51000, 2, 127600, 0, 0, 0, 0, 0, 0, 1, 206500, 0, 0, 0, 0, 10, 1287029),
+('SPR2002', '2019-10-01', 0, 0, 0, 0, 0, 0, 0, 0, 1, 10700, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10700),
+('UBR1001', '2019-10-01', 2, 188274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 188274),
+('BJN0465', '2019-10-02', 1, 107472, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 102500, 0, 0, 2, 209972),
+('KPO2002', '2019-10-02', 2, 466590, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 466590),
+('LEM1001', '2019-10-02', 5, 867766, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 104500, 2, 75000, 0, 0, 8, 1047266),
+('SMD1001', '2019-10-02', 1, 84903, 0, 0, 1, 79900, 0, 0, 1, 10700, 1, 165800, 0, 0, 0, 0, 0, 0, 0, 0, 1, 102500, 0, 0, 5, 443803),
+('SPR2002', '2019-10-02', 0, 0, 0, 0, 0, 0, 0, 0, 3, 27100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 27100),
+('CJA2002', '2019-10-03', 6, 1096698, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 1096698),
+('CLK1001', '2019-10-03', 11, 3872973, 0, 0, 0, 0, 0, 0, 0, 0, 1, 262000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 4134973),
+('KPO2002', '2019-10-03', 3, 1500540, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 753000, 0, 0, 0, 0, 0, 0, 4, 2253540),
+('LBG3003', '2019-10-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 53500, 0, 0, 0, 0, 1, 53500),
+('LEM1001', '2019-10-03', 12, 2579537, 0, 0, 0, 0, 0, 0, 1, 49600, 0, 0, 0, 0, 0, 0, 0, 0, 3, 186000, 3, 327500, 0, 0, 19, 3142637),
+('MJA1001', '2019-10-03', 5, 1047159, 0, 0, 0, 0, 0, 0, 0, 0, 1, 69200, 0, 0, 0, 0, 0, 0, 0, 0, 1, 202500, 0, 0, 7, 1318859),
+('RCK3003', '2019-10-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 705000, 0, 0, 2, 705000),
+('SMD1001', '2019-10-03', 14, 3369086, 0, 0, 1, 154900, 0, 0, 2, 99200, 8, 800300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 4423486),
+('SOR1001', '2019-10-03', 0, 0, 0, 0, 0, 0, 0, 0, 1, 10700, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 52500, 0, 0, 2, 63200),
+('UBR1001', '2019-10-03', 1, 308787, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 102500, 0, 0, 2, 411287),
+('BJN0465', '2019-10-04', 3, 284478, 0, 0, 0, 0, 0, 0, 1, 30000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 314478),
+('CJA2002', '2019-10-04', 8, 2050308, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 2050308),
+('CLK1001', '2019-10-04', 9, 1437989, 0, 0, 0, 0, 0, 0, 0, 0, 1, 57000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 1494989),
+('KPO2002', '2019-10-04', 1, 158214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 158214),
+('LEM1001', '2019-10-04', 2, 174523, 0, 0, 0, 0, 0, 0, 1, 6150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 632500, 0, 0, 8, 813173),
+('MJA1001', '2019-10-04', 6, 3455172, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1139400, 0, 0, 0, 0, 0, 0, 1, 53500, 0, 0, 0, 0, 11, 4648072),
+('PDL0001', '2019-10-04', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 162500, 0, 0, 0, 0, 1, 162500),
+('RCK3003', '2019-10-04', 4, 4697862, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 104500, 1, 202500, 0, 0, 6, 5004862),
+('SMD1001', '2019-10-04', 10, 2074725, 0, 0, 1, 807800, 0, 0, 1, 20200, 4, 682400, 0, 0, 0, 0, 0, 0, 2, 107000, 1, 502500, 0, 0, 19, 4194625),
+('STB2002', '2019-10-04', 0, 0, 0, 0, 0, 0, 0, 0, 1, 10400, 0, 0, 0, 0, 0, 0, 0, 0, 3, 186000, 0, 0, 0, 0, 4, 196400),
+('UBR1001', '2019-10-04', 3, 220838, 0, 0, 0, 0, 0, 0, 0, 0, 1, 52800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 273638),
+('LEM1001', '2019-10-05', 3, 667293, 0, 0, 0, 0, 0, 0, 1, 10700, 0, 0, 0, 0, 0, 0, 0, 0, 5, 526000, 3, 657500, 0, 0, 12, 1861493),
+('SMD1001', '2019-10-05', 5, 1865924, 0, 0, 0, 0, 0, 0, 1, 10700, 5, 635900, 0, 0, 0, 0, 1, 613000, 2, 405000, 4, 610000, 0, 0, 18, 4140524),
+('UBR1001', '2019-10-05', 2, 701176, 0, 0, 0, 0, 0, 0, 0, 0, 2, 121800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 822976);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `biaya_pln`
+-- Table structure for table `biaya_pln`
 --
 
 CREATE TABLE `biaya_pln` (
@@ -155,7 +197,7 @@ CREATE TABLE `biaya_pln` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `biaya_pln`
+-- Dumping data for table `biaya_pln`
 --
 
 INSERT INTO `biaya_pln` (`biaya_admin`, `fee`) VALUES
@@ -166,7 +208,7 @@ INSERT INTO `biaya_pln` (`biaya_admin`, `fee`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `biaya_voucher`
+-- Table structure for table `biaya_voucher`
 --
 
 CREATE TABLE `biaya_voucher` (
@@ -176,7 +218,7 @@ CREATE TABLE `biaya_voucher` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `biaya_voucher`
+-- Dumping data for table `biaya_voucher`
 --
 
 INSERT INTO `biaya_voucher` (`denom`, `harga_jual`, `fee_kopegtel`) VALUES
@@ -189,7 +231,7 @@ INSERT INTO `biaya_voucher` (`denom`, `harga_jual`, `fee_kopegtel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `coba`
+-- Table structure for table `coba`
 --
 
 CREATE TABLE `coba` (
@@ -200,7 +242,7 @@ CREATE TABLE `coba` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `coba`
+-- Dumping data for table `coba`
 --
 
 INSERT INTO `coba` (`a`, `b`, `c`, `d`) VALUES
@@ -211,7 +253,7 @@ INSERT INTO `coba` (`a`, `b`, `c`, `d`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fax`
+-- Table structure for table `fax`
 --
 
 CREATE TABLE `fax` (
@@ -223,7 +265,7 @@ CREATE TABLE `fax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `fax`
+-- Dumping data for table `fax`
 --
 
 INSERT INTO `fax` (`id`, `tanggal`, `lokasi`, `fax`, `lainlain`) VALUES
@@ -232,7 +274,7 @@ INSERT INTO `fax` (`id`, `tanggal`, `lokasi`, `fax`, `lainlain`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fee_admin`
+-- Table structure for table `fee_admin`
 --
 
 CREATE TABLE `fee_admin` (
@@ -241,75 +283,21 @@ CREATE TABLE `fee_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `fee_admin`
+-- Dumping data for table `fee_admin`
 --
 
 INSERT INTO `fee_admin` (`tanggal`, `fee_admin`) VALUES
-('2016-11-01', 736500),
-('2016-11-02', 453500),
-('2016-11-03', 483000),
-('2016-11-04', 2942500),
-('2016-11-05', 1236500),
-('2016-11-06', 3000),
-('2016-11-07', 7563500),
-('2016-11-08', 5196000),
-('2016-11-09', 4215500),
-('2016-11-10', 4111000),
-('2016-11-11', 3558000),
-('2016-11-12', 778000),
-('2016-11-13', 12000),
-('2016-11-14', 5231500),
-('2016-11-15', 5346000),
-('2016-11-16', 4984000),
-('2016-11-17', 4930000),
-('2016-11-18', 8557500),
-('2016-11-19', 3029000),
-('2016-11-20', 57000),
-('2016-11-21', 5351500),
-('2016-11-22', 1861000),
-('2016-11-23', 1321500),
-('2016-11-24', 772000),
-('2016-11-25', 1012500),
-('2016-11-26', 139500),
-('2016-11-27', 0),
-('2016-11-28', 1670000),
-('2016-11-29', 1007500),
-('2016-11-30', 746000),
-('2016-12-01', 887500),
-('2016-12-02', 532000),
-('2016-12-03', 129000),
-('2016-12-05', 5247000),
-('2016-12-04', 0),
-('2016-12-06', 5307000),
-('2016-12-07', 4951500),
-('2016-12-08', 3990000),
-('2016-12-09', 3888000),
-('2016-12-10', 1182500),
-('2016-12-11', 0),
-('2016-12-12', 15000),
-('2016-12-13', 5344500),
-('2016-12-14', 5196000),
-('2016-12-27', 2210500),
-('2016-12-28', 1014500),
-('2017-05-16', 4703000),
-('2017-05-17', 5586500),
-('2017-05-18', 5946500),
-('2017-07-12', 3890000),
-('2017-07-05', 3692500),
-('2018-03-01', 341500),
-('2018-03-02', 307500),
-('2018-05-03', 270000),
-('2018-10-01', 600500),
-('2019-08-01', 159500),
-('0000-00-00', 0),
 ('2019-10-01', 223000),
-('2019-09-30', 265000),
-('2019-09-28', 77500);
+('2019-10-02', 448500),
+('2019-10-03', 1090000),
+('2019-10-04', 1666500),
+('2019-10-05', 871000),
+('2019-10-06', 15000);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fee_akses`
+-- Table structure for table `fee_akses`
 --
 
 CREATE TABLE `fee_akses` (
@@ -318,7 +306,7 @@ CREATE TABLE `fee_akses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `fee_akses`
+-- Dumping data for table `fee_akses`
 --
 
 INSERT INTO `fee_akses` (`tanggal`, `fee_akses`) VALUES
@@ -413,12 +401,17 @@ INSERT INTO `fee_akses` (`tanggal`, `fee_akses`) VALUES
 ('0000-00-00', 0),
 ('2019-10-01', 38000),
 ('2019-09-30', 45500),
-('2019-09-28', 13000);
+('2019-09-28', 13000),
+('2019-10-02', 78500),
+('2019-10-03', 187000),
+('2019-10-04', 284500),
+('2019-10-05', 149000),
+('2019-10-06', 2500);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fee_arindo`
+-- Table structure for table `fee_arindo`
 --
 
 CREATE TABLE `fee_arindo` (
@@ -433,7 +426,7 @@ CREATE TABLE `fee_arindo` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fee_pdam`
+-- Table structure for table `fee_pdam`
 --
 
 CREATE TABLE `fee_pdam` (
@@ -444,7 +437,7 @@ CREATE TABLE `fee_pdam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `fee_pdam`
+-- Dumping data for table `fee_pdam`
 --
 
 INSERT INTO `fee_pdam` (`pdam`, `regional`, `biaya_admin`, `fee_mitra`) VALUES
@@ -518,7 +511,7 @@ INSERT INTO `fee_pdam` (`pdam`, `regional`, `biaya_admin`, `fee_mitra`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `harga_pulsa`
+-- Table structure for table `harga_pulsa`
 --
 
 CREATE TABLE `harga_pulsa` (
@@ -531,7 +524,7 @@ CREATE TABLE `harga_pulsa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `harga_pulsa`
+-- Dumping data for table `harga_pulsa`
 --
 
 INSERT INTO `harga_pulsa` (`kode_pulsa`, `produk`, `harga_arindo`, `harga_jual`, `fee_kopeg`, `penyedia`) VALUES
@@ -593,7 +586,7 @@ INSERT INTO `harga_pulsa` (`kode_pulsa`, `produk`, `harga_arindo`, `harga_jual`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `indovision`
+-- Table structure for table `indovision`
 --
 
 CREATE TABLE `indovision` (
@@ -614,23 +607,10 @@ CREATE TABLE `indovision` (
   `kode_biller` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `indovision`
---
-
-INSERT INTO `indovision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode_loket`, `loket`, `nama_biller`, `account`, `customer`, `tagihan`, `surcharge`, `fee_ca`, `fee_finnet`, `kewajiban`, `kode_biller`) VALUES
-('2016-11-12', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401003070381', 'CAHYA  NINGRUM', 179900, 0, 1500, 1500, 178400, '55'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401002860700', 'AGUS	SOLEHUDIN', 226965, 0, 1500, 1500, 225465, '55'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401002729780', 'ANDRI  JOHANNES', 344800, 0, 1500, 1500, 343300, '55'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401001596979', 'ARIYANTO', 429900, 0, 1500, 1500, 428400, '55'),
-('2016-12-10', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401003070381', 'CAHYA  NINGRUM', 179900, 0, 1500, 1500, 178400, '55'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'INDOVISION P2H', '401003844663', 'DIAN	WAHYUDI', 374900, 0, 1500, 1500, 373400, '55'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'INDOVISION P2H', '401001596979', 'ARIYANTO', 439900, 0, 1500, 1500, 438400, '55');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kaliuser`
+-- Table structure for table `kaliuser`
 --
 
 CREATE TABLE `kaliuser` (
@@ -643,7 +623,7 @@ CREATE TABLE `kaliuser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kaliuser`
+-- Dumping data for table `kaliuser`
 --
 
 INSERT INTO `kaliuser` (`id`, `lokasi`, `user`, `xfee`, `xtitip`, `xadmin`) VALUES
@@ -692,7 +672,7 @@ INSERT INTO `kaliuser` (`id`, `lokasi`, `user`, `xfee`, `xtitip`, `xadmin`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kinerja_user`
+-- Table structure for table `kinerja_user`
 --
 
 CREATE TABLE `kinerja_user` (
@@ -709,7 +689,7 @@ CREATE TABLE `kinerja_user` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kode_awal`
+-- Table structure for table `kode_awal`
 --
 
 CREATE TABLE `kode_awal` (
@@ -718,7 +698,7 @@ CREATE TABLE `kode_awal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kode_awal`
+-- Dumping data for table `kode_awal`
 --
 
 INSERT INTO `kode_awal` (`nomor_awal`, `produk`) VALUES
@@ -762,7 +742,7 @@ INSERT INTO `kode_awal` (`nomor_awal`, `produk`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `konpensasi`
+-- Table structure for table `konpensasi`
 --
 
 CREATE TABLE `konpensasi` (
@@ -800,7 +780,7 @@ CREATE TABLE `konpensasi` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_aoratv`
+-- Table structure for table `k_aoratv`
 --
 
 CREATE TABLE `k_aoratv` (
@@ -814,7 +794,7 @@ CREATE TABLE `k_aoratv` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo`
+-- Table structure for table `k_arindo`
 --
 
 CREATE TABLE `k_arindo` (
@@ -828,7 +808,7 @@ CREATE TABLE `k_arindo` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_adira`
+-- Table structure for table `k_arindo_adira`
 --
 
 CREATE TABLE `k_arindo_adira` (
@@ -842,7 +822,7 @@ CREATE TABLE `k_arindo_adira` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_adiratv`
+-- Table structure for table `k_arindo_adiratv`
 --
 
 CREATE TABLE `k_arindo_adiratv` (
@@ -856,7 +836,7 @@ CREATE TABLE `k_arindo_adiratv` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_baf`
+-- Table structure for table `k_arindo_baf`
 --
 
 CREATE TABLE `k_arindo_baf` (
@@ -870,7 +850,7 @@ CREATE TABLE `k_arindo_baf` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_bigtv`
+-- Table structure for table `k_arindo_bigtv`
 --
 
 CREATE TABLE `k_arindo_bigtv` (
@@ -884,7 +864,7 @@ CREATE TABLE `k_arindo_bigtv` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_bpjs`
+-- Table structure for table `k_arindo_bpjs`
 --
 
 CREATE TABLE `k_arindo_bpjs` (
@@ -898,7 +878,7 @@ CREATE TABLE `k_arindo_bpjs` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_fif`
+-- Table structure for table `k_arindo_fif`
 --
 
 CREATE TABLE `k_arindo_fif` (
@@ -912,7 +892,7 @@ CREATE TABLE `k_arindo_fif` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_indovision`
+-- Table structure for table `k_arindo_indovision`
 --
 
 CREATE TABLE `k_arindo_indovision` (
@@ -926,7 +906,7 @@ CREATE TABLE `k_arindo_indovision` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_pdam`
+-- Table structure for table `k_arindo_pdam`
 --
 
 CREATE TABLE `k_arindo_pdam` (
@@ -940,7 +920,7 @@ CREATE TABLE `k_arindo_pdam` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_pln`
+-- Table structure for table `k_arindo_pln`
 --
 
 CREATE TABLE `k_arindo_pln` (
@@ -954,7 +934,7 @@ CREATE TABLE `k_arindo_pln` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_toptv`
+-- Table structure for table `k_arindo_toptv`
 --
 
 CREATE TABLE `k_arindo_toptv` (
@@ -968,7 +948,7 @@ CREATE TABLE `k_arindo_toptv` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_voucher`
+-- Table structure for table `k_arindo_voucher`
 --
 
 CREATE TABLE `k_arindo_voucher` (
@@ -982,7 +962,7 @@ CREATE TABLE `k_arindo_voucher` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_arindo_wom`
+-- Table structure for table `k_arindo_wom`
 --
 
 CREATE TABLE `k_arindo_wom` (
@@ -996,7 +976,7 @@ CREATE TABLE `k_arindo_wom` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_indovision`
+-- Table structure for table `k_indovision`
 --
 
 CREATE TABLE `k_indovision` (
@@ -1007,18 +987,10 @@ CREATE TABLE `k_indovision` (
   `nominal` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `k_indovision`
---
-
-INSERT INTO `k_indovision` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `lokasi`, `nominal`) VALUES
-('2016-12-10', '2016-12-14', 'lembong3', 'LEMBONG', 178400),
-('2016-12-06', '2016-12-15', 'lembong3', 'LEMBONG', 429900);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_pdam`
+-- Table structure for table `k_pdam`
 --
 
 CREATE TABLE `k_pdam` (
@@ -1032,7 +1004,7 @@ CREATE TABLE `k_pdam` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_pln`
+-- Table structure for table `k_pln`
 --
 
 CREATE TABLE `k_pln` (
@@ -1046,7 +1018,7 @@ CREATE TABLE `k_pln` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_sopp`
+-- Table structure for table `k_sopp`
 --
 
 CREATE TABLE `k_sopp` (
@@ -1057,17 +1029,10 @@ CREATE TABLE `k_sopp` (
   `nominal` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `k_sopp`
---
-
-INSERT INTO `k_sopp` (`tanggal_masalah`, `tanggal_konpensasi`, `loket`, `lokasi`, `nominal`) VALUES
-('2016-12-06', '2016-12-15', 'cimahi2', 'CIMAHI', 34070);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_transvision`
+-- Table structure for table `k_transvision`
 --
 
 CREATE TABLE `k_transvision` (
@@ -1081,7 +1046,7 @@ CREATE TABLE `k_transvision` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_voucher_smart`
+-- Table structure for table `k_voucher_smart`
 --
 
 CREATE TABLE `k_voucher_smart` (
@@ -1095,7 +1060,7 @@ CREATE TABLE `k_voucher_smart` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_voucher_tri`
+-- Table structure for table `k_voucher_tri`
 --
 
 CREATE TABLE `k_voucher_tri` (
@@ -1109,7 +1074,7 @@ CREATE TABLE `k_voucher_tri` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `k_voucher_tsel`
+-- Table structure for table `k_voucher_tsel`
 --
 
 CREATE TABLE `k_voucher_tsel` (
@@ -1123,7 +1088,7 @@ CREATE TABLE `k_voucher_tsel` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `lokasi`
+-- Table structure for table `lokasi`
 --
 
 CREATE TABLE `lokasi` (
@@ -1136,7 +1101,7 @@ CREATE TABLE `lokasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `lokasi`
+-- Dumping data for table `lokasi`
 --
 
 INSERT INTO `lokasi` (`user_id`, `lokasi`, `loket`, `tempat`, `user`, `tempat_arindo`) VALUES
@@ -1192,7 +1157,60 @@ INSERT INTO `lokasi` (`user_id`, `lokasi`, `loket`, `tempat`, `user`, `tempat_ar
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `loket`
+-- Table structure for table `lokasi2`
+--
+
+CREATE TABLE `lokasi2` (
+  `user_id` int(10) NOT NULL,
+  `lokasi` varchar(20) NOT NULL,
+  `loket` varchar(20) NOT NULL,
+  `tempat` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `lokasi2`
+--
+
+INSERT INTO `lokasi2` (`user_id`, `lokasi`, `loket`, `tempat`) VALUES
+(1, 'BKR', 'bkr1', 'BKR'),
+(2, 'BANJARAN', 'bkr2', 'BANJARAN'),
+(3, 'MAJALAYA', 'cicalengka1', 'MAJALAYA'),
+(4, 'CIJAURA', 'cijaura', 'CIJAURA'),
+(5, 'CIJAURA2', 'cijaura2', 'CIJAURA'),
+(6, 'CIMAHI 1', 'cimahi1', 'CIMAHI'),
+(7, 'CIMAHI 2', 'cimahi2', 'CIMAHI2'),
+(8, 'CICALENGKA', 'ddl_cclengka', 'CICALENGKA'),
+(9, 'PADALARANG1', 'padalarang1', 'PADALARANG'),
+(10, 'PLASA RANCAEKEK', 'gegerkalong1', 'PLASA RANCAEKEK'),
+(11, 'JATINANGOR', 'jatinangor', 'JATINANGOR'),
+(12, 'JATINANGOR / PDL', 'ujungberung1', 'JATINANGOR'),
+(13, 'KOPO 1', 'kopo1', 'KOPO'),
+(14, 'KOPO 2', 'kopo2', 'KOPO'),
+(15, 'LEMBANG', 'lembang', 'LEMBANG'),
+(16, 'LEMBONG 1', 'lembong1', 'LEMBONG'),
+(17, 'LEMBONG 2', 'lembong2', 'LEMBONG'),
+(18, 'LEMBONG 3', 'lembong3', 'LEMBONG'),
+(19, 'RAJAWALI 1', 'rajawali1', 'RAJAWALI'),
+(20, 'RAJAWALI 2', 'rajawali2', 'RAJAWALI'),
+(21, 'RAJAWALI 3', 'rajawali3', 'RAJAWALI'),
+(22, 'RANCAEKEK 2/ LILIK', 'ddl_rckkbru', 'RANCAEKEK 2/LILIK'),
+(23, 'SETIABUDI 1', 'setiabudi1', 'SETIABUDI'),
+(24, 'SETIABUDI 2', 'setiabudi2', 'SETIABUDI'),
+(25, 'SOREANG', 'soreang', 'SOREANG'),
+(26, 'SUMEDANG 1', 'sumedang1', 'SUMEDANG'),
+(27, 'SUMEDANG 2', 'sumedang2', 'SUMEDANG'),
+(28, 'SUPRATMAN 1', 'supratman1', 'SUPRATMAN'),
+(29, 'SUPRATMAN 2', 'supratman2', 'SUPRATMAN'),
+(30, 'SUPRATMAN 3', 'supratman3', 'SUPRATMAN'),
+(31, 'TANJUNGSARI', 'tanjungsari', 'TANJUNGSARI'),
+(32, 'UJUNG BERUNG', 'ujungberung2', 'UJUNG BERUNG'),
+(33, 'WINDU 1', 'windu1', 'WINDU'),
+(34, 'WINDU 2', 'windu2', 'WINDU');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loket`
 --
 
 CREATE TABLE `loket` (
@@ -1201,64 +1219,10 @@ CREATE TABLE `loket` (
   `tanggal` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `loket`
---
-
-INSERT INTO `loket` (`loket`, `nama_user`, `tanggal`) VALUES
-('arcamanik', '', '2016-12-01'),
-('batujajar', 'Hani', '2016-12-01'),
-('bkr1', 'Heriyadi', '2016-12-01'),
-('bkr2', 'Rita', '2016-12-01'),
-('cicalengka1', 'Mila', '2016-12-01'),
-('cijaura', 'Eded', '2016-12-01'),
-('cijaura2', 'Tety', '2016-12-01'),
-('cikalongwetan', '', '2016-12-01'),
-('cililin', '', '2016-12-01'),
-('cimahi1', 'Yuli', '2016-12-01'),
-('cimahi2', 'Nandang', '2016-12-01'),
-('dago1', 'Budiar', '2016-12-01'),
-('dago2', '', '2016-12-01'),
-('ddl_cclengka', 'Mety', '2016-12-01'),
-('ddl_rckkbru', 'Pa Lili', '2016-12-01'),
-('gegerkalong1', 'Herlina', '2016-12-01'),
-('jatinangor', 'Sugar', '2016-12-01'),
-('ujungberung1', '', '2016-12-01'),
-('kopo1', 'Desy', '2016-12-01'),
-('kopo2', 'Ilyas', '2016-12-01'),
-('lembang', 'Dadang Supriyadi', '2016-12-01'),
-('lembong1', '', '2016-12-01'),
-('lembong2', 'Chandra', '2016-12-01'),
-('lembong3', 'Rika', '2016-12-01'),
-('padalarang1', 'Irwan', '2016-12-01'),
-('rajawali1', 'Ati P', '2016-12-01'),
-('rajawali2', 'Nugraha adi', '2016-12-01'),
-('rajawali3', '', '2016-12-01'),
-('rancaekek', '', '2016-12-01'),
-('setiabudi1', 'Asep Ahmad', '2016-12-01'),
-('setiabudi2', 'Suryani', '2016-12-01'),
-('soreang', 'Ayu', '2016-12-01'),
-('sumedang1', '', '2016-12-01'),
-('sumedang2', 'Dimroh', '2016-12-01'),
-('supratman1', '', '2016-12-01'),
-('supratman2', 'Dodi', '2016-12-01'),
-('supratman3', 'Rahmat', '2016-12-01'),
-('tanjungsari', 'Maulana', '2016-12-01'),
-('ujungberung2', 'Asep Hidayat', '2016-12-01'),
-('windu1', 'Dadang Junaedi', '2016-12-01'),
-('windu2', 'Erniyati', '2016-12-01'),
-('cicalengka2', 'Mety', '2016-12-01'),
-('cijaura1', 'Eded', '2016-12-01'),
-('padalarang', 'Irwan', '2016-12-01'),
-('lembang1', 'Dadang Supriyadi', '2016-12-01'),
-('setiabudhi1', 'Asep Ahmad', '2016-12-01'),
-('setiabudhi2', 'Suryani', '2016-12-01'),
-('rancaekek2', 'Pa Lili', '2016-12-01');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `nomor`
+-- Table structure for table `nomor`
 --
 
 CREATE TABLE `nomor` (
@@ -1266,7 +1230,7 @@ CREATE TABLE `nomor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `nomor`
+-- Dumping data for table `nomor`
 --
 
 INSERT INTO `nomor` (`nomor`) VALUES
@@ -1275,7 +1239,7 @@ INSERT INTO `nomor` (`nomor`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pdam`
+-- Table structure for table `pdam`
 --
 
 CREATE TABLE `pdam` (
@@ -1294,10 +1258,288 @@ CREATE TABLE `pdam` (
   `total_kopeg` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `pdam`
+--
+
+INSERT INTO `pdam` (`tanggal`, `jam`, `kopegtel`, `loket`, `virtual_account`, `nama_area`, `fee_admin`, `no_pdam`, `trx`, `bill`, `amount`, `total_fee`, `total_kopeg`) VALUES
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 136800, 2500, 139300),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 66700, 2500, 69200),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 20300, 2500, 22800),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 185200, 2500, 187700),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 350300, 2500, 352800),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 109400, 2500, 111900),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 29000, 2500, 31500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30800, 2500, 33300),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40000, 2500, 42500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 60600, 2500, 63100),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 459000, 2500, 461500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 119400, 2500, 121900),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 66000, 2500, 68500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 223950, 2500, 226450),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 223950, 2500, 226450),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 80000, 2500, 82500),
+('2019-10-01', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 97200, 2500, 99700),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 74000, 2500, 76500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 22000, 2500, 24500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 22000, 2500, 24500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 74000, 2500, 76500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 23600, 2500, 26100),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 97200, 2500, 99700),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 115500, 2500, 118000),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 369000, 2500, 371500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 35200, 2500, 37700),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 92000, 2500, 94500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 138200, 2500, 140700),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 74000, 2500, 76500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 55000, 2500, 57500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 55000, 2500, 57500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 110000, 2500, 112500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 19900, 2500, 22400),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 32600, 2500, 35100),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 175800, 2500, 178300),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 167100, 2500, 169600),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-02', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 80000, 2500, 82500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cicalengka1', 30315013, 'PDAM Bandung', 2500, 2147483647, 1, 1, 31500, 2500, 34000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 19100, 2500, 21600),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 36800, 2500, 39300),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 216600, 2500, 219100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 19600, 2500, 22100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40100, 2500, 42600),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 104000, 2500, 106500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 147600, 2500, 150100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 66700, 2500, 69200),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 85100, 2500, 87600),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 109400, 2500, 111900),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 193800, 2500, 196300),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 223000, 2500, 225500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 186500, 2500, 189000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 78900, 2500, 81400),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 66700, 2500, 69200),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 122600, 2500, 125100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 115500, 2500, 118000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 84400, 2500, 86900),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 383600, 2500, 386100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 133800, 2500, 136300),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 104000, 2500, 106500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 80000, 2500, 82500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 200400, 2500, 202900),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40200, 2500, 42700),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 66000, 2500, 68500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 159900, 2500, 162400),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 45400, 2500, 47900),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 45400, 2500, 47900),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'soreang', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 472100, 2500, 474600),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 67600, 2500, 70100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 32600, 2500, 35100),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'ujungberung2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30200, 2500, 32700),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30200, 2500, 32700),
+('2019-10-03', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 185200, 2500, 187700),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43400, 2500, 45900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 19600, 2500, 22100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 110000, 2500, 112500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 24800, 2500, 27300),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 20300, 2500, 22800),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 184400, 2500, 186900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 36800, 2500, 39300),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 27400, 2500, 29900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 36800, 2500, 39300),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 73000, 2500, 75500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 86000, 2500, 88500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 155600, 2500, 158100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 353000, 2500, 355500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43000, 2500, 45500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40600, 2500, 43100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 184400, 2500, 186900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 72800, 2500, 75300),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 115500, 2500, 118000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 78500, 2500, 81000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 328400, 2500, 330900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 158100, 2500, 160600),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 179400, 2500, 181900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30200, 2500, 32700),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 66000, 2500, 68500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 78700, 2500, 81200),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43400, 2500, 45900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'padalarang', 30315073, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'padalarang', 30315073, 'PDAM Bandung', 2500, 2147483647, 1, 1, 31500, 2500, 34000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40400, 2500, 42900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 63000, 2500, 65500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 75200, 2500, 77700),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 37000, 2500, 39500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 111200, 2500, 113700),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 65800, 2500, 68300),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 46000, 2500, 48500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 68000, 2500, 70500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 61400, 2500, 63900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 70600, 2500, 73100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'setiabudhi2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 37000, 2500, 39500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'sumedang2', 30315033, 'PDAM Kab Sumedang', 2500, 2147483647, 1, 1, 55000, 2500, 57500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 20300, 2500, 22800),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 84400, 2500, 86900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 70600, 2500, 73100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 89000, 2500, 91500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 119400, 2500, 121900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 471600, 2500, 474100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 37000, 2500, 39500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'ujungberung2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 58600, 2500, 61100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 32600, 2500, 35100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 110000, 2500, 112500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 88000, 2500, 90500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 45600, 2500, 48100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 63000, 2500, 65500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 25100, 2500, 27600),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 282600, 2500, 285100),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 56000, 2500, 58500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 167100, 2500, 169600),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43000, 2500, 45500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40400, 2500, 42900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40100, 2500, 42600),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 22000, 2500, 24500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 22000, 2500, 24500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43400, 2500, 45900),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-04', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 110000, 2500, 112500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 119400, 2500, 121900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 23600, 2500, 26100),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40100, 2500, 42600),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 128800, 2500, 131300),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62000, 2500, 64500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 37800, 2500, 40300),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 194600, 2500, 197100),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 34400, 2500, 36900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 68000, 2500, 70500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 80000, 2500, 82500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 68000, 2500, 70500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 216600, 2500, 219100),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 138200, 2500, 140700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 138200, 2500, 140700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cijaura2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 26900, 2500, 29400),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'cimahi2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 80000, 2500, 82500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'kopo1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 138200, 2500, 140700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 192000, 2500, 194500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 122600, 2500, 125100),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 51400, 2500, 53900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembang1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 115500, 2500, 118000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30200, 2500, 32700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 30800, 2500, 33300),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 74000, 2500, 76500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 216600, 2500, 219100),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 40100, 2500, 42600),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 98000, 2500, 100500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 446400, 2500, 448900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'lembong3', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Bandung', 2500, 2147483647, 1, 1, 54500, 2500, 57000),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 295200, 2500, 297700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43000, 2500, 45500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 185200, 2500, 187700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 62200, 2500, 64700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 33000, 2500, 35500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 25700, 2500, 28200),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 68000, 2500, 70500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 204000, 2500, 206500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'rajawali2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 257400, 2500, 259900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 156400, 2500, 158900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 475400, 2500, 477900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 46700, 2500, 49200),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'supratman2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'ujungberung2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 27400, 2500, 29900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'ujungberung2', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 50000, 2500, 52500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43000, 2500, 45500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 52200, 2500, 54700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 22200, 2500, 24700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 66000, 2500, 68500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 186000, 2500, 188500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 113400, 2500, 115900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 157000, 2500, 159500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 43000, 2500, 45500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 331400, 2500, 333900),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 390700, 2500, 393200),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 35200, 2500, 37700),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 17000, 2500, 19500),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 46700, 2500, 49200),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 128800, 2500, 131300),
+('2019-10-05', '00:00:00 WIB', 'D3_Kop Dadali BDG', 'windu1', 30315033, 'PDAM Kota Bandung', 2500, 2147483647, 1, 1, 92000, 2500, 94500);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengawasan`
+-- Table structure for table `pengawasan`
 --
 
 CREATE TABLE `pengawasan` (
@@ -1314,31 +1556,19 @@ CREATE TABLE `pengawasan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `pengawasan`
+-- Dumping data for table `pengawasan`
 --
 
 INSERT INTO `pengawasan` (`transfer1`, `transfer2`, `transfer3`, `transfer4`, `biaya`, `tarik_tunai`, `jasa giro`, `pph`, `kel giro`, `tanggal`) VALUES
-(-30966012, -101492476, -2061317, 0, -15000, 0, 0, 0, 0, '2016-12-01'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2016-12-02'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2016-12-03'),
-(-90002425, -54041567, -1831500, 0, -15000, 0, 0, 0, 0, '2016-12-04'),
-(-5154374, -483799745, -526747293, 0, -15000, 0, 0, 0, 0, '2016-12-05'),
-(-571000754, -645675080, -9108756, 0, -15000, -30954593, 0, 0, 0, '2016-12-06'),
-(-4323805, -610050265, -586113718, 0, -15000, 0, 0, 0, 0, '2016-12-07'),
-(-2581920, -507668709, -447629577, 0, -15000, 0, 0, 0, 0, '2016-12-08'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2016-12-09'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2016-12-10'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2016-12-11'),
-(-518113174, -648627138, -4078120, 0, -15000, 0, 0, 0, 0, '2016-12-12'),
-(-3779210, -84567415, -22911505, 0, -15000, 0, 0, 0, 0, '2018-10-01'),
 (-3183929, -26903337, -23673908, 0, -15000, 0, 0, 0, 0, '2019-10-01'),
-(-1123265, -30083725, -13545203, 0, -15000, 0, 0, 0, 0, '2019-09-30'),
-(0, 0, 0, 0, 0, 0, 0, 0, 0, '2019-09-28');
+(-2194731, -65261961, -52347670, 0, -15000, 0, 0, 0, 0, '2019-10-02'),
+(-163621896, -138617799, -17603180, 0, -15000, 0, 0, 0, 0, '2019-10-03'),
+(-26136252, -348096328, -279961001, 0, -15000, 0, 0, 0, 0, '2019-10-06');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pln`
+-- Table structure for table `pln`
 --
 
 CREATE TABLE `pln` (
@@ -1355,10 +1585,111 @@ CREATE TABLE `pln` (
   `total_kopeg` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `pln`
+--
+
+INSERT INTO `pln` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `loket`, `nomor`, `trx`, `bill`, `amount`, `fee_admin`, `total_kopeg`) VALUES
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'cicalengka1', 315023, 10, 10, 1565939, 27500, 1593439),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'cijaura1', 315043, 6, 6, 1212278, 16500, 1228778),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 14, 16, 4795715, 44000, 4839715),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'cimahi2', 315423, 1, 1, 189499, 2750, 192249),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 2, 2, 600000, 5500, 605500),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'lembang1', 315143, 2, 2, 636750, 5500, 642250),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'lembong2', 315303, 4, 4, 1756453, 11000, 1767453),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'lembong3', 315013, 2, 3, 473260, 8250, 481510),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'rajawali1', 315153, 4, 4, 1257682, 11000, 1268682),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'rajawali2', 315163, 7, 8, 2008908, 22000, 2030908),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi1', 315313, 3, 3, 1258157, 8250, 1266407),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'soreang', 315183, 4, 4, 1084467, 11000, 1095467),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'sumedang2', 315203, 3, 3, 747135, 8250, 755385),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'supratman2', 315223, 1, 1, 34662, 2750, 37412),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'supratman3', 315413, 3, 3, 435337, 8250, 443587),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'windu1', 315273, 3, 3, 1247370, 8250, 1255620),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'windu2', 315283, 3, 3, 1823396, 8250, 1831646),
+('2019-10-01', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 1, 1, 50000, 5000, 55000),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'cicalengka1', 315023, 6, 6, 630074, 16500, 646574),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'cijaura1', 315043, 13, 14, 2588087, 38500, 2626587),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 10, 10, 3382858, 27500, 3410358),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'cimahi2', 315423, 5, 5, 495933, 13750, 509683),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'gegerkalong1', 315103, 8, 8, 5058773, 22000, 5080773),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 4, 4, 473780, 11000, 484780),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'kopo2', 315133, 3, 3, 811654, 8250, 819904),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'lembang1', 315143, 18, 19, 4959854, 52250, 5012104),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'lembong2', 315303, 11, 11, 16643963, 30250, 16674213),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'lembong3', 315013, 3, 4, 1292365, 11000, 1303365),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'rajawali1', 315153, 5, 5, 670289, 13750, 684039),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'rajawali2', 315163, 5, 6, 2312494, 16500, 2328994),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi1', 315313, 5, 5, 1404061, 13750, 1417811),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi2', 315323, 2, 2, 1747285, 5500, 1752785),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'soreang', 315183, 1, 1, 116280, 2750, 119030),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'sumedang2', 315203, 6, 6, 601334, 16500, 617834),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'supratman3', 315413, 1, 1, 216346, 2750, 219096),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'ujungberung2', 315263, 2, 2, 493913, 5500, 499413),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'windu1', 315273, 7, 7, 1164536, 19250, 1183786),
+('2019-10-02', '3', '315', 'D3_Kop Dadali BDG', 'windu2', 315283, 14, 14, 4754341, 38500, 4792841),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'cicalengka1', 315023, 2, 2, 2968446, 5500, 2973946),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'cijaura1', 315043, 17, 17, 5938832, 46750, 5985582),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 28, 28, 17788481, 77000, 17865481),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'cimahi2', 315423, 23, 23, 7050270, 63250, 7113520),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'gegerkalong1', 315103, 2, 2, 228434, 5500, 233934),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 7, 7, 685946, 19250, 705196),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'kopo1', 315123, 5, 5, 3352620, 13750, 3366370),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'kopo2', 315133, 40, 80, 63500000, 220000, 63720000),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'lembang1', 315143, 22, 23, 4760298, 63250, 4823548),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'lembong2', 315303, 29, 29, 22724631, 79750, 22804381),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'lembong3', 315013, 17, 17, 9148314, 46750, 9195064),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'rajawali1', 315153, 11, 12, 3021558, 33000, 3054558),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'rajawali2', 315163, 17, 17, 6244672, 46750, 6291422),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi1', 315313, 5, 5, 2140240, 13750, 2153990),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi2', 315323, 8, 8, 2440196, 22000, 2462196),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'soreang', 315183, 1, 1, 209456, 2750, 212206),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'sumedang2', 315203, 6, 6, 1629210, 16500, 1645710),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'supratman2', 315223, 4, 4, 406694, 11000, 417694),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'supratman3', 315413, 2, 2, 410757, 5500, 416257),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'ujungberung2', 315263, 3, 3, 200432, 8250, 208682),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'windu1', 315273, 2, 2, 467745, 5500, 473245),
+('2019-10-03', '3', '315', 'D3_Kop Dadali BDG', 'windu2', 315283, 6, 6, 3238714, 16500, 3255214),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'cicalengka2', 315033, 8, 8, 10817408, 22000, 10839408),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'cijaura1', 315043, 22, 24, 13849796, 66000, 13915796),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 27, 27, 9486394, 74250, 9560644),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'cimahi2', 315423, 19, 19, 3972152, 52250, 4024402),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'gegerkalong1', 315103, 1, 1, 41361, 2750, 44111),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 2, 2, 281746, 5500, 287246),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'kopo1', 315123, 15, 15, 7642880, 41250, 7684130),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'kopo2', 315133, 16, 16, 9282936, 44000, 9326936),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'lembang1', 315143, 48, 48, 66134125, 132000, 66266125),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'lembong2', 315303, 30, 30, 35826743, 82500, 35909243),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'lembong3', 315013, 29, 29, 7609746, 79750, 7689496),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'padalarang', 315343, 11, 11, 5299694, 30250, 5329944),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'rajawali1', 315153, 15, 15, 4180362, 41250, 4221612),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'rajawali2', 315163, 16, 16, 2888221, 44000, 2932221),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi1', 315313, 13, 13, 9781720, 35750, 9817470),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'setiabudhi2', 315323, 18, 18, 7082127, 49500, 7131627),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'soreang', 315183, 12, 12, 1888208, 33000, 1921208),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'sumedang2', 315203, 8, 8, 8064921, 22000, 8086921),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'supratman2', 315223, 13, 13, 4946931, 35750, 4982681),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'ujungberung2', 315263, 7, 7, 2329878, 19250, 2349128),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'windu1', 315273, 21, 21, 11597540, 57750, 11655290),
+('2019-10-04', '3', '315', 'D3_Kop Dadali BDG', 'windu2', 315283, 31, 31, 18881260, 85250, 18966510),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'cijaura2', 315063, 61, 61, 15015194, 167750, 15182944),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'cimahi2', 315423, 14, 14, 2702150, 38500, 2740650),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 11, 11, 3436061, 30250, 3466311),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'kopo1', 315123, 21, 21, 6148368, 57750, 6206118),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'lembang1', 315143, 14, 14, 3091354, 38500, 3129854),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'lembong2', 315303, 18, 18, 4901569, 49500, 4951069),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'lembong3', 315013, 33, 33, 20344051, 90750, 20434801),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'rajawali2', 315163, 20, 20, 6001556, 55000, 6056556),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'sumedang2', 315203, 1, 1, 253546, 2750, 256296),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'supratman2', 315223, 15, 15, 4899996, 41250, 4941246),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'ujungberung2', 315263, 26, 26, 10096278, 71500, 10167778),
+('2019-10-05', '3', '315', 'D3_Kop Dadali BDG', 'windu1', 315273, 26, 26, 10835186, 71500, 10906686),
+('2019-10-06', '3', '315', 'D3_Kop Dadali BDG', 'jatinangor', 315353, 1, 1, 3879120, 2750, 3881870);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rincian_sopp_input`
+-- Table structure for table `rincian_sopp_input`
 --
 
 CREATE TABLE `rincian_sopp_input` (
@@ -1368,7 +1699,7 @@ CREATE TABLE `rincian_sopp_input` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `rincian_sopp_input`
+-- Dumping data for table `rincian_sopp_input`
 --
 
 INSERT INTO `rincian_sopp_input` (`tanggal`, `lokasi`, `fee_finnet`) VALUES
@@ -1401,7 +1732,7 @@ INSERT INTO `rincian_sopp_input` (`tanggal`, `lokasi`, `fee_finnet`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rk`
+-- Table structure for table `rk`
 --
 
 CREATE TABLE `rk` (
@@ -1414,7 +1745,7 @@ CREATE TABLE `rk` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rk_input`
+-- Table structure for table `rk_input`
 --
 
 CREATE TABLE `rk_input` (
@@ -1423,10 +1754,81 @@ CREATE TABLE `rk_input` (
   `jumlah` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `rk_input`
+--
+
+INSERT INTO `rk_input` (`tanggal`, `tempat`, `jumlah`) VALUES
+('2019-10-01', 'BANJARAN', 3002360),
+('2019-10-01', 'BKR', 701747),
+('2019-10-01', 'CIJAURA', 9798200),
+('2019-10-01', 'JATINANGOR', 1197503),
+('2019-10-01', 'KOPO', 6846700),
+('2019-10-01', 'LEMBANG', 1988600),
+('2019-10-01', 'LEMBONG', 24646000),
+('2019-10-01', 'MAJALAYA', 2802000),
+('2019-10-01', 'PLASA RANCAEKEK', 933220),
+('2019-10-01', 'RAJAWALI', 5337100),
+('2019-10-01', 'SETIABUDI', 1662767),
+('2019-10-01', 'SOREANG', 4620863),
+('2019-10-01', 'SUMEDANG', 4226500),
+('2019-10-01', 'SUPRATMAN', 1248590),
+('2019-10-01', 'UJUNG BERUNG', 5404500),
+('2019-10-01', 'WINDU', 3224500),
+('2019-10-02', 'CICALENGKA', 10626000),
+('2019-10-02', 'CIJAURA', 13095200),
+('2019-10-02', 'CIMAHI', 20190688),
+('2019-10-02', 'JATINANGOR', 484780),
+('2019-10-02', 'KOPO', 80943400),
+('2019-10-02', 'LEMBANG', 7345600),
+('2019-10-02', 'LEMBONG', 38678500),
+('2019-10-02', 'MAJALAYA', 13629000),
+('2019-10-02', 'PLASA RANCAEKEK', 7790835),
+('2019-10-02', 'RAJAWALI', 20076400),
+('2019-10-02', 'SOREANG', 9424143),
+('2019-10-02', 'SUMEDANG', 10520200),
+('2019-10-02', 'SUPRATMAN', 989003),
+('2019-10-02', 'UJUNG BERUNG', 4263500),
+('2019-10-02', 'WINDU', 7653200),
+('2019-10-03', 'CICALENGKA', 17536000),
+('2019-10-03', 'CIJAURA', 46710300),
+('2019-10-03', 'CIMAHI', 10599535),
+('2019-10-03', 'JATINANGOR', 1814994),
+('2019-10-03', 'KOPO', 37121700),
+('2019-10-03', 'LEMBANG', 33092000),
+('2019-10-03', 'LEMBONG', 45509100),
+('2019-10-03', 'MAJALAYA', 12464000),
+('2019-10-03', 'PADALARANG', 2993200),
+('2019-10-03', 'PLASA RANCAEKEK', 3074878),
+('2019-10-03', 'RAJAWALI', 6280000),
+('2019-10-03', 'SETIABUDI', 25438496),
+('2019-10-03', 'SOREANG', 7358949),
+('2019-10-03', 'SUMEDANG', 23791000),
+('2019-10-03', 'SUPRATMAN', 2773683),
+('2019-10-03', 'UJUNG BERUNG', 1153300),
+('2019-10-03', 'WINDU', 24799600),
+('2019-10-06', 'BANJARAN', 10139120),
+('2019-10-06', 'CICALENGKA', 18519000),
+('2019-10-06', 'CIJAURA', 168880780),
+('2019-10-06', 'CIMAHI', 88958153),
+('2019-10-06', 'JATINANGOR', 10888268),
+('2019-10-06', 'KOPO', 78496200),
+('2019-10-06', 'LEMBANG', 98743000),
+('2019-10-06', 'LEMBONG', 307003400),
+('2019-10-06', 'MAJALAYA', 30807000),
+('2019-10-06', 'PADALARANG', 14607300),
+('2019-10-06', 'PLASA RANCAEKEK', 12349886),
+('2019-10-06', 'RAJAWALI', 32788700),
+('2019-10-06', 'SETIABUDI', 83262461),
+('2019-10-06', 'SUMEDANG', 107339000),
+('2019-10-06', 'SUPRATMAN', 20779700),
+('2019-10-06', 'UJUNG BERUNG', 63805200),
+('2019-10-06', 'WINDU', 96432100);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `saldo`
+-- Table structure for table `saldo`
 --
 
 CREATE TABLE `saldo` (
@@ -1434,10 +1836,23 @@ CREATE TABLE `saldo` (
   `saldo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `saldo`
+--
+
+INSERT INTO `saldo` (`tanggal`, `saldo`) VALUES
+('2019-09-30', 143384690),
+('2019-10-01', 167249666),
+('2019-10-02', 293140753),
+('2019-10-03', 275793613),
+('2019-10-04', 275793613),
+('2019-10-05', 275793613),
+('2019-10-06', 865384300);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sopp`
+-- Table structure for table `sopp`
 --
 
 CREATE TABLE `sopp` (
@@ -1457,10 +1872,119 @@ CREATE TABLE `sopp` (
   `user` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `sopp`
+--
+
+INSERT INTO `sopp` (`tanggal`, `divre`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `trx`, `bill`, `amount`, `surcharge`, `fee_admin`, `total_kopeg`, `divre_bill`, `user`) VALUES
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 2, 2, 949250, 6000, 1000, 950250, 3, 'ddl_cclengka'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 7, 7, 1584426, 21000, 3500, 1587926, 3, 'cijaura'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 8, 8, 1569457, 24000, 4000, 1573457, 3, 'cijaura2'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 9, 9, 3178529, 22500, 4500, 3183029, 3, 'cimahi2'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 4, 4, 921220, 12000, 2000, 923220, 3, 'gegerkalong1'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 1, 1, 483000, 3000, 500, 483500, 3, 'jatinangor'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 9, 9, 2910120, 27000, 4500, 2914620, 3, 'kopo2'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 1, 1, 339000, 2500, 500, 339500, 3, 'lembang'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 3, 3, 1573000, 0, 0, 1573000, 3, 'lembong2'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 3, 3, 659478, 0, 0, 659478, 3, 'lembong3'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1099', 'D3_Padalarang', 1, 1, 46860, 3000, 500, 47360, 3, 'padalarang1'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 8, 8, 1561206, 24000, 4000, 1565206, 3, 'rajawali1'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 3, 3, 396360, 0, 0, 396360, 3, 'setiabudi1'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 11, 11, 3492396, 33000, 5500, 3497896, 3, 'soreang'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 5, 5, 1814070, 15000, 2500, 1816570, 3, 'sumedang2'),
+('2019-10-01', '03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 10, 10, 2907958, 30000, 5000, 2912958, 3, 'ujungberung2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1091', 'D3_BKR', 8, 8, 2130114, 24000, 4000, 2134114, 3, 'bkr2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 9, 9, 2639576, 27000, 4500, 2644076, 3, 'cicalengka1'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 6, 6, 1731821, 18000, 3000, 1734821, 3, 'cijaura'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 16, 16, 4398831, 48000, 8000, 4406831, 3, 'cijaura2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 44, 44, 14935333, 110000, 22000, 14957333, 3, 'cimahi2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 7, 7, 2572062, 21000, 3500, 2575562, 3, 'gegerkalong1'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 10, 10, 3180099, 30000, 5000, 3185099, 3, 'kopo1'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 12, 12, 3274845, 36000, 6000, 3280845, 3, 'kopo2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 1, 1, 580500, 2500, 500, 581000, 3, 'lembang'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 12, 12, 3102031, 0, 0, 3102031, 3, 'lembong2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 8, 8, 2773576, 0, 0, 2773576, 3, 'lembong3'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 4, 4, 577099, 12000, 2000, 579099, 3, 'rajawali1'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 2, 2, 1118790, 6000, 1000, 1119790, 3, 'rajawali2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 8, 8, 2889292, 0, 0, 2889292, 3, 'setiabudi1'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 14, 14, 3132365, 0, 0, 3132365, 3, 'setiabudi2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 7, 7, 3082090, 21000, 3500, 3085590, 3, 'soreang'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 8, 8, 2779481, 24000, 4000, 2783481, 3, 'sumedang2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 2, 2, 505000, 6000, 1000, 506000, 3, 'supratman2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 18, 18, 5604196, 54000, 9000, 5613196, 3, 'ujungberung2'),
+('2019-10-02', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 3, 3, 726635, 9000, 1500, 728135, 3, 'windu2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 1, 1, 525868, 3000, 500, 526368, 2, 'cijaura2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 1, 1, 45860, 0, 0, 45860, 2, 'lembong2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 1, 1, 323104, 3000, 500, 323604, 2, 'rajawali1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 2, 2, 81720, 6000, 1000, 82720, 2, 'sumedang2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 27, 27, 8857992, 81000, 13500, 8871492, 3, 'cicalengka1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 11, 11, 5367810, 33000, 5500, 5373310, 3, 'ddl_cclengka'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 31, 31, 6670731, 93000, 15500, 6686231, 3, 'cijaura'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 52, 52, 12596301, 156000, 26000, 12622301, 3, 'cijaura2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 48, 48, 12013239, 120000, 24000, 12037239, 3, 'cimahi2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 4, 4, 2102944, 12000, 2000, 2104944, 3, 'gegerkalong1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 2, 2, 1004798, 6000, 1000, 1005798, 3, 'jatinangor'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 30, 30, 9010946, 90000, 15000, 9025946, 3, 'kopo1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 17, 17, 5373335, 51000, 8500, 5381835, 3, 'kopo2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 16, 16, 3779602, 40000, 8000, 3787602, 3, 'lembang'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 60, 60, 11737314, 0, 0, 11737314, 3, 'lembong2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 44, 44, 9239821, 0, 0, 9239821, 3, 'lembong3'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1099', 'D3_Padalarang', 3, 3, 1167800, 9000, 1500, 1169300, 3, 'padalarang1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 16, 16, 2600572, 48000, 8000, 2608572, 3, 'rajawali1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 28, 28, 8421672, 84000, 14000, 8435672, 3, 'rajawali2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 22, 22, 3934185, 0, 0, 3934185, 3, 'setiabudi1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 20, 20, 5478217, 0, 0, 5478217, 3, 'setiabudi2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 19, 19, 5992606, 57000, 9500, 6002106, 3, 'soreang'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 33, 33, 8342244, 99000, 16500, 8358744, 3, 'sumedang2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 4, 4, 447359, 12000, 2000, 449359, 3, 'supratman2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 4, 4, 934958, 12000, 2000, 936958, 3, 'supratman3'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 19, 19, 5746827, 57000, 9500, 5756327, 3, 'ujungberung2'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 2, 2, 105202, 6000, 1000, 106202, 3, 'windu1'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 4, 4, 638714, 12000, 2000, 640714, 3, 'windu2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 1, 1, 437500, 0, 0, 437500, 2, 'lembong3'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1091', 'D3_BKR', 23, 23, 7263562, 69000, 11500, 7275062, 3, 'bkr2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 37, 37, 8047293, 111000, 18500, 8065793, 3, 'cicalengka1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 12, 12, 5148613, 36000, 6000, 5154613, 3, 'ddl_cclengka'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 34, 34, 8176612, 102000, 17000, 8193612, 3, 'cijaura'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 44, 44, 6806223, 132000, 22000, 6828223, 3, 'cijaura2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 43, 43, 10749744, 107500, 21500, 10771244, 3, 'cimahi2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 19, 19, 7243913, 57000, 9500, 7253413, 3, 'gegerkalong1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 2, 2, 539635, 6000, 1000, 540635, 3, 'jatinangor'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 41, 41, 9340262, 123000, 20500, 9360762, 3, 'kopo1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 43, 43, 8876828, 129000, 21500, 8898328, 3, 'kopo2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 38, 38, 10661285, 95000, 19000, 10680285, 3, 'lembang'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 65, 65, 15814677, 0, 0, 15814677, 3, 'lembong2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 68, 68, 10474714, 0, 0, 10474714, 3, 'lembong3'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1099', 'D3_Padalarang', 22, 22, 8957836, 66000, 11000, 8968836, 3, 'padalarang1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 15, 15, 2529763, 45000, 7500, 2537263, 3, 'rajawali1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 16, 16, 2829817, 48000, 8000, 2837817, 3, 'rajawali2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 29, 29, 4698243, 0, 0, 4698243, 3, 'setiabudi1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 28, 28, 5706421, 0, 0, 5706421, 3, 'setiabudi2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 26, 26, 7964114, 78000, 13000, 7977114, 3, 'soreang'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 42, 42, 12600740, 126000, 21000, 12621740, 3, 'sumedang2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 13, 13, 5850352, 39000, 6500, 5856852, 3, 'supratman2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 40, 40, 11711575, 120000, 20000, 11731575, 3, 'ujungberung2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 30, 30, 3442914, 90000, 15000, 3457914, 3, 'windu1'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 29, 29, 5598964, 87000, 14500, 5613464, 3, 'windu2'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 1, 1, 35860, 0, 0, 35860, 4, 'lembong3'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 58, 58, 9731024, 174000, 29000, 9760024, 3, 'cijaura2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 29, 29, 7219857, 72500, 14500, 7234357, 3, 'cimahi2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 6, 6, 1182520, 18000, 3000, 1185520, 3, 'jatinangor'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 38, 38, 7801105, 114000, 19000, 7820105, 3, 'kopo1'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 17, 17, 4269536, 42500, 8500, 4278036, 3, 'lembang'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 51, 51, 10115148, 0, 0, 10115148, 3, 'lembong2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 97, 97, 15460913, 0, 0, 15460913, 3, 'lembong3'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 41, 41, 8596321, 123000, 20500, 8616821, 3, 'rajawali2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 21, 21, 5039044, 63000, 10500, 5049544, 3, 'sumedang2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 10, 10, 2053646, 30000, 5000, 2058646, 3, 'supratman2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 55, 55, 12302005, 165000, 27500, 12329505, 3, 'ujungberung2'),
+('2019-10-05', '03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 23, 23, 3392780, 69000, 11500, 3404280, 3, 'windu1'),
+('2019-10-06', '03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 5, 5, 1491686, 15000, 2500, 1494186, 3, 'jatinangor');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `status_tanggal`
+-- Table structure for table `status_tanggal`
 --
 
 CREATE TABLE `status_tanggal` (
@@ -1469,7 +1993,7 @@ CREATE TABLE `status_tanggal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `status_tanggal`
+-- Dumping data for table `status_tanggal`
 --
 
 INSERT INTO `status_tanggal` (`tanggal`, `status`) VALUES
@@ -1479,7 +2003,7 @@ INSERT INTO `status_tanggal` (`tanggal`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `titipan`
+-- Table structure for table `titipan`
 --
 
 CREATE TABLE `titipan` (
@@ -1490,91 +2014,10 @@ CREATE TABLE `titipan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `titipan`
+-- Dumping data for table `titipan`
 --
 
 INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
-('2019-09-28', 'ARCAMANIK', 0, 0),
-('2019-09-28', 'BANJARAN', 0, -2104039),
-('2019-09-28', 'BATUJAJAR', 0, 0),
-('2019-09-28', 'BKR', 0, -11591860),
-('2019-09-28', 'CICALENGKA', 0, -4254523),
-('2019-09-28', 'CIJAURA', 0, -7532241),
-('2019-09-28', 'CIKALONG WETAN', 0, 0),
-('2019-09-28', 'CILILIN', 0, 0),
-('2019-09-28', 'CIMAHI', 0, -1700106),
-('2019-09-28', 'DAGO', 0, 0),
-('2019-09-28', 'JATINANGOR', 3878200, 0),
-('2019-09-28', 'KOPO', 0, -3659524),
-('2019-09-28', 'LEMBANG', 0, -964765),
-('2019-09-28', 'LEMBONG', 0, -2187487),
-('2019-09-28', 'MAJALAYA', 0, -3373501),
-('2019-09-28', 'PADALARANG', 0, -1883784),
-('2019-09-28', 'PLASA RANCAEKEK', 0, -3761552),
-('2019-09-28', 'RAJAWALI', 0, -4374454),
-('2019-09-28', 'RANCAEKEK / ERRI', 0, 0),
-('2019-09-28', 'RANCAEKEK 2/ LILIK', 0, 0),
-('2019-09-28', 'SETIABUDI', 0, -6239907),
-('2019-09-28', 'SOREANG', 0, -7665479),
-('2019-09-28', 'SUMEDANG', 0, -2069244),
-('2019-09-28', 'SUPRATMAN', 0, -1066811),
-('2019-09-28', 'TANJUNGSARI', 0, 0),
-('2019-09-28', 'UJUNG BERUNG', 0, -1707487),
-('2019-09-28', 'WINDU', 0, -798990),
-('2019-09-29', 'ARCAMANIK', 0, 0),
-('2019-09-29', 'BANJARAN', 0, -2),
-('2019-09-29', 'BATUJAJAR', 0, 0),
-('2019-09-29', 'BKR', 0, -12),
-('2019-09-29', 'CICALENGKA', 0, -4),
-('2019-09-29', 'CIJAURA', 0, -1969886),
-('2019-09-29', 'CIKALONG WETAN', 0, 0),
-('2019-09-29', 'CILILIN', 0, 0),
-('2019-09-29', 'CIMAHI', 0, -2),
-('2019-09-29', 'DAGO', 0, 0),
-('2019-09-29', 'JATINANGOR', 0, -130943),
-('2019-09-29', 'KOPO', 0, -1577231),
-('2019-09-29', 'LEMBANG', 0, -699599),
-('2019-09-29', 'LEMBONG', 0, -1024640),
-('2019-09-29', 'MAJALAYA', 0, -3),
-('2019-09-29', 'PADALARANG', 0, -2),
-('2019-09-29', 'PLASA RANCAEKEK', 0, -4),
-('2019-09-29', 'RAJAWALI', 0, -4),
-('2019-09-29', 'RANCAEKEK / ERRI', 0, 0),
-('2019-09-29', 'RANCAEKEK 2/ LILIK', 0, 0),
-('2019-09-29', 'SETIABUDI', 0, -6),
-('2019-09-29', 'SOREANG', 0, -8),
-('2019-09-29', 'SUMEDANG', 0, -2),
-('2019-09-29', 'SUPRATMAN', 0, -312738),
-('2019-09-29', 'TANJUNGSARI', 0, 0),
-('2019-09-29', 'UJUNG BERUNG', 0, -3935621),
-('2019-09-29', 'WINDU', 0, -799),
-('2019-10-31', 'ARCAMANIK', 0, 0),
-('2019-10-31', 'BANJARAN', 0, 0),
-('2019-10-31', 'BATUJAJAR', 0, 0),
-('2019-10-31', 'BKR', 0, 0),
-('2019-10-31', 'CICALENGKA', 0, 0),
-('2019-10-31', 'CIJAURA', 0, 0),
-('2019-10-31', 'CIKALONG WETAN', 0, 0),
-('2019-10-31', 'CILILIN', 0, 0),
-('2019-10-31', 'CIMAHI', 0, 0),
-('2019-10-31', 'DAGO', 0, 0),
-('2019-10-31', 'JATINANGOR', 0, 0),
-('2019-10-31', 'KOPO', 0, 0),
-('2019-10-31', 'LEMBANG', 0, 0),
-('2019-10-31', 'LEMBONG', 0, 0),
-('2019-10-31', 'MAJALAYA', 0, 0),
-('2019-10-31', 'PADALARANG', 0, 0),
-('2019-10-31', 'PLASA RANCAEKEK', 0, 0),
-('2019-10-31', 'RAJAWALI', 0, 0),
-('2019-10-31', 'RANCAEKEK / ERRI', 0, 0),
-('2019-10-31', 'RANCAEKEK 2/ LILIK', 0, 0),
-('2019-10-31', 'SETIABUDI', 0, 0),
-('2019-10-31', 'SOREANG', 0, 0),
-('2019-10-31', 'SUMEDANG', 0, 0),
-('2019-10-31', 'SUPRATMAN', 0, 0),
-('2019-10-31', 'TANJUNGSARI', 0, 0),
-('2019-10-31', 'UJUNG BERUNG', 0, 0),
-('2019-10-31', 'WINDU', 0, 0),
 ('2019-10-01', 'ARCAMANIK', 0, 0),
 ('2019-10-01', 'BANJARAN', 0, -2775076),
 ('2019-10-01', 'BATUJAJAR', 0, 0),
@@ -1602,6 +2045,143 @@ INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
 ('2019-10-01', 'TANJUNGSARI', 0, 0),
 ('2019-10-01', 'UJUNG BERUNG', 6, 0),
 ('2019-10-01', 'WINDU', 0, -650655),
+('2019-10-03', 'ARCAMANIK', 0, 0),
+('2019-10-03', 'BANJARAN', 0, -2213802),
+('2019-10-03', 'BATUJAJAR', 0, 0),
+('2019-10-03', 'BKR', 0, -11437143),
+('2019-10-03', 'CICALENGKA', 4917329, 0),
+('2019-10-03', 'CIJAURA', 0, -2749895),
+('2019-10-03', 'CIKALONG WETAN', 0, 0),
+('2019-10-03', 'CILILIN', 0, 0),
+('2019-10-03', 'CIMAHI', 4032998, 0),
+('2019-10-03', 'DAGO', 0, 0),
+('2019-10-03', 'JATINANGOR', 3878200, 0),
+('2019-10-03', 'KOPO', 75000192, 0),
+('2019-10-03', 'LEMBANG', 10822, 0),
+('2019-10-03', 'LEMBONG', 37328319, 0),
+('2019-10-03', 'MAJALAYA', 8433486, 0),
+('2019-10-03', 'PADALARANG', 0, -1816350),
+('2019-10-03', 'PLASA RANCAEKEK', 27, 0),
+('2019-10-03', 'RAJAWALI', 15000263, 0),
+('2019-10-03', 'RANCAEKEK / ERRI', 0, 0),
+('2019-10-03', 'RANCAEKEK 2/ LILIK', 0, 0),
+('2019-10-03', 'SETIABUDI', 0, -9424143),
+('2019-10-03', 'SOREANG', 6735868, 0),
+('2019-10-03', 'SUMEDANG', 7600159, 0),
+('2019-10-03', 'SUPRATMAN', 28198, 0),
+('2019-10-03', 'TANJUNGSARI', 0, 0),
+('2019-10-03', 'UJUNG BERUNG', 72, 0),
+('2019-10-03', 'WINDU', 0, -650583),
+('2019-10-04', 'ARCAMANIK', 0, 0),
+('2019-10-04', 'BANJARAN', 0, -2213802),
+('2019-10-04', 'BATUJAJAR', 0, 0),
+('2019-10-04', 'BKR', 0, -11437143),
+('2019-10-04', 'CICALENGKA', 12917546, 0),
+('2019-10-04', 'CIJAURA', 0, -3083196),
+('2019-10-04', 'CIKALONG WETAN', 0, 0),
+('2019-10-04', 'CILILIN', 0, 0),
+('2019-10-04', 'CIMAHI', 0, -4947002),
+('2019-10-04', 'DAGO', 0, 0),
+('2019-10-04', 'JATINANGOR', 3878200, 0),
+('2019-10-04', 'KOPO', 28000274, 0),
+('2019-10-04', 'LEMBANG', 20011135, 0),
+('2019-10-04', 'LEMBONG', 27528387, 0),
+('2019-10-04', 'MAJALAYA', 7433689, 0),
+('2019-10-04', 'PADALARANG', 50, 0),
+('2019-10-04', 'PLASA RANCAEKEK', 27, 0),
+('2019-10-04', 'RAJAWALI', 335, 0),
+('2019-10-04', 'RANCAEKEK / ERRI', 0, 0),
+('2019-10-04', 'RANCAEKEK 2/ LILIK', 0, 0),
+('2019-10-04', 'SETIABUDI', 575857, 0),
+('2019-10-04', 'SOREANG', 6735868, 0),
+('2019-10-04', 'SUMEDANG', 16350183, 0),
+('2019-10-04', 'SUPRATMAN', 28235, 0),
+('2019-10-04', 'TANJUNGSARI', 0, 0),
+('2019-10-04', 'UJUNG BERUNG', 0, -5399924),
+('2019-10-04', 'WINDU', 19349458, 0),
+('2019-10-05', 'ARCAMANIK', 0, 0),
+('2019-10-05', 'BANJARAN', 0, -9911842),
+('2019-10-05', 'BATUJAJAR', 0, 0),
+('2019-10-05', 'BKR', 0, -11437143),
+('2019-10-05', 'CICALENGKA', 0, -4601464),
+('2019-10-05', 'CIJAURA', 0, -45161079),
+('2019-10-05', 'CIKALONG WETAN', 0, 0),
+('2019-10-05', 'CILILIN', 0, 0),
+('2019-10-05', 'CIMAHI', 0, -20465148),
+('2019-10-05', 'DAGO', 0, 0),
+('2019-10-05', 'JATINANGOR', 3045319, 0),
+('2019-10-05', 'KOPO', 0, -9088935),
+('2019-10-05', 'LEMBANG', 0, -58886148),
+('2019-10-05', 'LEMBONG', 0, -44239302),
+('2019-10-05', 'MAJALAYA', 0, -5372676),
+('2019-10-05', 'PADALARANG', 0, -14607230),
+('2019-10-05', 'PLASA RANCAEKEK', 0, -12349859),
+('2019-10-05', 'RAJAWALI', 0, -16822880),
+('2019-10-05', 'RANCAEKEK / ERRI', 0, 0),
+('2019-10-05', 'RANCAEKEK 2/ LILIK', 0, 0),
+('2019-10-05', 'SETIABUDI', 0, -27686604),
+('2019-10-05', 'SOREANG', 0, -3357694),
+('2019-10-05', 'SUMEDANG', 0, -8889843),
+('2019-10-05', 'SUPRATMAN', 0, -12727984),
+('2019-10-05', 'TANJUNGSARI', 0, 0),
+('2019-10-05', 'UJUNG BERUNG', 0, -19941365),
+('2019-10-05', 'WINDU', 0, -21932620),
+('2019-10-06', 'ARCAMANIK', 0, 0),
+('2019-10-06', 'BANJARAN', 0, -9911842),
+('2019-10-06', 'BATUJAJAR', 0, 0),
+('2019-10-06', 'BKR', 0, -11437143),
+('2019-10-06', 'CICALENGKA', 0, -4601464),
+('2019-10-06', 'CIJAURA', 0, -72222779),
+('2019-10-06', 'CIKALONG WETAN', 0, 0),
+('2019-10-06', 'CILILIN', 0, 0),
+('2019-10-06', 'CIMAHI', 0, -30669155),
+('2019-10-06', 'DAGO', 0, 0),
+('2019-10-06', 'JATINANGOR', 0, -1621512),
+('2019-10-06', 'KOPO', 0, -23495779),
+('2019-10-06', 'LEMBANG', 0, -68731731),
+('2019-10-06', 'LEMBONG', 0, -96474823),
+('2019-10-06', 'MAJALAYA', 0, -5372676),
+('2019-10-06', 'PADALARANG', 0, -14607230),
+('2019-10-06', 'PLASA RANCAEKEK', 0, -12349859),
+('2019-10-06', 'RAJAWALI', 0, -32788282),
+('2019-10-06', 'RANCAEKEK / ERRI', 0, 0),
+('2019-10-06', 'RANCAEKEK 2/ LILIK', 0, 0),
+('2019-10-06', 'SETIABUDI', 0, -27686604),
+('2019-10-06', 'SOREANG', 0, -3357694),
+('2019-10-06', 'SUMEDANG', 0, -18388707),
+('2019-10-06', 'SUPRATMAN', 0, -20751276),
+('2019-10-06', 'TANJUNGSARI', 0, 0),
+('2019-10-06', 'UJUNG BERUNG', 0, -44205006),
+('2019-10-06', 'WINDU', 0, -38082686),
+('2019-10-07', 'ARCAMANIK', 0, 0),
+('2019-10-07', 'BANJARAN', 227278, 0),
+('2019-10-07', 'BATUJAJAR', 0, 0),
+('2019-10-07', 'BKR', 0, -11437143),
+('2019-10-07', 'CICALENGKA', 13917536, 0),
+('2019-10-07', 'CIJAURA', 96658001, 0),
+('2019-10-07', 'CIKALONG WETAN', 0, 0),
+('2019-10-07', 'CILILIN', 0, 0),
+('2019-10-07', 'CIMAHI', 58288998, 0),
+('2019-10-07', 'DAGO', 0, 0),
+('2019-10-07', 'JATINANGOR', 3878200, 0),
+('2019-10-07', 'KOPO', 55000421, 0),
+('2019-10-07', 'LEMBANG', 30011269, 0),
+('2019-10-07', 'LEMBONG', 210528577, 0),
+('2019-10-07', 'MAJALAYA', 25434324, 0),
+('2019-10-07', 'PADALARANG', 70, 0),
+('2019-10-07', 'PLASA RANCAEKEK', 27, 0),
+('2019-10-07', 'RAJAWALI', 418, 0),
+('2019-10-07', 'RANCAEKEK / ERRI', 0, 0),
+('2019-10-07', 'RANCAEKEK 2/ LILIK', 0, 0),
+('2019-10-07', 'SETIABUDI', 55575857, 0),
+('2019-10-07', 'SOREANG', 0, -3357694),
+('2019-10-07', 'SUMEDANG', 88950293, 0),
+('2019-10-07', 'SUPRATMAN', 28424, 0),
+('2019-10-07', 'TANJUNGSARI', 0, 0),
+('2019-10-07', 'UJUNG BERUNG', 19600194, 0),
+('2019-10-07', 'WINDU', 58349414, 0),
+('2019-10-02', 'CIMAHI2', 0, 0),
+('2019-10-02', 'RANCAEKEK 2/LILIK', 0, 0),
 ('2019-10-02', 'ARCAMANIK', 0, 0),
 ('2019-10-02', 'BANJARAN', 227284, 0),
 ('2019-10-02', 'BATUJAJAR', 0, 0),
@@ -1610,7 +2190,7 @@ INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
 ('2019-10-02', 'CIJAURA', 0, -2749942),
 ('2019-10-02', 'CIKALONG WETAN', 0, 0),
 ('2019-10-02', 'CILILIN', 0, 0),
-('2019-10-02', 'CIMAHI', 11144328, 0),
+('2019-10-02', 'CIMAHI', 0, -602674),
 ('2019-10-02', 'DAGO', 0, 0),
 ('2019-10-02', 'JATINANGOR', 3878200, 0),
 ('2019-10-02', 'KOPO', 2000135, 0),
@@ -1633,7 +2213,7 @@ INSERT INTO `titipan` (`tanggal`, `tempat`, `titipan`, `talangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `titipan2`
+-- Table structure for table `titipan2`
 --
 
 CREATE TABLE `titipan2` (
@@ -1641,10 +2221,23 @@ CREATE TABLE `titipan2` (
   `nominal` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `titipan2`
+--
+
+INSERT INTO `titipan2` (`tanggal`, `nominal`) VALUES
+('2019-10-01', 105000000),
+('2019-10-03', 105000000),
+('2019-10-04', 106000000),
+('2019-10-05', 107000000),
+('2019-10-06', 107000000),
+('2019-10-07', 107000000),
+('2019-10-02', 105000000);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `total_trx`
+-- Table structure for table `total_trx`
 --
 
 CREATE TABLE `total_trx` (
@@ -1654,712 +2247,145 @@ CREATE TABLE `total_trx` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `total_trx`
+-- Dumping data for table `total_trx`
 --
 
 INSERT INTO `total_trx` (`tanggal`, `tempat`, `total`) VALUES
-('2016-11-01', 'ARCAMANIK', 0),
-('2016-11-01', 'BANJARAN', 412004523),
-('2016-11-01', 'BATUJAJAR', 167604162),
-('2016-11-01', 'BKR', 5489633),
-('2016-11-01', 'CICALENGKA', 204923226),
-('2016-11-01', 'CIJAURA', 1215298887),
-('2016-11-01', 'CIKALONG WETAN', 0),
-('2016-11-01', 'CILILIN', 0),
-('2016-11-01', 'CIMAHI', 1039699907),
-('2016-11-01', 'DAGO', 362116350),
-('2016-11-01', 'JATINANGOR', 142564278),
-('2016-11-01', 'KOPO', 1897050740),
-('2016-11-01', 'LEMBANG', 724400258),
-('2016-11-01', 'LEMBONG', 2147483647),
-('2016-11-01', 'MAJALAYA', 565218737),
-('2016-11-01', 'PADALARANG', 238058329),
-('2016-11-01', 'PLASA RANCAEKEK', 672362498),
-('2016-11-01', 'RAJAWALI', 2012864243),
-('2016-11-01', 'RANCAEKEK / ERRI', 0),
-('2016-11-01', 'RANCAEKEK 2/ LILIK', 71238793),
-('2016-11-01', 'SETIABUDI', 1681031882),
-('2016-11-01', 'SOREANG', 325092021),
-('2016-11-01', 'SUMEDANG', 727549517),
-('2016-11-01', 'SUPRATMAN', 1599036363),
-('2016-11-01', 'TANJUNGSARI', 81945440),
-('2016-11-01', 'UJUNG BERUNG', 709959791),
-('2016-11-01', 'WINDU', 1377698733),
-('2016-12-04', 'ARCAMANIK', 0),
-('2016-12-04', 'BANJARAN', 0),
-('2016-12-04', 'BATUJAJAR', 0),
-('2016-12-04', 'BKR', 22500),
-('2016-12-04', 'CICALENGKA', 0),
-('2016-12-04', 'CIJAURA', 0),
-('2016-12-04', 'CIKALONG WETAN', 0),
-('2016-12-04', 'CILILIN', 0),
-('2016-12-04', 'CIMAHI', 0),
-('2016-12-04', 'DAGO', 0),
-('2016-12-04', 'JATINANGOR', 0),
-('2016-12-04', 'KOPO', 0),
-('2016-12-04', 'LEMBANG', 0),
-('2016-12-04', 'LEMBONG', 0),
-('2016-12-04', 'MAJALAYA', 0),
-('2016-12-04', 'PADALARANG', 0),
-('2016-12-04', 'PLASA RANCAEKEK', 0),
-('2016-12-04', 'RAJAWALI', 0),
-('2016-12-04', 'RANCAEKEK / ERRI', 0),
-('2016-12-04', 'RANCAEKEK 2/ LILIK', 0),
-('2016-12-04', 'SETIABUDI', 0),
-('2016-12-04', 'SOREANG', 0),
-('2016-12-04', 'SUMEDANG', 0),
-('2016-12-04', 'SUPRATMAN', 0),
-('2016-12-04', 'TANJUNGSARI', 0),
-('2016-12-04', 'UJUNG BERUNG', 0),
-('2016-12-04', 'WINDU', 0),
-('2016-12-03', 'ARCAMANIK', 0),
-('2016-12-03', 'BANJARAN', 0),
-('2016-12-03', 'BATUJAJAR', 0),
-('2016-12-03', 'BKR', 0),
-('2016-12-03', 'CICALENGKA', 0),
-('2016-12-03', 'CIJAURA', 8059955),
-('2016-12-03', 'CIKALONG WETAN', 0),
-('2016-12-03', 'CILILIN', 0),
-('2016-12-03', 'CIMAHI', 582111),
-('2016-12-03', 'DAGO', 0),
-('2016-12-03', 'JATINANGOR', 22000),
-('2016-12-03', 'KOPO', 1295314),
-('2016-12-03', 'LEMBANG', 5401200),
-('2016-12-03', 'LEMBONG', 4306166),
-('2016-12-03', 'MAJALAYA', 0),
-('2016-12-03', 'PADALARANG', 0),
-('2016-12-03', 'PLASA RANCAEKEK', 0),
-('2016-12-03', 'RAJAWALI', 3925244),
-('2016-12-03', 'RANCAEKEK / ERRI', 0),
-('2016-12-03', 'RANCAEKEK 2/ LILIK', 4575001),
-('2016-12-03', 'SETIABUDI', 0),
-('2016-12-03', 'SOREANG', 0),
-('2016-12-03', 'SUMEDANG', 0),
-('2016-12-03', 'SUPRATMAN', 3683603),
-('2016-12-03', 'TANJUNGSARI', 258682),
-('2016-12-03', 'UJUNG BERUNG', 5525244),
-('2016-12-03', 'WINDU', 897735),
-('2016-12-01', 'ARCAMANIK', 0),
-('2016-12-01', 'BANJARAN', 1151956),
-('2016-12-01', 'BATUJAJAR', 3253018),
-('2016-12-01', 'BKR', 0),
-('2016-12-01', 'CICALENGKA', 2008944),
-('2016-12-01', 'CIJAURA', 13971967),
-('2016-12-01', 'CIKALONG WETAN', 0),
-('2016-12-01', 'CILILIN', 0),
-('2016-12-01', 'CIMAHI', 8329089),
-('2016-12-01', 'DAGO', 1229485),
-('2016-12-01', 'JATINANGOR', 611539),
-('2016-12-01', 'KOPO', 12367310),
-('2016-12-01', 'LEMBANG', 7784941),
-('2016-12-01', 'LEMBONG', 16333828),
-('2016-12-01', 'MAJALAYA', 1588604),
-('2016-12-01', 'PADALARANG', 730110),
-('2016-12-01', 'PLASA RANCAEKEK', 9251424),
-('2016-12-01', 'RAJAWALI', 14537046),
-('2016-12-01', 'RANCAEKEK / ERRI', 0),
-('2016-12-01', 'RANCAEKEK 2/ LILIK', 560688),
-('2016-12-01', 'SETIABUDI', 6995144),
-('2016-12-01', 'SOREANG', 5286433),
-('2016-12-01', 'SUMEDANG', 3833882),
-('2016-12-01', 'SUPRATMAN', 6221950),
-('2016-12-01', 'TANJUNGSARI', 981339),
-('2016-12-01', 'UJUNG BERUNG', 11427192),
-('2016-12-01', 'WINDU', 7127216),
-('2016-12-02', 'ARCAMANIK', 0),
-('2016-12-02', 'BANJARAN', 1451469),
-('2016-12-02', 'BATUJAJAR', 1573083),
-('2016-12-02', 'BKR', 22500),
-('2016-12-02', 'CICALENGKA', 1691575),
-('2016-12-02', 'CIJAURA', 21358096),
-('2016-12-02', 'CIKALONG WETAN', 0),
-('2016-12-02', 'CILILIN', 0),
-('2016-12-02', 'CIMAHI', 12877598),
-('2016-12-02', 'DAGO', 1818657),
-('2016-12-02', 'JATINANGOR', 1307711),
-('2016-12-02', 'KOPO', 8826669),
-('2016-12-02', 'LEMBANG', 11506576),
-('2016-12-02', 'LEMBONG', 18703699),
-('2016-12-02', 'MAJALAYA', 5591582),
-('2016-12-02', 'PADALARANG', 1329184),
-('2016-12-02', 'PLASA RANCAEKEK', 0),
-('2016-12-02', 'RAJAWALI', 7505808),
-('2016-12-02', 'RANCAEKEK / ERRI', 0),
-('2016-12-02', 'RANCAEKEK 2/ LILIK', 5270401),
-('2016-12-02', 'SETIABUDI', 6419140),
-('2016-12-02', 'SOREANG', 6354866),
-('2016-12-02', 'SUMEDANG', 2715700),
-('2016-12-02', 'SUPRATMAN', 8032769),
-('2016-12-02', 'TANJUNGSARI', 1303548),
-('2016-12-02', 'UJUNG BERUNG', 15401031),
-('2016-12-02', 'WINDU', 5865530),
-('2016-12-05', 'ARCAMANIK', 0),
-('2016-12-05', 'BANJARAN', 9259741),
-('2016-12-05', 'BATUJAJAR', 11642467),
-('2016-12-05', 'BKR', 975367),
-('2016-12-05', 'CICALENGKA', 13967500),
-('2016-12-05', 'CIJAURA', 88631236),
-('2016-12-05', 'CIKALONG WETAN', 0),
-('2016-12-05', 'CILILIN', 0),
-('2016-12-05', 'CIMAHI', 84251937),
-('2016-12-05', 'DAGO', 32487984),
-('2016-12-05', 'JATINANGOR', 5380371),
-('2016-12-05', 'KOPO', 107281177),
-('2016-12-05', 'LEMBANG', 54967986),
-('2016-12-05', 'LEMBONG', 162404578),
-('2016-12-05', 'MAJALAYA', 15751983),
-('2016-12-05', 'PADALARANG', 9136687),
-('2016-12-05', 'PLASA RANCAEKEK', 12055496),
-('2016-12-05', 'RAJAWALI', 83036913),
-('2016-12-05', 'RANCAEKEK / ERRI', 0),
-('2016-12-05', 'RANCAEKEK 2/ LILIK', 3274853),
-('2016-12-05', 'SETIABUDI', 76159191),
-('2016-12-05', 'SOREANG', 22430800),
-('2016-12-05', 'SUMEDANG', 36500023),
-('2016-12-05', 'SUPRATMAN', 69341524),
-('2016-12-05', 'TANJUNGSARI', 15870028),
-('2016-12-05', 'UJUNG BERUNG', 32801212),
-('2016-12-05', 'WINDU', 75280858),
-('2016-12-07', 'ARCAMANIK', 0),
-('2016-12-07', 'BANJARAN', 8600696),
-('2016-12-07', 'BATUJAJAR', 18552867),
-('2016-12-07', 'BKR', 0),
-('2016-12-07', 'CICALENGKA', 9444462),
-('2016-12-07', 'CIJAURA', 81241040),
-('2016-12-07', 'CIKALONG WETAN', 0),
-('2016-12-07', 'CILILIN', 0),
-('2016-12-07', 'CIMAHI', 63136820),
-('2016-12-07', 'DAGO', 21929878),
-('2016-12-07', 'JATINANGOR', 2811495),
-('2016-12-07', 'KOPO', 85468372),
-('2016-12-07', 'LEMBANG', 58516377),
-('2016-12-07', 'LEMBONG', 218185106),
-('2016-12-07', 'MAJALAYA', 16765744),
-('2016-12-07', 'PADALARANG', 37569920),
-('2016-12-07', 'PLASA RANCAEKEK', 15424443),
-('2016-12-07', 'RAJAWALI', 119634735),
-('2016-12-07', 'RANCAEKEK / ERRI', 0),
-('2016-12-07', 'RANCAEKEK 2/ LILIK', 2825106),
-('2016-12-07', 'SETIABUDI', 123643582),
-('2016-12-07', 'SOREANG', 21230911),
-('2016-12-07', 'SUMEDANG', 49558203),
-('2016-12-07', 'SUPRATMAN', 149756355),
-('2016-12-07', 'TANJUNGSARI', 1668345),
-('2016-12-07', 'UJUNG BERUNG', 24765397),
-('2016-12-07', 'WINDU', 76187334),
-('2016-12-06', 'ARCAMANIK', 0),
-('2016-12-06', 'BANJARAN', 14920808),
-('2016-12-06', 'BATUJAJAR', 7052909),
-('2016-12-06', 'BKR', 0),
-('2016-12-06', 'CICALENGKA', 6937865),
-('2016-12-06', 'CIJAURA', 83553006),
-('2016-12-06', 'CIKALONG WETAN', 0),
-('2016-12-06', 'CILILIN', 0),
-('2016-12-06', 'CIMAHI', 65229854),
-('2016-12-06', 'DAGO', 0),
-('2016-12-06', 'JATINANGOR', 8597883),
-('2016-12-06', 'KOPO', 60576738),
-('2016-12-06', 'LEMBANG', 88220877),
-('2016-12-06', 'LEMBONG', 185018051),
-('2016-12-06', 'MAJALAYA', 28044121),
-('2016-12-06', 'PADALARANG', 10943286),
-('2016-12-06', 'PLASA RANCAEKEK', 36036549),
-('2016-12-06', 'RAJAWALI', 108347531),
-('2016-12-06', 'RANCAEKEK / ERRI', 0),
-('2016-12-06', 'RANCAEKEK 2/ LILIK', 3041309),
-('2016-12-06', 'SETIABUDI', 117719251),
-('2016-12-06', 'SOREANG', 24130107),
-('2016-12-06', 'SUMEDANG', 42678602),
-('2016-12-06', 'SUPRATMAN', 76256910),
-('2016-12-06', 'TANJUNGSARI', 3285192),
-('2016-12-06', 'UJUNG BERUNG', 87333725),
-('2016-12-06', 'WINDU', 174879816),
-('2016-12-08', 'ARCAMANIK', 0),
-('2016-12-08', 'BANJARAN', 6476437),
-('2016-12-08', 'BATUJAJAR', 14563695),
-('2016-12-08', 'BKR', 0),
-('2016-12-08', 'CICALENGKA', 7784625),
-('2016-12-08', 'CIJAURA', 61465420),
-('2016-12-08', 'CIKALONG WETAN', 0),
-('2016-12-08', 'CILILIN', 0),
-('2016-12-08', 'CIMAHI', 50932362),
-('2016-12-08', 'DAGO', 21563368),
-('2016-12-08', 'JATINANGOR', 4280502),
-('2016-12-08', 'KOPO', 68724954),
-('2016-12-08', 'LEMBANG', 21957832),
-('2016-12-08', 'LEMBONG', 233720470),
-('2016-12-08', 'MAJALAYA', 17752631),
-('2016-12-08', 'PADALARANG', 7555293),
-('2016-12-08', 'PLASA RANCAEKEK', 16883225),
-('2016-12-08', 'RAJAWALI', 81013117),
-('2016-12-08', 'RANCAEKEK / ERRI', 0),
-('2016-12-08', 'RANCAEKEK 2/ LILIK', 2797978),
-('2016-12-08', 'SETIABUDI', 98748742),
-('2016-12-08', 'SOREANG', 9441072),
-('2016-12-08', 'SUMEDANG', 29456781),
-('2016-12-08', 'SUPRATMAN', 108634211),
-('2016-12-08', 'TANJUNGSARI', 1262471),
-('2016-12-08', 'UJUNG BERUNG', 52256142),
-('2016-12-08', 'WINDU', 45963478),
-('2016-12-09', 'ARCAMANIK', 0),
-('2016-12-09', 'BANJARAN', 9950394),
-('2016-12-09', 'BATUJAJAR', 13442713),
-('2016-12-09', 'BKR', 0),
-('2016-12-09', 'CICALENGKA', 3885928),
-('2016-12-09', 'CIJAURA', 44428664),
-('2016-12-09', 'CIKALONG WETAN', 0),
-('2016-12-09', 'CILILIN', 0),
-('2016-12-09', 'CIMAHI', 45354245),
-('2016-12-09', 'DAGO', 23267379),
-('2016-12-09', 'JATINANGOR', 5135148),
-('2016-12-09', 'KOPO', 37077106),
-('2016-12-09', 'LEMBANG', 56334621),
-('2016-12-09', 'LEMBONG', 269987092),
-('2016-12-09', 'MAJALAYA', 24753341),
-('2016-12-09', 'PADALARANG', 9846810),
-('2016-12-09', 'PLASA RANCAEKEK', 13083421),
-('2016-12-09', 'RAJAWALI', 93245017),
-('2016-12-09', 'RANCAEKEK / ERRI', 0),
-('2016-12-09', 'RANCAEKEK 2/ LILIK', 1100594),
-('2016-12-09', 'SETIABUDI', 74174730),
-('2016-12-09', 'SOREANG', 22570796),
-('2016-12-09', 'SUMEDANG', 24366603),
-('2016-12-09', 'SUPRATMAN', 58270100),
-('2016-12-09', 'TANJUNGSARI', 3277925),
-('2016-12-09', 'UJUNG BERUNG', 50815992),
-('2016-12-09', 'WINDU', 59015722),
-('2016-12-11', 'ARCAMANIK', 0),
-('2016-12-11', 'BANJARAN', 0),
-('2016-12-11', 'BATUJAJAR', 0),
-('2016-12-11', 'BKR', 896090),
-('2016-12-11', 'CICALENGKA', 0),
-('2016-12-11', 'CIJAURA', 0),
-('2016-12-11', 'CIKALONG WETAN', 0),
-('2016-12-11', 'CILILIN', 0),
-('2016-12-11', 'CIMAHI', 0),
-('2016-12-11', 'DAGO', 0),
-('2016-12-11', 'JATINANGOR', 0),
-('2016-12-11', 'KOPO', 0),
-('2016-12-11', 'LEMBANG', 0),
-('2016-12-11', 'LEMBONG', 0),
-('2016-12-11', 'MAJALAYA', 0),
-('2016-12-11', 'PADALARANG', 0),
-('2016-12-11', 'PLASA RANCAEKEK', 0),
-('2016-12-11', 'RAJAWALI', 0),
-('2016-12-11', 'RANCAEKEK / ERRI', 0),
-('2016-12-11', 'RANCAEKEK 2/ LILIK', 77000),
-('2016-12-11', 'SETIABUDI', 0),
-('2016-12-11', 'SOREANG', 0),
-('2016-12-11', 'SUMEDANG', 0),
-('2016-12-11', 'SUPRATMAN', 0),
-('2016-12-11', 'TANJUNGSARI', 0),
-('2016-12-11', 'UJUNG BERUNG', 0),
-('2016-12-11', 'WINDU', 0),
-('2016-12-12', 'ARCAMANIK', 0),
-('2016-12-12', 'BANJARAN', 0),
-('2016-12-12', 'BATUJAJAR', 0),
-('2016-12-12', 'BKR', 371381),
-('2016-12-12', 'CICALENGKA', 0),
-('2016-12-12', 'CIJAURA', 0),
-('2016-12-12', 'CIKALONG WETAN', 0),
-('2016-12-12', 'CILILIN', 0),
-('2016-12-12', 'CIMAHI', 0),
-('2016-12-12', 'DAGO', 0),
-('2016-12-12', 'JATINANGOR', 1336650),
-('2016-12-12', 'KOPO', 0),
-('2016-12-12', 'LEMBANG', 0),
-('2016-12-12', 'LEMBONG', 0),
-('2016-12-12', 'MAJALAYA', 0),
-('2016-12-12', 'PADALARANG', 0),
-('2016-12-12', 'PLASA RANCAEKEK', 0),
-('2016-12-12', 'RAJAWALI', 0),
-('2016-12-12', 'RANCAEKEK / ERRI', 0),
-('2016-12-12', 'RANCAEKEK 2/ LILIK', 772221),
-('2016-12-12', 'SETIABUDI', 0),
-('2016-12-12', 'SOREANG', 0),
-('2016-12-12', 'SUMEDANG', 0),
-('2016-12-12', 'SUPRATMAN', 0),
-('2016-12-12', 'TANJUNGSARI', 22000),
-('2016-12-12', 'UJUNG BERUNG', 0),
-('2016-12-12', 'WINDU', 0),
-('2016-12-10', 'ARCAMANIK', 0),
-('2016-12-10', 'BANJARAN', 0),
-('2016-12-10', 'BATUJAJAR', 0),
-('2016-12-10', 'BKR', 0),
-('2016-12-10', 'CICALENGKA', 0),
-('2016-12-10', 'CIJAURA', 25882053),
-('2016-12-10', 'CIKALONG WETAN', 0),
-('2016-12-10', 'CILILIN', 0),
-('2016-12-10', 'CIMAHI', 0),
-('2016-12-10', 'DAGO', 0),
-('2016-12-10', 'JATINANGOR', 1218130),
-('2016-12-10', 'KOPO', 18538050),
-('2016-12-10', 'LEMBANG', 2508204),
-('2016-12-10', 'LEMBONG', 59853463),
-('2016-12-10', 'MAJALAYA', 0),
-('2016-12-10', 'PADALARANG', 0),
-('2016-12-10', 'PLASA RANCAEKEK', 0),
-('2016-12-10', 'RAJAWALI', 24722017),
-('2016-12-10', 'RANCAEKEK / ERRI', 0),
-('2016-12-10', 'RANCAEKEK 2/ LILIK', 3499976),
-('2016-12-10', 'SETIABUDI', 0),
-('2016-12-10', 'SOREANG', 0),
-('2016-12-10', 'SUMEDANG', 3979506),
-('2016-12-10', 'SUPRATMAN', 73383470),
-('2016-12-10', 'TANJUNGSARI', 0),
-('2016-12-10', 'UJUNG BERUNG', 10870247),
-('2016-12-10', 'WINDU', 6045833),
-('2016-12-14', 'ARCAMANIK', 0),
-('2016-12-14', 'BANJARAN', 9939695),
-('2016-12-14', 'BATUJAJAR', 3371220),
-('2016-12-14', 'BKR', 233311),
-('2016-12-14', 'CICALENGKA', 55867435),
-('2016-12-14', 'CIJAURA', 69252706),
-('2016-12-14', 'CIKALONG WETAN', 0),
-('2016-12-14', 'CILILIN', 0),
-('2016-12-14', 'CIMAHI', 68026433),
-('2016-12-14', 'DAGO', 18900320),
-('2016-12-14', 'JATINANGOR', 4598319),
-('2016-12-14', 'KOPO', 203603163),
-('2016-12-14', 'LEMBANG', 27028060),
-('2016-12-14', 'LEMBONG', 297404416),
-('2016-12-14', 'MAJALAYA', 72964182),
-('2016-12-14', 'PADALARANG', 23504863),
-('2016-12-14', 'PLASA RANCAEKEK', 69159138),
-('2016-12-14', 'RAJAWALI', 398568060),
-('2016-12-14', 'RANCAEKEK / ERRI', 0),
-('2016-12-14', 'RANCAEKEK 2/ LILIK', 2090761),
-('2016-12-14', 'SETIABUDI', 135466039),
-('2016-12-14', 'SOREANG', 10731953),
-('2016-12-14', 'SUMEDANG', 139248854),
-('2016-12-14', 'SUPRATMAN', 84874449),
-('2016-12-14', 'TANJUNGSARI', 2574831),
-('2016-12-14', 'UJUNG BERUNG', 34588896),
-('2016-12-14', 'WINDU', 56030582),
-('2016-12-27', 'ARCAMANIK', 0),
-('2016-12-27', 'BANJARAN', 8683179),
-('2016-12-27', 'BATUJAJAR', 10315659),
-('2016-12-27', 'BKR', 106641),
-('2016-12-27', 'CICALENGKA', 6525912),
-('2016-12-27', 'CIJAURA', 31105549),
-('2016-12-27', 'CIKALONG WETAN', 0),
-('2016-12-27', 'CILILIN', 0),
-('2016-12-27', 'CIMAHI', 35372351),
-('2016-12-27', 'DAGO', 8440958),
-('2016-12-27', 'JATINANGOR', 4647732),
-('2016-12-27', 'KOPO', 42723553),
-('2016-12-27', 'LEMBANG', 9964261),
-('2016-12-27', 'LEMBONG', 35064356),
-('2016-12-27', 'MAJALAYA', 10404887),
-('2016-12-27', 'PADALARANG', 4917888),
-('2016-12-27', 'PLASA RANCAEKEK', 15462816),
-('2016-12-27', 'RAJAWALI', 32295669),
-('2016-12-27', 'RANCAEKEK / ERRI', 0),
-('2016-12-27', 'RANCAEKEK 2/ LILIK', 879226),
-('2016-12-27', 'SETIABUDI', 35869291),
-('2016-12-27', 'SOREANG', 15861090),
-('2016-12-27', 'SUMEDANG', 16774132),
-('2016-12-27', 'SUPRATMAN', 6263729),
-('2016-12-27', 'TANJUNGSARI', 3087895),
-('2016-12-27', 'UJUNG BERUNG', 35867995),
-('2016-12-27', 'WINDU', 4863050),
-('2016-12-28', 'ARCAMANIK', 0),
-('2016-12-28', 'BANJARAN', 3690016),
-('2016-12-28', 'BATUJAJAR', 4074090),
-('2016-12-28', 'BKR', 0),
-('2016-12-28', 'CICALENGKA', 2240296),
-('2016-12-28', 'CIJAURA', 10449913),
-('2016-12-28', 'CIKALONG WETAN', 0),
-('2016-12-28', 'CILILIN', 0),
-('2016-12-28', 'CIMAHI', 18909454),
-('2016-12-28', 'DAGO', 2193703),
-('2016-12-28', 'JATINANGOR', 1304278),
-('2016-12-28', 'KOPO', 17451739),
-('2016-12-28', 'LEMBANG', 3102404),
-('2016-12-28', 'LEMBONG', 19400893),
-('2016-12-28', 'MAJALAYA', 3591860),
-('2016-12-28', 'PADALARANG', 6528433),
-('2016-12-28', 'PLASA RANCAEKEK', 5042538),
-('2016-12-28', 'RAJAWALI', 9671332),
-('2016-12-28', 'RANCAEKEK / ERRI', 0),
-('2016-12-28', 'RANCAEKEK 2/ LILIK', 0),
-('2016-12-28', 'SETIABUDI', 12363278),
-('2016-12-28', 'SOREANG', 6231417),
-('2016-12-28', 'SUMEDANG', 8044243),
-('2016-12-28', 'SUPRATMAN', 4438351),
-('2016-12-28', 'TANJUNGSARI', 2522092),
-('2016-12-28', 'UJUNG BERUNG', 11759059),
-('2016-12-28', 'WINDU', 4335734),
-('2017-05-16', 'ARCAMANIK', 0),
-('2017-05-16', 'BANJARAN', 9697136),
-('2017-05-16', 'BATUJAJAR', 12934524),
-('2017-05-16', 'BKR', 187582),
-('2017-05-16', 'CICALENGKA', 25041783),
-('2017-05-16', 'CIJAURA', 134807412),
-('2017-05-16', 'CIKALONG WETAN', 0),
-('2017-05-16', 'CILILIN', 0),
-('2017-05-16', 'CIMAHI', 48330400),
-('2017-05-16', 'DAGO', 0),
-('2017-05-16', 'JATINANGOR', 8074528),
-('2017-05-16', 'KOPO', 134955093),
-('2017-05-16', 'LEMBANG', 30959314),
-('2017-05-16', 'LEMBONG', 225216011),
-('2017-05-16', 'MAJALAYA', 37486919),
-('2017-05-16', 'PADALARANG', 9987479),
-('2017-05-16', 'PLASA RANCAEKEK', 70994907),
-('2017-05-16', 'RAJAWALI', 151420751),
-('2017-05-16', 'RANCAEKEK / ERRI', 0),
-('2017-05-16', 'RANCAEKEK 2/ LILIK', 10926893),
-('2017-05-16', 'SETIABUDI', 155362216),
-('2017-05-16', 'SOREANG', 15080884),
-('2017-05-16', 'SUMEDANG', 155398933),
-('2017-05-16', 'SUPRATMAN', 143232782),
-('2017-05-16', 'TANJUNGSARI', 6073753),
-('2017-05-16', 'UJUNG BERUNG', 46632020),
-('2017-05-16', 'WINDU', 122701950),
-('2017-05-17', 'ARCAMANIK', 0),
-('2017-05-17', 'BANJARAN', 24039231),
-('2017-05-17', 'BATUJAJAR', 6769615),
-('2017-05-17', 'BKR', 410800),
-('2017-05-17', 'CICALENGKA', 15263536),
-('2017-05-17', 'CIJAURA', 69747039),
-('2017-05-17', 'CIKALONG WETAN', 0),
-('2017-05-17', 'CILILIN', 0),
-('2017-05-17', 'CIMAHI', 62603019),
-('2017-05-17', 'DAGO', 0),
-('2017-05-17', 'JATINANGOR', 7858341),
-('2017-05-17', 'KOPO', 189640169),
-('2017-05-17', 'LEMBANG', 50692344),
-('2017-05-17', 'LEMBONG', 306532111),
-('2017-05-17', 'MAJALAYA', 107031398),
-('2017-05-17', 'PADALARANG', 14715396),
-('2017-05-17', 'PLASA RANCAEKEK', 59948194),
-('2017-05-17', 'RAJAWALI', 191476868),
-('2017-05-17', 'RANCAEKEK / ERRI', 0),
-('2017-05-17', 'RANCAEKEK 2/ LILIK', 1621678),
-('2017-05-17', 'SETIABUDI', 153723095),
-('2017-05-17', 'SOREANG', 39432834),
-('2017-05-17', 'SUMEDANG', 78692545),
-('2017-05-17', 'SUPRATMAN', 212591859),
-('2017-05-17', 'TANJUNGSARI', 4132873),
-('2017-05-17', 'UJUNG BERUNG', 24146859),
-('2017-05-17', 'WINDU', 115014342),
-('2017-05-18', 'ARCAMANIK', 0),
-('2017-05-18', 'BANJARAN', 24684300),
-('2017-05-18', 'BATUJAJAR', 21484562),
-('2017-05-18', 'BKR', 1208150),
-('2017-05-18', 'CICALENGKA', 17540720),
-('2017-05-18', 'CIJAURA', 154527025),
-('2017-05-18', 'CIKALONG WETAN', 0),
-('2017-05-18', 'CILILIN', 0),
-('2017-05-18', 'CIMAHI', 47629984),
-('2017-05-18', 'DAGO', 48297672),
-('2017-05-18', 'JATINANGOR', 9319099),
-('2017-05-18', 'KOPO', 357115865),
-('2017-05-18', 'LEMBANG', 58951384),
-('2017-05-18', 'LEMBONG', 554151803),
-('2017-05-18', 'MAJALAYA', 35365876),
-('2017-05-18', 'PADALARANG', 73111468),
-('2017-05-18', 'PLASA RANCAEKEK', 43482530),
-('2017-05-18', 'RAJAWALI', 176143738),
-('2017-05-18', 'RANCAEKEK / ERRI', 0),
-('2017-05-18', 'RANCAEKEK 2/ LILIK', 4194059),
-('2017-05-18', 'SETIABUDI', 146061969),
-('2017-05-18', 'SOREANG', 26703122),
-('2017-05-18', 'SUMEDANG', 68326704),
-('2017-05-18', 'SUPRATMAN', 88586018),
-('2017-05-18', 'TANJUNGSARI', 5063593),
-('2017-05-18', 'UJUNG BERUNG', 164255729),
-('2017-05-18', 'WINDU', 174472412),
-('2018-03-01', 'ARCAMANIK', 0),
-('2018-03-01', 'BANJARAN', 136984),
-('2018-03-01', 'BATUJAJAR', 1819728),
-('2018-03-01', 'BKR', 52500),
-('2018-03-01', 'CICALENGKA', 1213944),
-('2018-03-01', 'CIJAURA', 4988411),
-('2018-03-01', 'CIKALONG WETAN', 0),
-('2018-03-01', 'CILILIN', 0),
-('2018-03-01', 'CIMAHI', 5860893),
-('2018-03-01', 'DAGO', 0),
-('2018-03-01', 'JATINANGOR', 1164396),
-('2018-03-01', 'KOPO', 3182539),
-('2018-03-01', 'LEMBANG', 6085226),
-('2018-03-01', 'LEMBONG', 3939078),
-('2018-03-01', 'MAJALAYA', 0),
-('2018-03-01', 'PADALARANG', 1240759),
-('2018-03-01', 'PLASA RANCAEKEK', 6992282),
-('2018-03-01', 'RAJAWALI', 3693199),
-('2018-03-01', 'RANCAEKEK / ERRI', 0),
-('2018-03-01', 'RANCAEKEK 2/ LILIK', 0),
-('2018-03-01', 'SETIABUDI', 5664693),
-('2018-03-01', 'SOREANG', 5283348),
-('2018-03-01', 'SUMEDANG', 942354),
-('2018-03-01', 'SUPRATMAN', 1281164),
-('2018-03-01', 'TANJUNGSARI', 0),
-('2018-03-01', 'UJUNG BERUNG', 5253711),
-('2018-03-01', 'WINDU', 1289901),
-('2018-05-03', 'ARCAMANIK', 0),
-('2018-05-03', 'BANJARAN', 1240784),
-('2018-05-03', 'BATUJAJAR', 0),
-('2018-05-03', 'BKR', 0),
-('2018-05-03', 'CICALENGKA', 558677),
-('2018-05-03', 'CIJAURA', 13376175),
-('2018-05-03', 'CIKALONG WETAN', 0),
-('2018-05-03', 'CILILIN', 0),
-('2018-05-03', 'CIMAHI', 2912429),
-('2018-05-03', 'DAGO', 0),
-('2018-05-03', 'JATINANGOR', 43000),
-('2018-05-03', 'KOPO', 52004204),
-('2018-05-03', 'LEMBANG', 9890991),
-('2018-05-03', 'LEMBONG', 8996331),
-('2018-05-03', 'MAJALAYA', 5167252),
-('2018-05-03', 'PADALARANG', 0),
-('2018-05-03', 'PLASA RANCAEKEK', 3998498),
-('2018-05-03', 'RAJAWALI', 9182098),
-('2018-05-03', 'RANCAEKEK / ERRI', 0),
-('2018-05-03', 'RANCAEKEK 2/ LILIK', 0),
-('2018-05-03', 'SETIABUDI', 13409475),
-('2018-05-03', 'SOREANG', 0),
-('2018-05-03', 'SUMEDANG', 10961962),
-('2018-05-03', 'SUPRATMAN', 3297809),
-('2018-05-03', 'TANJUNGSARI', 0),
-('2018-05-03', 'UJUNG BERUNG', 4583398),
-('2018-05-03', 'WINDU', 4815312),
-('2018-11-01', 'ARCAMANIK', 0),
-('2018-11-01', 'BANJARAN', 0),
-('2018-11-01', 'BATUJAJAR', 0),
-('2018-11-01', 'BKR', 0),
-('2018-11-01', 'CICALENGKA', 0),
-('2018-11-01', 'CIJAURA', 0),
-('2018-11-01', 'CIKALONG WETAN', 0),
-('2018-11-01', 'CILILIN', 0),
-('2018-11-01', 'CIMAHI', 0),
-('2018-11-01', 'DAGO', 0),
-('2018-11-01', 'JATINANGOR', 0),
-('2018-11-01', 'KOPO', 0),
-('2018-11-01', 'LEMBANG', 0),
-('2018-11-01', 'LEMBONG', 0),
-('2018-11-01', 'MAJALAYA', 0),
-('2018-11-01', 'PADALARANG', 0),
-('2018-11-01', 'PLASA RANCAEKEK', 0),
-('2018-11-01', 'RAJAWALI', 0),
-('2018-11-01', 'RANCAEKEK / ERRI', 0),
-('2018-11-01', 'RANCAEKEK 2/ LILIK', 0),
-('2018-11-01', 'SETIABUDI', 0),
-('2018-11-01', 'SOREANG', 0),
-('2018-11-01', 'SUMEDANG', 0),
-('2018-11-01', 'SUPRATMAN', 0),
-('2018-11-01', 'TANJUNGSARI', 0),
-('2018-11-01', 'UJUNG BERUNG', 0),
-('2018-11-01', 'WINDU', 0),
-('2018-10-01', 'ARCAMANIK', 0),
-('2018-10-01', 'BANJARAN', 2786086),
-('2018-10-01', 'BATUJAJAR', 0),
-('2018-10-01', 'BKR', 0),
-('2018-10-01', 'CICALENGKA', 0),
-('2018-10-01', 'CIJAURA', 12376463),
-('2018-10-01', 'CIKALONG WETAN', 0),
-('2018-10-01', 'CILILIN', 0),
-('2018-10-01', 'CIMAHI', 10890744),
-('2018-10-01', 'DAGO', 0),
-('2018-10-01', 'JATINANGOR', 464138),
-('2018-10-01', 'KOPO', 10658719),
-('2018-10-01', 'LEMBANG', 10706976),
-('2018-10-01', 'LEMBONG', 13869135),
-('2018-10-01', 'MAJALAYA', 0),
-('2018-10-01', 'PADALARANG', 3859000),
-('2018-10-01', 'PLASA RANCAEKEK', 4598288),
-('2018-10-01', 'RAJAWALI', 6446151),
-('2018-10-01', 'RANCAEKEK / ERRI', 0),
-('2018-10-01', 'RANCAEKEK 2/ LILIK', 0),
-('2018-10-01', 'SETIABUDI', 7548668),
-('2018-10-01', 'SOREANG', 5700014),
-('2018-10-01', 'SUMEDANG', 6280253),
-('2018-10-01', 'SUPRATMAN', 2659249),
-('2018-10-01', 'TANJUNGSARI', 0),
-('2018-10-01', 'UJUNG BERUNG', 8965443),
-('2018-10-01', 'WINDU', 4169703),
-('2019-08-01', 'ARCAMANIK', 0),
-('2019-08-01', 'BANJARAN', 37000),
-('2019-08-01', 'BATUJAJAR', 0),
-('2019-08-01', 'BKR', 202750),
-('2019-08-01', 'CICALENGKA', 493767),
-('2019-08-01', 'CIJAURA', 7823354),
-('2019-08-01', 'CIKALONG WETAN', 0),
-('2019-08-01', 'CILILIN', 0),
-('2019-08-01', 'CIMAHI', 5966489),
-('2019-08-01', 'DAGO', 0),
-('2019-08-01', 'JATINANGOR', 0),
-('2019-08-01', 'KOPO', 4319954),
-('2019-08-01', 'LEMBANG', 3873628),
-('2019-08-01', 'LEMBONG', 1539544),
-('2019-08-01', 'MAJALAYA', 3013102),
-('2019-08-01', 'PADALARANG', 0),
-('2019-08-01', 'PLASA RANCAEKEK', 1187032),
-('2019-08-01', 'RAJAWALI', 3996747),
-('2019-08-01', 'RANCAEKEK / ERRI', 0),
-('2019-08-01', 'RANCAEKEK 2/ LILIK', 0),
-('2019-08-01', 'SETIABUDI', 3730308),
-('2019-08-01', 'SOREANG', 3665417),
-('2019-08-01', 'SUMEDANG', 1915843),
-('2019-08-01', 'SUPRATMAN', 548984),
-('2019-08-01', 'TANJUNGSARI', 0),
-('2019-08-01', 'UJUNG BERUNG', 1981849),
-('2019-08-01', 'WINDU', 2971155),
-('2019-09-30', 'ARCAMANIK', 0),
-('2019-09-30', 'BANJARAN', 2298042),
-('2019-09-30', 'BATUJAJAR', 0),
-('2019-09-30', 'BKR', 547024),
-('2019-09-30', 'CICALENGKA', 0),
-('2019-09-30', 'CIJAURA', 5607760),
-('2019-09-30', 'CIKALONG WETAN', 0),
-('2019-09-30', 'CILILIN', 0),
-('2019-09-30', 'CIMAHI', 5354940),
-('2019-09-30', 'DAGO', 0),
-('2019-09-30', 'JATINANGOR', 4285108),
-('2019-09-30', 'KOPO', 3085217),
-('2019-09-30', 'LEMBANG', 610464),
-('2019-09-30', 'LEMBONG', 4037971),
-('2019-09-30', 'MAJALAYA', 1315875),
-('2019-09-30', 'PADALARANG', 1766490),
-('2019-09-30', 'PLASA RANCAEKEK', 1305173),
-('2019-09-30', 'RAJAWALI', 2202507),
-('2019-09-30', 'RANCAEKEK / ERRI', 0),
-('2019-09-30', 'RANCAEKEK 2/ LILIK', 0),
-('2019-09-30', 'SETIABUDI', 5121087),
-('2019-09-30', 'SOREANG', 0),
-('2019-09-30', 'SUMEDANG', 1242722),
-('2019-09-30', 'SUPRATMAN', 1443839),
-('2019-09-30', 'TANJUNGSARI', 0),
-('2019-09-30', 'UJUNG BERUNG', 3178794),
-('2019-09-30', 'WINDU', 1681880),
-('2019-09-28', 'ARCAMANIK', 0),
-('2019-09-28', 'BANJARAN', 0),
-('2019-09-28', 'BATUJAJAR', 0),
-('2019-09-28', 'BKR', 0),
-('2019-09-28', 'CICALENGKA', 0),
-('2019-09-28', 'CIJAURA', 1969878),
-('2019-09-28', 'CIKALONG WETAN', 0),
-('2019-09-28', 'CILILIN', 0),
-('2019-09-28', 'CIMAHI', 0),
-('2019-09-28', 'DAGO', 0),
-('2019-09-28', 'JATINANGOR', 130947),
-('2019-09-28', 'KOPO', 1577227),
-('2019-09-28', 'LEMBANG', 698634),
-('2019-09-28', 'LEMBONG', 1024638),
-('2019-09-28', 'MAJALAYA', 0),
-('2019-09-28', 'PADALARANG', 0),
-('2019-09-28', 'PLASA RANCAEKEK', 0),
-('2019-09-28', 'RAJAWALI', 0),
-('2019-09-28', 'RANCAEKEK / ERRI', 0),
-('2019-09-28', 'RANCAEKEK 2/ LILIK', 0),
-('2019-09-28', 'SETIABUDI', 0),
-('2019-09-28', 'SOREANG', 0),
-('2019-09-28', 'SUMEDANG', 0),
-('2019-09-28', 'SUPRATMAN', 312737),
-('2019-09-28', 'TANJUNGSARI', 0),
-('2019-09-28', 'UJUNG BERUNG', 3935619),
-('2019-09-28', 'WINDU', 0),
+('2019-10-02', 'ARCAMANIK', 0),
+('2019-10-02', 'BANJARAN', 2441086),
+('2019-10-02', 'BATUJAJAR', 0),
+('2019-10-02', 'BKR', 0),
+('2019-10-02', 'CICALENGKA', 0),
+('2019-10-02', 'CIJAURA', 13095153),
+('2019-10-02', 'CIKALONG WETAN', 0),
+('2019-10-02', 'CILILIN', 0),
+('2019-10-02', 'CIMAHI', 15555016),
+('2019-10-02', 'DAGO', 0),
+('2019-10-02', 'JATINANGOR', 484780),
+('2019-10-02', 'KOPO', 7943343),
+('2019-10-02', 'LEMBANG', 7345570),
+('2019-10-02', 'LEMBONG', 25478395),
+('2019-10-02', 'MAJALAYA', 3628850),
+('2019-10-02', 'PADALARANG', 0),
+('2019-10-02', 'PLASA RANCAEKEK', 7790835),
+('2019-10-02', 'RAJAWALI', 5076322),
+('2019-10-02', 'RANCAEKEK / ERRI', 0),
+('2019-10-02', 'RANCAEKEK 2/ LILIK', 0),
+('2019-10-02', 'SETIABUDI', 9424143),
+('2019-10-02', 'SOREANG', 3222120),
+('2019-10-02', 'SUMEDANG', 4120131),
+('2019-10-02', 'SUPRATMAN', 989003),
+('2019-10-02', 'TANJUNGSARI', 0),
+('2019-10-02', 'UJUNG BERUNG', 6263453),
+('2019-10-02', 'WINDU', 7653162),
+('2019-10-03', 'ARCAMANIK', 0),
+('2019-10-03', 'BANJARAN', 0),
+('2019-10-03', 'BATUJAJAR', 0),
+('2019-10-03', 'BKR', 0),
+('2019-10-03', 'CICALENGKA', 9535783),
+('2019-10-03', 'CIJAURA', 47043601),
+('2019-10-03', 'CIKALONG WETAN', 0),
+('2019-10-03', 'CILILIN', 0),
+('2019-10-03', 'CIMAHI', 19579535),
+('2019-10-03', 'DAGO', 0),
+('2019-10-03', 'JATINANGOR', 1814994),
+('2019-10-03', 'KOPO', 84121618),
+('2019-10-03', 'LEMBANG', 13091687),
+('2019-10-03', 'LEMBONG', 55309032),
+('2019-10-03', 'MAJALAYA', 13463797),
+('2019-10-03', 'PADALARANG', 1176800),
+('2019-10-03', 'PLASA RANCAEKEK', 3074878),
+('2019-10-03', 'RAJAWALI', 21279928),
+('2019-10-03', 'RANCAEKEK / ERRI', 0),
+('2019-10-03', 'RANCAEKEK 2/ LILIK', 0),
+('2019-10-03', 'SETIABUDI', 15438496),
+('2019-10-03', 'SOREANG', 7358949),
+('2019-10-03', 'SUMEDANG', 15040976),
+('2019-10-03', 'SUPRATMAN', 2773646),
+('2019-10-03', 'TANJUNGSARI', 0),
+('2019-10-03', 'UJUNG BERUNG', 6553296),
+('2019-10-03', 'WINDU', 4799559),
+('2019-10-04', 'ARCAMANIK', 0),
+('2019-10-04', 'BANJARAN', 7698040),
+('2019-10-04', 'BATUJAJAR', 0),
+('2019-10-04', 'BKR', 0),
+('2019-10-04', 'CICALENGKA', 17519010),
+('2019-10-04', 'CIJAURA', 42077883),
+('2019-10-04', 'CIKALONG WETAN', 0),
+('2019-10-04', 'CILILIN', 0),
+('2019-10-04', 'CIMAHI', 15518146),
+('2019-10-04', 'DAGO', 0),
+('2019-10-04', 'JATINANGOR', 832881),
+('2019-10-04', 'KOPO', 37089209),
+('2019-10-04', 'LEMBANG', 78897283),
+('2019-10-04', 'LEMBONG', 71767689),
+('2019-10-04', 'MAJALAYA', 12806365),
+('2019-10-04', 'PADALARANG', 14607280),
+('2019-10-04', 'PLASA RANCAEKEK', 12349886),
+('2019-10-04', 'RAJAWALI', 16823215),
+('2019-10-04', 'RANCAEKEK / ERRI', 0),
+('2019-10-04', 'RANCAEKEK 2/ LILIK', 0),
+('2019-10-04', 'SETIABUDI', 28262461),
+('2019-10-04', 'SOREANG', 10093562),
+('2019-10-04', 'SUMEDANG', 25240026),
+('2019-10-04', 'SUPRATMAN', 12756219),
+('2019-10-04', 'TANJUNGSARI', 0),
+('2019-10-04', 'UJUNG BERUNG', 14541441),
+('2019-10-04', 'WINDU', 41282078),
+('2019-10-05', 'ARCAMANIK', 0),
+('2019-10-05', 'BANJARAN', 0),
+('2019-10-05', 'BATUJAJAR', 0),
+('2019-10-05', 'BKR', 0),
+('2019-10-05', 'CICALENGKA', 0),
+('2019-10-05', 'CIJAURA', 27061700),
+('2019-10-05', 'CIKALONG WETAN', 0),
+('2019-10-05', 'CILILIN', 0),
+('2019-10-05', 'CIMAHI', 10204007),
+('2019-10-05', 'DAGO', 0),
+('2019-10-05', 'JATINANGOR', 4666831),
+('2019-10-05', 'KOPO', 14406844),
+('2019-10-05', 'LEMBANG', 9845583),
+('2019-10-05', 'LEMBONG', 52235521),
+('2019-10-05', 'MAJALAYA', 0),
+('2019-10-05', 'PADALARANG', 0),
+('2019-10-05', 'PLASA RANCAEKEK', 0),
+('2019-10-05', 'RAJAWALI', 15965402),
+('2019-10-05', 'RANCAEKEK / ERRI', 0),
+('2019-10-05', 'RANCAEKEK 2/ LILIK', 0),
+('2019-10-05', 'SETIABUDI', 0),
+('2019-10-05', 'SOREANG', 0),
+('2019-10-05', 'SUMEDANG', 9498864),
+('2019-10-05', 'SUPRATMAN', 8023292),
+('2019-10-05', 'TANJUNGSARI', 0),
+('2019-10-05', 'UJUNG BERUNG', 24263641),
+('2019-10-05', 'WINDU', 16150066),
+('2019-10-06', 'ARCAMANIK', 0),
+('2019-10-06', 'BANJARAN', 0),
+('2019-10-06', 'BATUJAJAR', 0),
+('2019-10-06', 'BKR', 0),
+('2019-10-06', 'CICALENGKA', 0),
+('2019-10-06', 'CIJAURA', 0),
+('2019-10-06', 'CIKALONG WETAN', 0),
+('2019-10-06', 'CILILIN', 0),
+('2019-10-06', 'CIMAHI', 0),
+('2019-10-06', 'DAGO', 0),
+('2019-10-06', 'JATINANGOR', 5388556),
+('2019-10-06', 'KOPO', 0),
+('2019-10-06', 'LEMBANG', 0),
+('2019-10-06', 'LEMBONG', 0),
+('2019-10-06', 'MAJALAYA', 0),
+('2019-10-06', 'PADALARANG', 0),
+('2019-10-06', 'PLASA RANCAEKEK', 0),
+('2019-10-06', 'RAJAWALI', 0),
+('2019-10-06', 'RANCAEKEK / ERRI', 0),
+('2019-10-06', 'RANCAEKEK 2/ LILIK', 0),
+('2019-10-06', 'SETIABUDI', 0),
+('2019-10-06', 'SOREANG', 0),
+('2019-10-06', 'SUMEDANG', 0),
+('2019-10-06', 'SUPRATMAN', 0),
+('2019-10-06', 'TANJUNGSARI', 0),
+('2019-10-06', 'UJUNG BERUNG', 0),
+('2019-10-06', 'WINDU', 0),
 ('2019-10-01', 'ARCAMANIK', 0),
 ('2019-10-01', 'BANJARAN', 0),
 ('2019-10-01', 'BATUJAJAR', 0),
@@ -2391,7 +2417,7 @@ INSERT INTO `total_trx` (`tanggal`, `tempat`, `total`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transvision`
+-- Table structure for table `transvision`
 --
 
 CREATE TABLE `transvision` (
@@ -2413,310 +2439,19 @@ CREATE TABLE `transvision` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transvision`
+-- Dumping data for table `transvision`
 --
 
 INSERT INTO `transvision` (`tanggal`, `divre`, `kode_kopeg`, `nama_kopeg`, `kode_loket`, `loket`, `nama_biller`, `account`, `customer`, `tagihan`, `surcharge`, `fee_ca`, `fee_finnet`, `kewajiban`, `kode_biller`) VALUES
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810134886', 'KOKO KOKO', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810056730', 'DIDIH PURNAMA ALAM', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810011978', 'ASEP PAHRUDIN', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810083944', 'RDENNY SUKARDINI', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810163266', 'AUDY REVOLLY KAWENGI', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810106343', 'JOELIANTI NASOWIDJAY', 196500, 0, 0, 0, 196500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810048004', 'SRI AGUSTIANI IRIANT', 174499, 3000, 0, 0, 174499, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810012808', 'YACUB DJOHANSYAH', 171500, 0, 0, 0, 171500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810109108', 'NANA KAMANA', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810016690', 'LING HIE PING', 171499, 0, 0, 0, 171499, '20'),
-('2016-11-09', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810080840', 'MOCHAMAD ALIHASYIM', 274500, 0, 0, 0, 274500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810086997', 'DEWI ENOK DEALER MOB', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810013373', 'SUDIRMAN', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810056549', 'LIA KANIA YULIAWATI', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810051170', 'TJOKRO YUDIANTO', 207500, 3000, 0, 0, 207500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810153897', 'JACHJA SUTISNA', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810080576', 'ROSMANA SPD', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810046935', 'NETI TAMBUNAN', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810017393', 'WIDI WIDODO DECODER ', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810017706', 'WIDI WIDODO DECODER ', 173999, 2500, 0, 0, 173999, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810019860', 'WIDI WIDODO DECODER3', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810020005', 'WIDI WIDODO DECODER ', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810020208', 'WIDI WIDODO DECODER ', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810022423', 'WIDI WIDODO', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034521', 'WIDI WIDODO 7', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034412', 'WIDI WIDODO 8', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034541', 'WIDI WIDODO  9', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810016977', 'WIDI WIDODO  10', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034648', 'WIDI WIDODO  11', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034106', 'WIDI WIDODO  12', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810016396', 'WIDI WIDODO', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810034093', 'WIDI WIDODO DEC 14', 174000, 2500, 0, 0, 174000, '20'),
-('2016-11-10', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810106291', 'WILLY KOMARA', 144500, 3000, 0, 0, 144500, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810034687', 'HIRSAN FIRRA KANAR', 173999, 2500, 0, 0, 173999, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810047395', 'IIS AISYAH', 141500, 0, 0, 0, 141500, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810092899', 'MAKO PUSDIKIF BANDUN', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810146223', 'MAKO PUSDIKIF BANDUN', 174499, 3000, 0, 0, 174499, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810091178', 'MUJIONO', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810030705', 'DENY KRISTANDI', 8500, 3000, 0, 0, 8500, '20'),
-('2016-11-11', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810050570', 'LILIS SUKMAYATI', 174500, 3000, 0, 0, 174500, '20'),
-('2016-11-12', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810075799', 'H JOKO SURANTOSHMHUM', 304500, 0, 0, 0, 304500, '20'),
-('2016-11-12', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo1', 'TRANSVISION P2H', '127810056483', 'BAGUS INDRAJANA', 199500, 3000, 0, 0, 199500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810112349', 'UJANG SUNARYA', 144800, 3000, 0, 500, 144800, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810091037', 'TEDDI', 174500, 3000, 0, 500, 174500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810049407', 'ELSE MARIA', 177499, 3000, 0, 500, 177499, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810170475', 'KOST BJ 26', 1202500, 0, 0, 500, 1202500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo1', 'TRANSVISION P2H', '127810038061', 'LUTHFI HARIZ', 174499, 3000, 0, 500, 174499, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810070187', 'FIRDA', 174500, 3000, 0, 500, 174500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810033028', 'GASIM ALKATIRIE', 407000, 2500, 0, 500, 407000, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810093307', 'BALAI LPSE PROV JABA', 144500, 3000, 0, 500, 144500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810079462', 'YOYO', 174500, 3000, 0, 500, 174500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810067912', 'ANGGA MARDITAMA SULT', 171500, 0, 0, 500, 171500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1094', 'ujungberung2', 'TRANSVISION P2H', '127810092436', 'RUSI KOMALASARI', 174500, 3000, 0, 500, 174500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810017506', 'EVIE MARIANI', 407500, 3000, 0, 500, 407500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810050969', 'EVIE MARIANI', 407500, 3000, 0, 500, 407500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810052026', 'EVIE MARIANI', 407500, 3000, 0, 500, 407500, '20'),
-('2016-11-14', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810048716', 'RADIMAN', 174500, 3000, 0, 500, 174500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810134756', 'GUNAWAN SIMON RIO JO', 173999, 2500, 2000, 500, 171999, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810089301', 'ENDANG JULIASTUTI M', 171500, 0, 2000, 500, 169500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810104089', 'AFRIZA', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810038025', 'TITA GARNITA', 304500, 0, 2000, 500, 302500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810099704', 'PARLINDUNGAN SIHOMBI', 171500, 0, 2000, 500, 169500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810066959', 'RACHMAT', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810060474', 'KECAMATAN LENGKONG', 407500, 3000, 2000, 500, 405500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810056093', 'GIANTI RESMANI', 174499, 3000, 2000, 500, 172499, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810038726', 'KKEJAKSAAN TINGGI  M', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810079128', 'FLORENCE RUKTI HAYAT', 171500, 0, 2000, 500, 169500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810056361', 'R HETI NURHAYATI', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1099', 'padalarang1', 'TRANSVISION P2H', '127810087961', 'RD HAGUS SUYADHANA', 407500, 3000, 2000, 500, 405500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810037596', 'ROBERT SETIAWAN', 404500, 0, 2000, 500, 402500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810134753', 'EIDY SANDRA SH MH', 141500, 0, 2000, 500, 139500, '20'),
-('2016-11-15', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810034433', 'SIGIT SETIAWAN', 171499, 0, 2000, 500, 169499, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810052074', 'SANTI WANGSA KARTA', 174000, 2500, 2000, 500, 172000, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810104067', 'RONI WIHARJA', 144500, 3000, 2000, 500, 142500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1093', 'dago1', 'TRANSVISION P2H', '127810163125', 'BONDAN PUDJADI KARTO', 144000, 2500, 2000, 500, 142000, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810092783', 'NANA SUKARNA', 144500, 3000, 2000, 500, 142500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810047830', 'MIEKE CECILIA SILOOY', 174499, 3000, 2000, 500, 172499, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810026645', 'BUDI PRAYITNO', 174499, 3000, 2000, 500, 172499, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810088479', 'IRWAN MOCH SANTOSA', 177500, 3000, 2000, 500, 175500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810035666', 'FREDERIK ALBERT M', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810044464', 'DENI KOMARA  DIKLAT ', 407500, 3000, 2000, 500, 405500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810014958', 'INDRA PERMANA', 174500, 3000, 2000, 500, 172500, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810037020', 'RDIDA HIDAYAT', 174499, 3000, 2000, 500, 172499, '20'),
-('2016-11-16', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo1', 'TRANSVISION P2H', '127810051409', 'ASEP SOEBROTO', 144500, 3000, 2000, 500, 142500, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810056711', 'CECENG C GANDAWIJAYA', 304500, 3000, 2000, 500, 305000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810139156', 'WINA WAHYUNI', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810107343', 'SURJADI DHARMADI', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810073403', 'DODYANDRA TUNAS TOYO', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810048869', 'PERMADI', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810071587', 'ASTUTISSIMSE', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810056054', 'IDRIS', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127102204468', 'VICTORY FUTURES', 255500, 3000, 2000, 500, 256000, '20'),
-('2016-11-17', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127102200288', 'SUWARDJOKO', 217000, 3000, 2000, 500, 217500, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810090361', 'DADI', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810113798', 'DRIRHTBLILY SATARIMS', 171500, 0, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810123736', 'AGUS DJUMHANA SOEPAR', 171500, 0, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810057378', 'MUHYI', 171500, 0, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810069696', 'DRSKUSWONDO', 171500, 0, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1100', 'ddl_cclengka', 'TRANSVISION P2H', '127810100069', 'AGUNG', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810073071', 'ABDUL WAHAB', 171500, 0, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1100', 'cicalengka1', 'TRANSVISION P2H', '127810106312', 'KARSAM', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810104063', 'SHENDY SUMARLI', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1091', 'bkr2', 'TRANSVISION P2H', '127810106317', 'KANDA MARTANAGARA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810111496', 'STEVANI VALENCI', 141500, 3000, 2000, 500, 142000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1100', 'ddl_cclengka', 'TRANSVISION P2H', '127810102164', 'AHMAD FARIZI', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810087481', 'SULYANA KARTIKA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810084035', 'EDDY KURNIA', 441500, 0, 2000, 500, 442000, '20'),
-('2016-11-18', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810163630', 'RUMAH THE PRIANGAN', 662500, 0, 2000, 500, 663000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '5546', 'ddl_rckkbru', 'TRANSVISION P2H', '127810104032', 'ENNY BASTIAN', 284800, 3000, 2000, 500, 285300, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810050379', 'AGUS GANJAR', 141500, 3000, 2000, 500, 142000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145673', 'VINCENTSIUS  YANUAR ', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145672', 'VINCENTSIUS  YANUAR ', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127225151432', 'PTINDOSENTOSA TRADA ', 201500, 0, 0, 0, 201500, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810048244', 'H WUKIR KARTIKO', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810092167', 'BACHTI ALISJAHBANA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810102168', 'DIDIN SARIFUDIN', 141500, 2500, 2000, 500, 142000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810058886', 'DRAHJ IKA CANDRAWULA', 246500, 3000, 2000, 500, 247000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '5546', 'ddl_rckkbru', 'TRANSVISION P2H', '127810104032', 'ENNY BASTIAN', 284800, 3000, 2000, 500, 285300, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810050379', 'AGUS GANJAR', 141500, 3000, 2000, 500, 142000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145673', 'VINCENTSIUS  YANUAR ', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145672', 'VINCENTSIUS  YANUAR ', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127225151432', 'PTINDOSENTOSA TRADA ', 201500, 0, 2000, 500, 202000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810048244', 'H WUKIR KARTIKO', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810092167', 'BACHTI ALISJAHBANA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810102168', 'DIDIN SARIFUDIN', 141500, 2500, 2000, 500, 142000, '20'),
-('2016-11-19', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810058886', 'DRAHJ IKA CANDRAWULA', 246500, 3000, 2000, 500, 247000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810074283', 'NUR I SUYADI', 191500, 3000, 2000, 500, 192000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810005782', 'DRS HERRI HUDAYA MSI', 324500, 3000, 2000, 500, 325000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810062710', 'HERMANSYAH', 221500, 3000, 2000, 500, 222000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810113210', 'INTANIA SETIATI WAHY', 840500, 0, 2000, 500, 841000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1091', 'bkr2', 'TRANSVISION P2H', '127810024833', 'R KURNIA PERMANA', 191499, 3000, 2000, 500, 191999, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810106292', 'SMP N 37 BANDUNG', 191500, 3000, 2000, 500, 192000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810096533', 'KUSUMAWATI', 191500, 3000, 2000, 500, 192000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi2', 'TRANSVISION P2H', '127810135222', 'TIMOTHY LENI', 324500, 2500, 2000, 500, 325000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810047377', 'HERMAN YUSUF', 191499, 3000, 2000, 500, 191999, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1093', 'dago1', 'TRANSVISION P2H', '127810170303', 'HOTEL WIRTON', 2477500, 2500, 2000, 500, 2478000, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127102213529', 'SUGIHARTO', 250000, 0, 2000, 500, 250500, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810108264', 'M FAHRUROZI', 294000, 0, 2000, 500, 294500, '20'),
-('2016-11-21', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810113801', 'HENI', 191500, 0, 2000, 500, 192000, '20'),
-('2016-11-24', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810113797', 'DANI SYAHLANI', 161500, 0, 0, 0, 161500, '20'),
-('2016-11-25', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810083389', 'DADANG', 161500, 3000, 2000, 500, 162000, '20'),
-('2016-11-25', '03', '695', 'D3_Kop Dadali BDG', '1100', 'cicalengka1', 'TRANSVISION P2H', '127810205612', 'DELLY YULIA', 301500, 3000, 2000, 500, 302000, '20'),
-('2016-12-01', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura', 'TRANSVISION P2H', '127810012809', 'INDRA FIRMANSYAH', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-01', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810075799', 'H JOKO SURANTOSHMHUM', 304500, 0, 0, 0, 304500, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810074822', 'CECEP N AZIZ', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810013637', 'TATIK WIRYASTUTI', 141501, 0, 0, 0, 141501, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810083626', 'MARZAID FACHRY', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810012739', 'DR REGGY M PANGABEAN', 141501, 0, 0, 0, 141501, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810163262', 'PANGGABEAN DJONGGI P', 141501, 0, 0, 0, 141501, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810013373', 'SUDIRMAN', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810132742', 'H YAYAN SUBARNA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1094', 'ujungberung2', 'TRANSVISION P2H', '127810084754', 'LUCYA WIDYANTI', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810086777', 'HANAFI ANAS MUFTI', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810055865', 'MIN HERMINAWATI', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810137259', 'PT AGRABUDI KOMUNIKA', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810130100', 'MAMAN SURACHMAN', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810048906', 'MIA MUTIYA RAHMAN', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810132407', 'H DEDDY SUYUD HAMDAN', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810036730', 'LAMBERT FSILOOY', 304500, 2500, 2000, 500, 305000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810067809', 'LAMBERT F SILOOY', 404500, 2500, 2000, 500, 405000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810088704', 'LAMBERT FSILOOY', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810081650', 'ASEP SUTISNA', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1100', 'ddl_cclengka', 'TRANSVISION P2H', '127810083767', 'DEDI SUPTANDI', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810048461', 'MUHAMAD RAMADHAN', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810057684', 'DDAMAYANTI', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810084039', 'IMAS AGUSTINA', 196500, 2500, 2000, 500, 197000, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810012598', 'LILIS ROSTINI', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810056074', 'IDA FARIDA', 141501, 2500, 2000, 500, 142001, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810047254', 'SRI PUSPASARI', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810049971', 'SRI PUSPA IVANA', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810055630', 'ERRI RUSTANDI', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810046220', 'YOVI HERDIAN', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo2', 'TRANSVISION P2H', '127810055603', 'HENCU SAHURI', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810111445', 'DEDE SUWARMAN', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810047001', 'DIAH KOMALA DEWI', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810057353', 'SUYATNOTO', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo1', 'TRANSVISION P2H', '127810104051', 'DEWI PRASETYO', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810136440', 'DINAS PEMUKIMAN', 803500, 0, 0, 0, 803500, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810069851', 'URAWAN', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810081747', 'NURLELA KABAN', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810124979', 'NURLELA SILVIA FRANS', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810068023', 'NURLELA', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810061397', 'NURLELA', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810006481', 'EKARINA BR KARO', 201500, 2500, 2000, 500, 202000, '20'),
-('2016-12-06', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810067678', 'HERWANTO', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810073760', 'MARIA RICARDA SALIM', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810103994', 'RIANA MUTIA PUTRI', 196499, 0, 0, 0, 196499, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810093307', 'BALAI LPSE PROV JABA', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810049274', 'HERDIYANTI BBA', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810083944', 'RDENNY SUKARDINI', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810153526', 'RIZKY PRATAMA PUTRA', 201500, 3000, 2000, 500, 202000, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810058249', 'YOS SOENTORO', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810012126', 'RADIANI BERLINA', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810106292', 'SMP N 37 BANDUNG', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810062793', 'HSUHERMAN AMURASA SA', 201500, 0, 0, 0, 201500, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810106291', 'WILLY KOMARA', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-07', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810047965', 'NINING NURAENI', 141501, 0, 0, 0, 141501, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810080576', 'ROSMANA SPD', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura', 'TRANSVISION P2H', '127810088479', 'IRWAN MOCH SANTOSA', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810022618', 'HILDA FARIDA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810066877', 'VIDI ARGA UTAMA', 171499, 2500, 2000, 500, 171999, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810060430', 'PRIE SUPRIADI', 174500, 3000, 2000, 500, 175000, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810059878', 'LILI HIDAYAT BA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1100', 'ddl_cclengka', 'TRANSVISION P2H', '127810056712', 'ASEP TATA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810104030', 'HENDRA SUMITO', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1094', 'ujungberung2', 'TRANSVISION P2H', '127810135135', 'EDWAR HARDIANA', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810079128', 'FLORENCE RUKTI HAYAT', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '5546', 'ddl_rckkbru', 'TRANSVISION P2H', '127810083445', 'MAMAN', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-08', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810081662', 'SUPRIHATI', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810027984', 'I MADE TISNA JATMIKA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810048004', 'SRI AGUSTIANI IRIANT', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810014958', 'INDRA PERMANA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810050570', 'LILIS SUKMAYATI', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810017253', 'IRH IRWIN AYUB RAIS', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810055551', 'GARNIWA', 196500, 0, 0, 0, 196500, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810104089', 'AFRIZA', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi1', 'TRANSVISION P2H', '127810135222', 'TIMOTHY LENI', 473934, 2500, 2000, 500, 474434, '20'),
-('2016-12-09', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810102222', 'RHINO NUGROHO', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-10', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo1', 'TRANSVISION P2H', '127810056486', 'ITA LATIFAH', 196500, 3000, 2000, 500, 197000, '20'),
-('2016-12-10', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura', 'TRANSVISION P2H', '127810056623', 'ADNA KARIM', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-10', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127102213529', 'SUGIHARTO', 250000, 0, 0, 0, 250000, '20'),
-('2016-12-10', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810108264', 'M FAHRUROZI', 274000, 0, 0, 0, 274000, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127810013987', 'SUDARDJA', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810109108', 'NANA KAMANA', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810170044', 'BATIK KERIS', 662500, 0, 0, 0, 662500, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1093', 'dago1', 'TRANSVISION P2H', '127810067858', 'TUGIMAN', 141501, 2500, 2000, 500, 142001, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810066959', 'RACHMAT', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810134756', 'GUNAWAN SIMON RIO JO', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810038726', 'KKEJAKSAAN TINGGI  M', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810056093', 'GIANTI RESMANI', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810146097', 'HERDA M GANIKONI', 5500, 3000, 2000, 500, 6000, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1100', 'cicalengka1', 'TRANSVISION P2H', '127810106312', 'KARSAM', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1093', 'dago1', 'TRANSVISION P2H', '127810170303', 'HOTEL WIRTON', 2477500, 2500, 2000, 500, 2478000, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo2', 'TRANSVISION P2H', '127810051409', 'ASEP SOEBROTO', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810067912', 'ANGGA MARDITAMA SULT', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810153897', 'JACHJA SUTISNA', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810086997', 'DEWI ENOK DEALER MOB', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-13', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo2', 'TRANSVISION P2H', '127810048716', 'RADIMAN', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810123747', 'IVAN ZUBEIL BAIEZT', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi2', 'TRANSVISION P2H', '127810034687', 'HIRSAN FIRRA KANAR', 171500, 2500, 2000, 500, 172000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810134886', 'KOKO KOKO', 141501, 3000, 2000, 500, 142001, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810011978', 'ASEP PAHRUDIN', 171499, 3000, 2000, 500, 171999, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810089301', 'ENDANG JULIASTUTI M', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810051514', 'IRIANA', 274500, 3000, 2000, 500, 275000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1093', 'dago1', 'TRANSVISION P2H', '127810163125', 'BONDAN PUDJADI KARTO', 141501, 2500, 2000, 500, 142001, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810012808', 'YACUB DJOHANSYAH', 171499, 0, 0, 0, 171499, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1091', 'bkr2', 'TRANSVISION P2H', '127810024833', 'R KURNIA PERMANA', 171500, 3000, 2000, 500, 172000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu2', 'TRANSVISION P2H', '127810051170', 'TJOKRO YUDIANTO', 201500, 3000, 2000, 500, 202000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1099', 'padalarang1', 'TRANSVISION P2H', '127810087961', 'RD HAGUS SUYADHANA', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-14', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127225151432', 'PTINDOSENTOSA TRADA ', 201500, 0, 0, 0, 201500, '20'),
-('2016-12-02', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810059487', 'AGNES R INDARTI', 171500, 0, 0, 0, 171500, '20'),
-('2016-12-02', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810011648', 'YANI WIDIAWATIE DECO', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-02', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810011597', 'YANI WIDIAWATIE', 404500, 3000, 2000, 500, 405000, '20'),
-('2016-12-27', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi1', 'TRANSVISION P2H', '127102200171', 'JIMMYMONIKA R K', 646000, 0, 0, 0, 646000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810037020', 'RDIDA HIDAYAT', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810050570', 'LILIS SUKMAYATI', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810056202', 'WAWANG SULAETY', 226500, 0, 0, 0, 226500, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810108264', 'M FAHRUROZI', 304000, 2500, 2000, 500, 304500, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127102213529', 'SUGIHARTO', 250000, 2500, 2000, 500, 250500, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810070187', 'FIRDA', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810026645', 'BUDI PRAYITNO', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127102200288', 'SUWARDJOKO', 217000, 2500, 2000, 500, 217500, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1099', 'padalarang1', 'TRANSVISION P2H', '127810087961', 'RD HAGUS SUYADHANA', 404500, 3000, 2000, 500, 405000, '20'),
-('2017-05-16', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali2', 'TRANSVISION P2H', '127810104067', 'RONI WIHARJA', 171500, 3000, 2000, 500, 172000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145673', 'VINCENTSIUS  YANUAR ', 221500, 2500, 2000, 500, 222000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810145672', 'VINCENTSIUS  YANUAR ', 221500, 2500, 2000, 500, 222000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810103994', 'RIANA MUTIA PUTRI', 226500, 0, 0, 0, 226500, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810033028', 'GASIM ALKATIRIE', 404500, 2500, 2000, 500, 405000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810072822', 'HENGKI TOBING', 101500, 0, 0, 0, 101500, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1096', 'kopo2', 'TRANSVISION P2H', '127810051409', 'ASEP SOEBROTO', 171500, 3000, 2000, 500, 172000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810047001', 'DIAH KOMALA DEWI', 404500, 3000, 2000, 500, 405000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong3', 'TRANSVISION P2H', '127810106343', 'JOELIANTI NASOWIDJAY', 226500, 2500, 2000, 500, 227000, '20'),
-('2017-05-17', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810104063', 'SHENDY SUMARLI', 404500, 3000, 2000, 500, 405000, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810056054', 'IDRIS', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1115', 'lembong2', 'TRANSVISION P2H', '127810170044', 'BATIK KERIS', 662500, 2500, 2000, 500, 663000, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman3', 'TRANSVISION P2H', '127810057353', 'SUYATNOTO', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810050379', 'AGUS GANJAR', 171500, 3000, 2000, 500, 172000, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810038025', 'TITA GARNITA', 324500, 0, 0, 0, 324500, '20'),
-('2017-05-18', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810089280', 'EDIH KUSNADI', 284800, 3000, 2000, 500, 285300, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810073760', 'MARIA RICARDA SALIM', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810057353', 'SUYATNOTO', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810134886', 'KOKO KOKO', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810072822', 'HENGKI TOBING', 101500, 0, 0, 0, 101500, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1089', 'setiabudi2', 'TRANSVISION P2H', '127810049274', 'HERDIYANTI BBA', 221500, 0, 0, 0, 221500, '20'),
-('2017-07-12', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810102222', 'RHINO NUGROHO', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1087', 'supratman2', 'TRANSVISION P2H', '127810062793', 'HSUHERMAN AMURASA SA', 221500, 3000, 2000, 500, 222000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810121913', 'DIAN WAHYUDI', 221500, 3000, 2000, 500, 222000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810057684', 'DDAMAYANTI', 201500, 2500, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810012598', 'LILIS ROSTINI', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810137259', 'PT AGRABUDI KOMUNIKA', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1092', 'windu1', 'TRANSVISION P2H', '127810123747', 'IVAN ZUBEIL BAIEZT', 201500, 3000, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810166468', 'EDI GUNAWAN', 201500, 2500, 2000, 500, 202000, '20'),
-('2017-07-05', '03', '695', 'D3_Kop Dadali BDG', '1090', 'rajawali1', 'TRANSVISION P2H', '127810048004', 'SRI AGUSTIANI IRIANT', 221500, 3000, 2000, 500, 222000, '20'),
-('2018-03-01', '03', '695', 'D3_Kop Dadali BDG', '1106', 'lembang', 'TRANSVISION P2H', '127810066877', 'VIDI ARGA UTAMA', 460500, 2500, 2000, 500, 461000, '20'),
-('2018-10-01', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810132742', 'H YAYAN SUBARNA', 221500, 3000, 2000, 500, 222000, '20');
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1104', 'sumedang2', 'TRANSVISION P2H', '127810102222', 'RHINO NUGROHO', 221500, 3000, 2000, 500, 222000, '20'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1095', 'cijaura2', 'TRANSVISION P2H', '127810014958', 'INDRA PERMANA', 221500, 3000, 2000, 500, 222000, '20'),
+('2019-10-03', '03', '695', 'D3_Kop Dadali BDG', '1107', 'soreang', 'TRANSVISION P2H', '127810132742', 'H YAYAN SUBARNA', 221500, 3000, 2000, 500, 222000, '20'),
+('2019-10-04', '03', '695', 'D3_Kop Dadali BDG', '1097', 'cimahi2', 'TRANSVISION P2H', '127810067678', 'HERWANTO', 221500, 2500, 2000, 500, 222000, '20');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `upload`
+-- Table structure for table `upload`
 --
 
 CREATE TABLE `upload` (
@@ -2726,825 +2461,10 @@ CREATE TABLE `upload` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `upload`
+-- Dumping data for table `upload`
 --
 
 INSERT INTO `upload` (`tanggal`, `nama`, `pen`) VALUES
-('0000-00-00', 'Arindo 1 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-01', 'MKMSettleLoket_01112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-01', 'SettleP2HSUM_01-11-2016.xlsx', 'JASTEL'),
-('2016-11-01', 'SettlePDAMPPOBDet(695)01-11-2016_01-11-2016.xlsx', 'PDAM'),
-('2016-11-01', 'SettleTselDet_03_0(695)01-11-2016_01-11-2016.xlsx', 'VOUCHER'),
-('2016-11-01', 'SettleTselDet_03_10000(695)01-11-2016_01-11-2016.x', 'VOUCHER'),
-('2016-11-01', 'SettleTselDet_03_100000(695)01-11-2016_01-11-2016.', 'VOUCHER'),
-('2016-11-01', 'SettleTselDet_03_20000(695)01-11-2016_01-11-2016.x', 'VOUCHER'),
-('2016-11-01', 'SettleTselDet_03_25000(695)01-11-2016_01-11-2016.x', 'VOUCHER'),
-('2016-11-01', 'SettleTselDet_03_50000(695)01-11-2016_01-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 2 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-02', 'MKMSettleLoket_02112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-02', 'MKMSettleLoket_02112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-02', 'SettleP2HSUM_02-11-2016.xlsx', 'JASTEL'),
-('2016-11-02', 'SettlePDAMPPOBDet(695)02-11-2016_02-11-2016.xlsx', 'PDAM'),
-('2016-11-02', 'SettleTselDet_03_0(695)02-11-2016_02-11-2016.xlsx', 'VOUCHER'),
-('2016-11-02', 'SettleTselDet_03_10000(695)02-11-2016_02-11-2016.x', 'VOUCHER'),
-('2016-11-02', 'SettleTselDet_03_100000(695)02-11-2016_02-11-2016.', 'VOUCHER'),
-('2016-11-02', 'SettleTselDet_03_20000(695)02-11-2016_02-11-2016.x', 'VOUCHER'),
-('2016-11-02', 'SettleTselDet_03_25000(695)02-11-2016_02-11-2016.x', 'VOUCHER'),
-('2016-11-02', 'SettleTselDet_03_50000(695)02-11-2016_02-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-03', 'MKMSettleLoket_03112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-03', 'MKMSettleLoket_03112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-03', 'SettleP2HSUM_03-11-2016.xlsx', 'JASTEL'),
-('2016-11-03', 'SettlePDAMPPOBDet(695)03-11-2016_03-11-2016.xlsx', 'PDAM'),
-('2016-11-03', 'SettleTselDet_03_0(695)03-11-2016_03-11-2016.xlsx', 'VOUCHER'),
-('2016-11-03', 'SettleTselDet_03_10000(695)03-11-2016_03-11-2016.x', 'VOUCHER'),
-('2016-11-03', 'SettleTselDet_03_20000(695)03-11-2016_03-11-2016.x', 'VOUCHER'),
-('2016-11-03', 'SettleTselDet_03_25000(695)03-11-2016_03-11-2016.x', 'VOUCHER'),
-('2016-11-03', 'SettleTselDet_03_50000(695)03-11-2016_03-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 4 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-04', 'MKMSettleLoket_04112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-04', 'MKMSettleLoket_04112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-04', 'SettleP2HSUM_04-11-2016.xlsx', 'JASTEL'),
-('2016-11-04', 'SettlePDAMPPOBDet(695)04-11-2016_04-11-2016.xlsx', 'PDAM'),
-('2016-11-04', 'SettleTselDet_03_0(695)04-11-2016_04-11-2016.xlsx', 'VOUCHER'),
-('2016-11-04', 'SettleTselDet_03_10000(695)04-11-2016_04-11-2016.x', 'VOUCHER'),
-('2016-11-04', 'SettleTselDet_03_20000(695)04-11-2016_04-11-2016.x', 'VOUCHER'),
-('2016-11-04', 'SettleTselDet_03_25000(695)04-11-2016_04-11-2016.x', 'VOUCHER'),
-('2016-11-04', 'SettleTselDet_03_50000(695)04-11-2016_04-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 5 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-05', 'MKMSettleLoket_05112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-05', 'SettleP2HSUM_05-11-2016.xlsx', 'JASTEL'),
-('2016-11-05', 'SettlePDAMPPOBDet(695)05-11-2016_05-11-2016(1).xls', 'PDAM'),
-('2016-11-05', 'SettlePDAMPPOBDet(695)05-11-2016_05-11-2016.xlsx', 'PDAM'),
-('2016-11-05', 'SettleTselDet_03_0(695)05-11-2016_05-11-2016.xlsx', 'VOUCHER'),
-('2016-11-05', 'SettleTselDet_03_10000(695)05-11-2016_05-11-2016.x', 'VOUCHER'),
-('2016-11-05', 'SettleTselDet_03_20000(695)05-11-2016_05-11-2016.x', 'VOUCHER'),
-('2016-11-05', 'SettleTselDet_03_25000(695)05-11-2016_05-11-2016.x', 'VOUCHER'),
-('2016-11-05', 'SettleTselDet_03_50000(695)05-11-2016_05-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 6 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-06', 'SettleP2HSUM_06-11-2016.xlsx', 'JASTEL'),
-('2016-11-06', 'SettlePDAMPPOBDet(695)06-11-2016_06-11-2016.xlsx', 'PDAM'),
-('2016-11-06', 'SettleTselDet_03_10000(695)06-11-2016_06-11-2016.x', 'VOUCHER'),
-('2016-11-06', 'SettleTselDet_03_20000(695)06-11-2016_06-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 7 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-07', 'MKMSettleLoket_07112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-07', 'SettleP2HSUM_07-11-2016.xlsx', 'JASTEL'),
-('2016-11-07', 'SettlePDAMPPOBDet(695)07-11-2016_07-11-2016(1).xls', 'PDAM'),
-('2016-11-07', 'SettlePDAMPPOBDet(695)07-11-2016_07-11-2016.xlsx', 'PDAM'),
-('2016-11-07', 'SettleTselDet_03_0(695)07-11-2016_07-11-2016.xlsx', 'VOUCHER'),
-('2016-11-07', 'SettleTselDet_03_10000(695)07-11-2016_07-11-2016.x', 'VOUCHER'),
-('2016-11-07', 'SettleTselDet_03_100000(695)07-11-2016_07-11-2016.', 'VOUCHER'),
-('2016-11-07', 'SettleTselDet_03_20000(695)07-11-2016_07-11-2016.x', 'VOUCHER'),
-('2016-11-07', 'SettleTselDet_03_25000(695)07-11-2016_07-11-2016.x', 'VOUCHER'),
-('2016-11-07', 'SettleTselDet_03_50000(695)07-11-2016_07-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 8 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-08', 'MKMSettleLoket_08112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-08', 'MKMSettleLoket_08112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-08', 'SettleP2HSUM_08-11-2016.xlsx', 'JASTEL'),
-('2016-11-08', 'SettlePDAMPPOBDet(695)08-11-2016_08-11-2016(1).xls', 'PDAM'),
-('2016-11-08', 'SettlePDAMPPOBDet(695)08-11-2016_08-11-2016.xlsx', 'PDAM'),
-('2016-11-08', 'SettleTselDet_03_0(695)08-11-2016_08-11-2016.xlsx', 'VOUCHER'),
-('2016-11-08', 'SettleTselDet_03_10000(695)08-11-2016_08-11-2016.x', 'VOUCHER'),
-('2016-11-08', 'SettleTselDet_03_20000(695)08-11-2016_08-11-2016.x', 'VOUCHER'),
-('2016-11-08', 'SettleTselDet_03_25000(695)08-11-2016_08-11-2016.x', 'VOUCHER'),
-('2016-11-08', 'SettleTselDet_03_50000(695)08-11-2016_08-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 9 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-09', 'MKMSettleLoket_09112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-09', 'SettleP2HSUM_09-11-2016.xlsx', 'JASTEL'),
-('2016-11-09', 'SettlePAYTVDet_03_20(695)09-11-2016_09-11-2016.xls', 'TRANSVISION'),
-('2016-11-09', 'SettlePDAMPPOBDet(695)09-11-2016_09-11-2016(1).xls', 'PDAM'),
-('2016-11-09', 'SettlePDAMPPOBDet(695)09-11-2016_09-11-2016.xlsx', 'PDAM'),
-('2016-11-09', 'SettleTselDet_03_0(695)09-11-2016_09-11-2016.xlsx', 'VOUCHER'),
-('2016-11-09', 'SettleTselDet_03_10000(695)09-11-2016_09-11-2016.x', 'VOUCHER'),
-('2016-11-09', 'SettleTselDet_03_100000(695)09-11-2016_09-11-2016.', 'VOUCHER'),
-('2016-11-09', 'SettleTselDet_03_20000(695)09-11-2016_09-11-2016.x', 'VOUCHER'),
-('2016-11-09', 'SettleTselDet_03_50000(695)09-11-2016_09-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 10 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-10', 'MKMSettleLoket_10112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-10', 'SettleP2HSUM_10-11-2016.xlsx', 'JASTEL'),
-('2016-11-10', 'SettlePAYTVDet_03_20(695)10-11-2016_10-11-2016.xls', 'TRANSVISION'),
-('2016-11-10', 'SettlePDAMPPOBDet(695)10-11-2016_10-11-2016(1).xls', 'PDAM'),
-('2016-11-10', 'SettlePDAMPPOBDet(695)10-11-2016_10-11-2016(2).xls', 'PDAM'),
-('2016-11-10', 'SettlePDAMPPOBDet(695)10-11-2016_10-11-2016.xlsx', 'PDAM'),
-('2016-11-10', 'SettleTselDet_03_0(695)10-11-2016_10-11-2016.xlsx', 'VOUCHER'),
-('2016-11-10', 'SettleTselDet_03_10000(695)10-11-2016_10-11-2016.x', 'VOUCHER'),
-('2016-11-10', 'SettleTselDet_03_100000(695)10-11-2016_10-11-2016.', 'VOUCHER'),
-('2016-11-10', 'SettleTselDet_03_20000(695)10-11-2016_10-11-2016.x', 'VOUCHER'),
-('2016-11-10', 'SettleTselDet_03_25000(695)10-11-2016_10-11-2016.x', 'VOUCHER'),
-('2016-11-10', 'SettleTselDet_03_50000(695)10-11-2016_10-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 11 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-12', 'MKMSettleLoket_11112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-11', 'SettleP2HSUM_11-11-2016.xlsx', 'JASTEL'),
-('2016-11-11', 'SettlePAYTVDet_03_20(695)11-11-2016_11-11-2016.xls', 'TRANSVISION'),
-('2016-11-11', 'SettlePDAMPPOBDet(695)11-11-2016_11-11-2016(1).xls', 'PDAM'),
-('2016-11-11', 'SettlePDAMPPOBDet(695)11-11-2016_11-11-2016(2).xls', 'PDAM'),
-('2016-11-11', 'SettlePDAMPPOBDet(695)11-11-2016_11-11-2016.xlsx', 'PDAM'),
-('2016-11-11', 'SettleTselDet_03_0(695)11-11-2016_11-11-2016.xlsx', 'VOUCHER'),
-('2016-11-11', 'SettleTselDet_03_10000(695)11-11-2016_11-11-2016.x', 'VOUCHER'),
-('2016-11-11', 'SettleTselDet_03_20000(695)11-11-2016_11-11-2016.x', 'VOUCHER'),
-('2016-11-11', 'SettleTselDet_03_25000(695)11-11-2016_11-11-2016.x', 'VOUCHER'),
-('2016-11-11', 'SettleTselDet_03_50000(695)11-11-2016_11-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 12 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-12', 'MKMSettleLoket_12112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-12', 'SettleP2HSUM_12-11-2016.xlsx', 'JASTEL'),
-('2016-11-12', 'SettlePAYTVDet_03_20(695)12-11-2016_12-11-2016.xls', 'TRANSVISION'),
-('2016-11-12', 'SettlePAYTVDet_03_55(695)12-11-2016_12-11-2016.xls', 'INDOVISION'),
-('2016-11-12', 'SettlePDAMPPOBDet(695)12-07-2016_12-07-2016(1).xls', 'PDAM'),
-('2016-07-12', 'SettlePDAMPPOBDet(695)12-07-2016_12-07-2016.xlsx', 'PDAM'),
-('2016-07-12', 'SettlePDAMPPOBDet(695)12-11-2016_12-11-2016(1).xls', 'PDAM'),
-('2016-11-12', 'SettlePDAMPPOBDet(695)12-11-2016_12-11-2016.xlsx', 'PDAM'),
-('2016-11-12', 'SettleTselDet_03_0(695)12-11-2016_12-11-2016.xlsx', 'VOUCHER'),
-('2016-11-12', 'SettleTselDet_03_10000(695)12-11-2016_12-11-2016.x', 'VOUCHER'),
-('2016-11-12', 'SettleTselDet_03_100000(695)12-11-2016_12-11-2016.', 'VOUCHER'),
-('2016-11-12', 'SettleTselDet_03_20000(695)12-11-2016_12-11-2016.x', 'VOUCHER'),
-('2016-11-12', 'SettleTselDet_03_25000(695)12-11-2016_12-11-2016.x', 'VOUCHER'),
-('2016-11-12', 'SettleTselDet_03_50000(695)12-11-2016_12-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 13 Nop 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'SettleP2HSUM_13-11-2016.xlsx', 'JASTEL'),
-('0000-00-00', 'Arindo 14 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-14', 'MKMSettleLoket_14112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-14', 'MKMSettleLoket_14112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-14', 'SettleP2HSUM_14-11-2016.xlsx', 'JASTEL'),
-('2016-11-14', 'SettlePAYTVDet_03_20(695)14-11-2016_14-11-2016.xls', 'TRANSVISION'),
-('2016-11-14', 'SettlePDAMPPOBDet(695)14-11-2016_14-11-2016(1).xls', 'PDAM'),
-('2016-11-14', 'SettlePDAMPPOBDet(695)14-11-2016_14-11-2016.xlsx', 'PDAM'),
-('2016-11-14', 'SettleTselDet_03_0(695)14-11-2016_14-11-2016.xlsx', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_10000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_100000(695)14-11-2016_14-11-2016.', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_20000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_25000(695)14-11-2016_14-11-2016(1', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_25000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_50000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 15 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-15', 'MKMSettleLoket_15112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-15', 'MKMSettleLoket_15112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-15', 'SettleP2HSUM_15-11-2016.xlsx', 'JASTEL'),
-('2016-11-15', 'SettlePAYTVDet_03_20(695)15-11-2016_15-11-2016.xls', 'TRANSVISION'),
-('2016-11-15', 'SettlePDAMPPOBDet(695)15-11-2016_15-11-2016(1).xls', 'PDAM'),
-('2016-11-15', 'SettlePDAMPPOBDet(695)15-11-2016_15-11-2016.xlsx', 'PDAM'),
-('2016-11-15', 'SettleTselDet_03_0(695)15-11-2016_15-11-2016.xlsx', 'VOUCHER'),
-('2016-11-15', 'SettleTselDet_03_10000(695)15-11-2016_15-11-2016.x', 'VOUCHER'),
-('2016-11-15', 'SettleTselDet_03_100000(695)15-11-2016_15-11-2016.', 'VOUCHER'),
-('2016-11-15', 'SettleTselDet_03_20000(695)15-11-2016_15-11-2016.x', 'VOUCHER'),
-('2016-11-15', 'SettleTselDet_03_50000(695)15-11-2016_15-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 16 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-16', 'MKMSettleLoket_16112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-16', 'SettleP2HSUM_16-11-2016.xlsx', 'JASTEL'),
-('2016-11-16', 'SettlePAYTVDet_03_20(695)16-11-2016_16-11-2016.xls', 'TRANSVISION'),
-('2016-11-16', 'SettlePDAMPPOBDet(695)16-11-2016_16-11-2016(1).xls', 'PDAM'),
-('2016-11-16', 'SettlePDAMPPOBDet(695)16-11-2016_16-11-2016.xlsx', 'PDAM'),
-('2016-11-16', 'SettleTselDet_03_0(695)16-11-2016_16-11-2016.xlsx', 'VOUCHER'),
-('2016-11-16', 'SettleTselDet_03_10000(695)16-11-2016_16-11-2016.x', 'VOUCHER'),
-('2016-11-16', 'SettleTselDet_03_100000(695)16-11-2016_16-11-2016.', 'VOUCHER'),
-('2016-11-16', 'SettleTselDet_03_20000(695)16-11-2016_16-11-2016.x', 'VOUCHER'),
-('2016-11-16', 'SettleTselDet_03_25000(695)16-11-2016_16-11-2016.x', 'VOUCHER'),
-('2016-11-16', 'SettleTselDet_03_50000(695)16-11-2016_16-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 17 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-17', 'MKMSettleLoket_17112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-17', 'SettleP2HSUM_17-11-2016.xlsx', 'JASTEL'),
-('2016-11-17', 'SettlePAYTVDet_03_20(695)17-11-2016_17-11-2016.xls', 'TRANSVISION'),
-('2016-11-17', 'SettlePDAMPPOBDet(695)17-11-2016_17-11-2016(1).xls', 'PDAM'),
-('2016-11-17', 'SettlePDAMPPOBDet(695)17-11-2016_17-11-2016(2).xls', 'PDAM'),
-('2016-11-17', 'SettlePDAMPPOBDet(695)17-11-2016_17-11-2016.xlsx', 'PDAM'),
-('2016-11-17', 'SettleTselDet_03_0(695)17-11-2016_17-11-2016.xlsx', 'VOUCHER'),
-('2016-11-17', 'SettleTselDet_03_10000(695)17-11-2016_17-11-2016.x', 'VOUCHER'),
-('2016-11-17', 'SettleTselDet_03_100000(695)17-11-2016_17-11-2016.', 'VOUCHER'),
-('2016-11-17', 'SettleTselDet_03_20000(695)17-11-2016_17-11-2016.x', 'VOUCHER'),
-('2016-11-17', 'SettleTselDet_03_25000(695)17-11-2016_17-11-2016.x', 'VOUCHER'),
-('2016-11-17', 'SettleTselDet_03_50000(695)17-11-2016_17-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 18 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-18', 'MKMSettleLoket_18112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-18', 'SettleP2HSUM_18-11-2016.xlsx', 'JASTEL'),
-('2016-11-18', 'SettlePAYTVDet_03_20(695)18-11-2016_18-11-2016.xls', 'TRANSVISION'),
-('2016-11-18', 'SettlePAYTVDet_03_55(695)18-11-2016_18-11-2016.xls', 'INDOVISION'),
-('2016-11-18', 'SettlePDAMPPOBDet(695)18-11-2016_18-11-2016(1).xls', 'PDAM'),
-('2016-11-18', 'SettlePDAMPPOBDet(695)18-11-2016_18-11-2016.xlsx', 'PDAM'),
-('2016-11-18', 'SettleTselDet_03_0(695)18-11-2016_18-11-2016.xlsx', 'VOUCHER'),
-('2016-11-18', 'SettleTselDet_03_10000(695)18-11-2016_18-11-2016.x', 'VOUCHER'),
-('2016-11-18', 'SettleTselDet_03_100000(695)18-11-2016_18-11-2016.', 'VOUCHER'),
-('2016-11-18', 'SettleTselDet_03_20000(695)18-11-2016_18-11-2016.x', 'VOUCHER'),
-('2016-11-18', 'SettleTselDet_03_25000(695)18-11-2016_18-11-2016.x', 'VOUCHER'),
-('2016-11-18', 'SettleTselDet_03_50000(695)18-11-2016_18-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 19 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-19', 'MKMSettleLoket_19112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-19', 'SettleP2HSUM_19-11-2016.xlsx', 'JASTEL'),
-('2016-11-19', 'SettlePAYTVDet_03_20(695)19-11-2016_19-11-2016(1).', 'TRANSVISION'),
-('2016-11-19', 'SettlePAYTVDet_03_20(695)19-11-2016_19-11-2016.xls', 'TRANSVISION'),
-('2016-11-19', 'SettlePDAMPPOBDet(695)19-11-2016_19-11-2016(1).xls', 'PDAM'),
-('2016-11-19', 'SettlePDAMPPOBDet(695)19-11-2016_19-11-2016.xlsx', 'PDAM'),
-('2016-11-19', 'SettleTselDet_03_0(695)19-11-2016_19-11-2016.xlsx', 'VOUCHER'),
-('2016-11-19', 'SettleTselDet_03_10000(695)19-11-2016_19-11-2016.x', 'VOUCHER'),
-('2016-11-19', 'SettleTselDet_03_20000(695)19-11-2016_19-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 20 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-20', 'SettleP2HSUM_20-11-2016.xlsx', 'JASTEL'),
-('2016-11-20', 'SettlePDAMPPOBDet(695)20-11-2016_20-11-2016.xlsx', 'PDAM'),
-('2016-11-20', 'SettleTselDet_03_10000(695)20-11-2016_20-11-2016.x', 'VOUCHER'),
-('2016-11-20', 'SettleTselDet_03_100000(695)20-11-2016_20-11-2016.', 'VOUCHER'),
-('2016-11-20', 'SettleTselDet_03_20000(695)20-11-2016_20-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 21 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-21', 'MKMSettleLoket_21112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-21', 'MKMSettleLoket_21112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-21', 'SettleP2HSUM_21-11-2016.xlsx', 'JASTEL'),
-('2016-11-21', 'SettlePAYTVDet_03_20(695)21-11-2016_21-11-2016.xls', 'TRANSVISION'),
-('2016-11-21', 'SettlePDAMPPOBDet(695)21-11-2016_21-11-2016(1).xls', 'PDAM'),
-('2016-11-21', 'SettlePDAMPPOBDet(695)21-11-2016_21-11-2016.xlsx', 'PDAM'),
-('2016-11-21', 'SettleTselDet_03_0(695)21-11-2016_21-11-2016.xlsx', 'VOUCHER'),
-('2016-11-21', 'SettleTselDet_03_10000(695)21-11-2016_21-11-2016.x', 'VOUCHER'),
-('2016-11-21', 'SettleTselDet_03_100000(695)21-11-2016_21-11-2016.', 'VOUCHER'),
-('2016-11-21', 'SettleTselDet_03_20000(695)21-11-2016_21-11-2016.x', 'VOUCHER'),
-('2016-11-21', 'SettleTselDet_03_25000(695)21-11-2016_21-11-2016.x', 'VOUCHER'),
-('2016-11-21', 'SettleTselDet_03_50000(695)21-11-2016_21-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 22 Nop 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 23 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-23', 'SettleThreeDet_03_10000(695)01-11-2016_30-11-2016.', 'VOUCHER'),
-('0000-00-00', 'Arindo 24 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-24', 'MKMSettleLoket_24112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-24', 'MKMSettleLoket_24112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-24', 'SettleP2HSUM_24-11-2016.xlsx', 'JASTEL'),
-('2016-11-24', 'SettlePAYTVDet_03_20(695)24-11-2016_24-11-2016.xls', 'TRANSVISION'),
-('2016-11-24', 'SettlePDAMPPOBDet(695)24-11-2016_24-11-2016(1).xls', 'PDAM'),
-('2016-11-24', 'SettlePDAMPPOBDet(695)24-11-2016_24-11-2016.xlsx', 'PDAM'),
-('2016-11-24', 'SettleTselDet_03_0(695)24-11-2016_24-11-2016.xlsx', 'VOUCHER'),
-('2016-11-24', 'SettleTselDet_03_10000(695)24-11-2016_24-11-2016.x', 'VOUCHER'),
-('2016-11-24', 'SettleTselDet_03_100000(695)24-11-2016_24-11-2016.', 'VOUCHER'),
-('2016-11-24', 'SettleTselDet_03_20000(695)24-11-2016_24-11-2016.x', 'VOUCHER'),
-('2016-11-24', 'SettleTselDet_03_25000(695)24-11-2016_24-11-2016.x', 'VOUCHER'),
-('2016-11-24', 'SettleTselDet_03_50000(695)24-11-2016_24-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 25 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-25', 'MKMSettleLoket_25112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-25', 'SettleP2HSUM_25-11-2016.xlsx', 'JASTEL'),
-('2016-11-25', 'SettlePAYTVDet_03_20(695)25-11-2016_25-11-2016.xls', 'TRANSVISION'),
-('2016-11-25', 'SettlePDAMPPOBDet(695)25-11-2016_25-11-2016.xlsx', 'PDAM'),
-('2016-11-25', 'SettleTselDet_03_0(695)25-11-2016_25-11-2016.xlsx', 'VOUCHER'),
-('2016-11-25', 'SettleTselDet_03_10000(695)25-11-2016_25-11-2016.x', 'VOUCHER'),
-('2016-11-25', 'SettleTselDet_03_100000(695)25-11-2016_25-11-2016.', 'VOUCHER'),
-('2016-11-25', 'SettleTselDet_03_20000(695)25-11-2016_25-11-2016.x', 'VOUCHER'),
-('2016-11-25', 'SettleTselDet_03_25000(695)25-11-2016_25-11-2016.x', 'VOUCHER'),
-('2016-11-25', 'SettleTselDet_03_50000(695)25-11-2016_25-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 26 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-26', 'MKMSettleLoket_26112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-26', 'SettleP2HSUM_26-11-2016.xlsx', 'JASTEL'),
-('2016-11-26', 'SettleTselDet_03_0(695)26-11-2016_26-11-2016.xlsx', 'VOUCHER'),
-('2016-11-26', 'SettleTselDet_03_10000(695)26-11-2016_26-11-2016.x', 'VOUCHER'),
-('2016-11-26', 'SettleTselDet_03_20000(695)26-11-2016_26-11-2016.x', 'VOUCHER'),
-('2016-11-26', 'SettleTselDet_03_50000(695)26-11-2016_26-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 27 Nop 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 28 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-28', 'MKMSettleLoket_28112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-28', 'MKMSettleLoket_28112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-28', 'SettleP2HSUM_28-11-2016.xlsx', 'JASTEL'),
-('2016-11-28', 'SettlePDAMPPOBDet(695)28-11-2016_28-11-2016(1).xls', 'PDAM'),
-('2016-11-28', 'SettlePDAMPPOBDet(695)28-11-2016_28-11-2016.xlsx', 'PDAM'),
-('2016-11-28', 'SettleTselDet_03_0(695)28-11-2016_28-11-2016.xlsx', 'VOUCHER'),
-('2016-11-28', 'SettleTselDet_03_10000(695)28-11-2016_28-11-2016.x', 'VOUCHER'),
-('2016-11-28', 'SettleTselDet_03_100000(695)28-11-2016_28-11-2016.', 'VOUCHER'),
-('2016-11-28', 'SettleTselDet_03_20000(695)28-11-2016_28-11-2016.x', 'VOUCHER'),
-('2016-11-28', 'SettleTselDet_03_25000(695)28-11-2016_28-11-2016.x', 'VOUCHER'),
-('2016-11-28', 'SettleTselDet_03_50000(695)28-11-2016_28-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 29 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-29', 'MKMSettleLoket_29112016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-11-29', 'MKMSettleLoket_29112016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-11-29', 'SettleP2HSUM_29-11-2016.xlsx', 'JASTEL'),
-('2016-11-29', 'SettlePDAMPPOBDet(695)29-11-2016_29-11-2016(1).xls', 'PDAM'),
-('2016-11-29', 'SettlePDAMPPOBDet(695)29-11-2016_29-11-2016.xlsx', 'PDAM'),
-('2016-11-29', 'SettleTselDet_03_0(695)29-11-2016_29-11-2016.xlsx', 'VOUCHER'),
-('2016-11-29', 'SettleTselDet_03_10000(695)29-11-2016_29-11-2016.x', 'VOUCHER'),
-('2016-11-29', 'SettleTselDet_03_100000(695)29-11-2016_29-11-2016.', 'VOUCHER'),
-('2016-11-29', 'SettleTselDet_03_20000(695)29-11-2016_29-11-2016.x', 'VOUCHER'),
-('2016-11-29', 'SettleTselDet_03_25000(695)29-11-2016_29-11-2016.x', 'VOUCHER'),
-('2016-11-29', 'SettleTselDet_03_50000(695)29-11-2016_29-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 30 Nop 2016.xlsx', 'ARINDO'),
-('2016-11-30', 'SettleP2HSUM_30-11-2016.xlsx', 'JASTEL'),
-('2016-11-30', 'SettlePDAMPPOBDet(695)30-11-2016_30-11-2016.xlsx', 'PDAM'),
-('2016-11-30', 'SettleTselDet_03_0(695)30-11-2016_30-11-2016.xlsx', 'VOUCHER'),
-('2016-11-30', 'SettleTselDet_03_10000(695)30-11-2016_30-11-2016.x', 'VOUCHER'),
-('2016-11-30', 'SettleTselDet_03_100000(695)30-11-2016_30-11-2016.', 'VOUCHER'),
-('2016-11-30', 'SettleTselDet_03_20000(695)30-11-2016_30-11-2016.x', 'VOUCHER'),
-('2016-11-30', 'SettleTselDet_03_25000(695)30-11-2016_30-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)14-11-2016_14-11-2016.xlsx', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_10000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_100000(695)14-11-2016_14-11-2016.', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_20000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_25000(695)14-11-2016_14-11-2016(1', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_25000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_50000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)14-11-2016_14-11-2016.xlsx', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_10000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_100000(695)14-11-2016_14-11-2016.', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_20000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_25000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-14', 'SettleTselDet_03_50000(695)14-11-2016_14-11-2016.x', 'VOUCHER'),
-('2016-11-23', 'SettleP2HSUM_22-11-2016.xlsx', 'JASTEL'),
-('2016-11-23', 'SettlePDAMPPOBDet(695)05-12-2016_05-12-2016(1).xls', 'PDAM'),
-('2016-11-23', 'SettlePDAMPPOBDet(695)22-11-2016_23-11-2016.xlsx', 'PDAM'),
-('2016-11-23', 'SettleTselDet_03_0(695)22-11-2016_23-11-2016.xlsx', 'VOUCHER'),
-('2016-11-23', 'SettleTselDet_03_10000(695)22-11-2016_23-11-2016.x', 'VOUCHER'),
-('2016-11-23', 'SettleTselDet_03_100000(695)22-11-2016_23-11-2016.', 'VOUCHER'),
-('2016-11-23', 'SettleTselDet_03_20000(695)22-11-2016_23-11-2016.x', 'VOUCHER'),
-('2016-11-23', 'SettleTselDet_03_25000(695)22-11-2016_23-11-2016.x', 'VOUCHER'),
-('2016-11-23', 'SettleTselDet_03_50000(695)22-11-2016_23-11-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Des 2016.xlsx', 'ARINDO'),
-('2016-12-01', 'MKMSettleLoket_01122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-01', 'SettleP2HSUM_01-12-2016.xlsx', 'JASTEL'),
-('2016-12-01', 'SettlePAYTVDet_03_20(695)01-12-2016_01-12-2016.xls', 'TRANSVISION'),
-('2016-12-01', 'SettlePDAMPPOBDet(695)01-12-2016_01-12-2016(1).xls', 'PDAM'),
-('2016-12-01', 'SettlePDAMPPOBDet(695)01-12-2016_01-12-2016.xlsx', 'PDAM'),
-('2016-12-01', 'SettleTselDet_03_0(695)01-12-2016_01-12-2016.xlsx', 'VOUCHER'),
-('2016-12-01', 'SettleTselDet_03_10000(695)01-12-2016_01-12-2016.x', 'VOUCHER'),
-('2016-12-01', 'SettleTselDet_03_100000(695)01-12-2016_01-12-2016.', 'VOUCHER'),
-('2016-12-01', 'SettleTselDet_03_20000(695)01-12-2016_01-12-2016.x', 'VOUCHER'),
-('2016-12-01', 'SettleTselDet_03_25000(695)01-12-2016_01-12-2016.x', 'VOUCHER'),
-('2016-12-01', 'SettleTselDet_03_50000(695)01-12-2016_01-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 2 Des 2016.xlsx', 'ARINDO'),
-('2016-12-02', 'SettleP2HSUM_02-12-2016.xlsx', 'JASTEL'),
-('2016-12-02', 'SettlePAYTVDet_03_20(695)02-12-2016_02-12-2016.xls', 'TRANSVISION'),
-('0000-00-00', 'Arindo 3 Des 2016.xlsx', 'ARINDO'),
-('2016-12-03', 'SettleP2HSUM_03-12-2016.xlsx', 'JASTEL'),
-('0000-00-00', 'Arindo 5 Des 2016.xlsx', 'ARINDO'),
-('2016-12-05', 'MKMSettleLoket_05122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-05', 'MKMSettleLoket_05122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-05', 'SettleP2HSUM_05-12-2016.xlsx', 'JASTEL'),
-('2016-12-05', 'SettlePAYTVDet_03_20(695)05-12-2016_05-12-2016.xls', 'TRANSVISION'),
-('2016-12-05', 'SettleTselDet_03_0(695)05-12-2016_05-12-2016.xlsx', 'VOUCHER'),
-('2016-12-05', 'SettleTselDet_03_10000(695)05-12-2016_05-12-2016.x', 'VOUCHER'),
-('2016-12-05', 'SettleTselDet_03_100000(695)05-12-2016_05-12-2016.', 'VOUCHER'),
-('2016-12-05', 'SettleTselDet_03_20000(695)05-12-2016_05-12-2016.x', 'VOUCHER'),
-('2016-12-05', 'SettleTselDet_03_25000(695)05-12-2016_05-12-2016.x', 'VOUCHER'),
-('2016-12-05', 'SettleTselDet_03_50000(695)05-12-2016_05-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 6 Des 2016.xlsx', 'ARINDO'),
-('2016-12-06', 'MKMSettleLoket_06122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-06', 'SettleP2HSUM_06-12-2016.xlsx', 'JASTEL'),
-('2016-12-06', 'SettlePAYTVDet_03_20(695)06-12-2016_06-12-2016.xls', 'TRANSVISION'),
-('2016-12-06', 'SettlePAYTVDet_03_55(695)06-12-2016_06-12-2016.xls', 'INDOVISION'),
-('2016-12-06', 'SettlePDAMPPOBDet(695)06-12-2016_06-12-2016(1).xls', 'PDAM'),
-('2016-12-06', 'SettlePDAMPPOBDet(695)06-12-2016_06-12-2016.xlsx', 'PDAM'),
-('2016-12-06', 'SettleTselDet_03_0(695)06-12-2016_06-12-2016.xlsx', 'VOUCHER'),
-('2016-12-06', 'SettleTselDet_03_10000(695)06-12-2016_06-12-2016.x', 'VOUCHER'),
-('2016-12-06', 'SettleTselDet_03_100000(695)06-12-2016_06-12-2016.', 'VOUCHER'),
-('2016-12-06', 'SettleTselDet_03_20000(695)06-12-2016_06-12-2016.x', 'VOUCHER'),
-('2016-12-06', 'SettleTselDet_03_25000(695)06-12-2016_06-12-2016.x', 'VOUCHER'),
-('2016-12-06', 'SettleTselDet_03_50000(695)06-12-2016_06-12-2016.x', 'VOUCHER'),
-('2016-12-07', 'SettleP2HSUM_07-12-2016.xlsx', 'JASTEL'),
-('2016-12-07', 'SettlePAYTVDet_03_20(695)07-12-2016_07-12-2016.xls', 'TRANSVISION'),
-('2016-12-07', 'SettlePDAMPPOBDet(695)07-12-2016_07-12-2016(1).xls', 'PDAM'),
-('2016-12-07', 'SettlePDAMPPOBDet(695)07-12-2016_07-12-2016.xlsx', 'PDAM'),
-('2016-12-07', 'SettleTselDet_03_0(695)07-12-2016_07-12-2016.xlsx', 'VOUCHER'),
-('2016-12-07', 'SettleTselDet_03_10000(695)07-12-2016_07-12-2016.x', 'VOUCHER'),
-('2016-12-07', 'SettleTselDet_03_100000(695)07-12-2016_07-12-2016.', 'VOUCHER'),
-('2016-12-07', 'SettleTselDet_03_20000(695)07-12-2016_07-12-2016.x', 'VOUCHER'),
-('2016-12-07', 'SettleTselDet_03_25000(695)07-12-2016_07-12-2016.x', 'VOUCHER'),
-('2016-12-07', 'SettleTselDet_03_50000(695)07-12-2016_07-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 7 Des 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)05-12-2016_05-12-2016(1).xls', 'PDAM'),
-('2016-12-05', 'SettlePDAMPPOBDet(695)05-12-2016_05-12-2016(2).xls', 'PDAM'),
-('2016-12-05', 'SettlePDAMPPOBDet(695)05-12-2016_05-12-2016.xlsx', 'PDAM'),
-('0000-00-00', 'Arindo 8 Des 2016.xlsx', 'ARINDO'),
-('2016-12-08', 'MKMSettleLoket_08122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-08', 'MKMSettleLoket_08122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-08', 'SettleP2HSUM_08-12-2016.xlsx', 'JASTEL'),
-('2016-12-08', 'SettlePAYTVDet_03_20(695)08-12-2016_08-12-2016.xls', 'TRANSVISION'),
-('2016-12-08', 'SettlePDAMPPOBDet(695)08-12-2016_08-12-2016(1).xls', 'PDAM'),
-('2016-12-08', 'SettlePDAMPPOBDet(695)08-12-2016_08-12-2016.xlsx', 'PDAM'),
-('2016-12-08', 'SettleTselDet_03_0(695)08-12-2016_08-12-2016.xlsx', 'VOUCHER'),
-('2016-12-08', 'SettleTselDet_03_10000(695)08-12-2016_08-12-2016.x', 'VOUCHER'),
-('2016-12-08', 'SettleTselDet_03_100000(695)08-12-2016_08-12-2016.', 'VOUCHER'),
-('2016-12-08', 'SettleTselDet_03_20000(695)08-12-2016_08-12-2016.x', 'VOUCHER'),
-('2016-12-08', 'SettleTselDet_03_25000(695)08-12-2016_08-12-2016.x', 'VOUCHER'),
-('2016-12-08', 'SettleTselDet_03_50000(695)08-12-2016_08-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 9 Des 2016.xlsx', 'ARINDO'),
-('2016-12-09', 'MKMSettleLoket_09122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-09', 'PAYTVP2HSUM__09-12-2016_.xlsx', 'JASTEL'),
-('0000-00-00', 'SettleP2HSUM_09-12-2016.xlsx', 'JASTEL'),
-('2016-12-09', 'SettlePAYTVDet_03_20(695)09-12-2016_09-12-2016(1).', 'TRANSVISION'),
-('2016-12-09', 'SettlePDAMPPOBDet(695)09-12-2016_09-12-2016(1).xls', 'PDAM'),
-('2016-12-09', 'SettlePDAMPPOBDet(695)09-12-2016_09-12-2016(2).xls', 'PDAM'),
-('2016-12-09', 'SettleTselDet_03_0(695)09-12-2016_09-12-2016(1).xl', 'VOUCHER'),
-('2016-12-09', 'SettleTselDet_03_10000(695)09-12-2016_09-12-2016(1', 'VOUCHER'),
-('2016-12-09', 'SettleTselDet_03_100000(695)09-12-2016_09-12-2016(', 'VOUCHER'),
-('2016-12-09', 'SettleTselDet_03_20000(695)09-12-2016_09-12-2016.x', 'VOUCHER'),
-('2016-12-09', 'SettleTselDet_03_25000(695)09-12-2016_09-12-2016.x', 'VOUCHER'),
-('2016-12-09', 'SettleTselDet_03_50000(695)09-12-2016_09-12-2016(1', 'VOUCHER'),
-('0000-00-00', 'Arindo 10 Des 2016.xlsx', 'ARINDO'),
-('2016-12-10', 'MKMSettleLoket_10122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-10', 'SettleP2HSUM_10-12-2016.xlsx', 'JASTEL'),
-('2016-12-10', 'SettlePAYTVDet_03_20(695)10-12-2016_10-12-2016.xls', 'TRANSVISION'),
-('2016-12-10', 'SettlePAYTVDet_03_55(695)10-12-2016_10-12-2016.xls', 'INDOVISION'),
-('2016-12-10', 'SettlePDAMPPOBDet(695)10-12-2016_10-12-2016(1).xls', 'PDAM'),
-('2016-12-10', 'SettlePDAMPPOBDet(695)10-12-2016_10-12-2016.xlsx', 'PDAM'),
-('2016-12-10', 'SettleTselDet_03_0(695)10-12-2016_10-12-2016.xlsx', 'VOUCHER'),
-('2016-12-10', 'SettleTselDet_03_10000(695)10-12-2016_10-12-2016.x', 'VOUCHER'),
-('2016-12-10', 'SettleTselDet_03_20000(695)10-12-2016_10-12-2016.x', 'VOUCHER'),
-('2016-12-10', 'SettleTselDet_03_50000(695)10-12-2016_10-12-2016.x', 'VOUCHER'),
-('2016-12-11', 'SettlePDAMPPOBDet(695)11-12-2016_11-12-2016.xlsx', 'PDAM'),
-('2016-12-12', 'SettleP2HSUM_12-12-2016.xlsx', 'JASTEL'),
-('2016-12-12', 'SettleTselDet_03_10000(695)12-12-2016_12-12-2016(1', 'VOUCHER'),
-('0000-00-00', 'Arindo 13 Des 2016.xlsx', 'ARINDO'),
-('2016-12-13', 'MKMSettleLoket_13122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-13', 'MKMSettleLoket_13122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-13', 'SettleP2HSUM_13-12-2016.xlsx', 'JASTEL'),
-('2016-12-13', 'SettlePAYTVDet_03_20(695)13-12-2016_13-12-2016.xls', 'TRANSVISION'),
-('2016-12-13', 'SettlePDAMPPOBDet(695)13-12-2016_13-12-2016(1).xls', 'PDAM'),
-('2016-12-13', 'SettlePDAMPPOBDet(695)13-12-2016_13-12-2016.xlsx', 'PDAM'),
-('2016-12-13', 'SettleThreeDet_03_10000(695)13-12-2016_13-12-2016.', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_0(695)13-12-2016_13-12-2016.xlsx', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_10000(695)13-12-2016_13-12-2016.x', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_100000(695)13-12-2016_13-12-2016.', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_20000(695)13-12-2016_13-12-2016.x', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_25000(695)13-12-2016_13-12-2016.x', 'VOUCHER'),
-('2016-12-13', 'SettleTselDet_03_50000(695)13-12-2016_13-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 14 Des 2016.xlsx', 'ARINDO'),
-('2016-12-14', 'MKMSettleLoket_14122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-14', 'MKMSettleLoket_14122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-14', 'SettleP2HSUM_14-12-2016.xlsx', 'JASTEL'),
-('2016-12-14', 'SettlePAYTVDet_03_20(695)14-12-2016_14-12-2016.xls', 'TRANSVISION'),
-('2016-12-14', 'SettlePDAMPPOBDet(695)14-12-2016_14-12-2016(1).xls', 'PDAM'),
-('2016-12-14', 'SettlePDAMPPOBDet(695)14-12-2016_14-12-2016.xlsx', 'PDAM'),
-('2016-12-14', 'SettleTselDet_03_0(695)14-12-2016_14-12-2016.xlsx', 'VOUCHER'),
-('2016-12-14', 'SettleTselDet_03_10000(695)14-12-2016_14-12-2016.x', 'VOUCHER'),
-('2016-12-14', 'SettleTselDet_03_100000(695)14-12-2016_14-12-2016.', 'VOUCHER'),
-('2016-12-14', 'SettleTselDet_03_20000(695)14-12-2016_14-12-2016.x', 'VOUCHER'),
-('2016-12-14', 'SettleTselDet_03_25000(695)14-12-2016_14-12-2016.x', 'VOUCHER'),
-('2016-12-14', 'SettleTselDet_03_50000(695)14-12-2016_14-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 2 Des 2016.xlsx', 'ARINDO'),
-('2016-12-02', 'MKMSettleLoket_02122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-02', 'MKMSettleLoket_02122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-02', 'SettleP2HSUM_02-12-2016.xlsx', 'JASTEL'),
-('2016-12-02', 'SettlePAYTVDet_03_20(695)02-12-2016_02-12-2016.xls', 'TRANSVISION'),
-('2016-12-02', 'SettlePDAMPPOBDet(695)02-12-2016_02-12-2016(1).xls', 'PDAM'),
-('2016-12-02', 'SettlePDAMPPOBDet(695)02-12-2016_02-12-2016.xlsx', 'PDAM'),
-('2016-12-02', 'SettleTselDet_03_0(695)02-12-2016_02-12-2016.xlsx', 'VOUCHER'),
-('2016-12-02', 'SettleTselDet_03_10000(695)02-12-2016_02-12-2016.x', 'VOUCHER'),
-('2016-12-02', 'SettleTselDet_03_20000(695)02-12-2016_02-12-2016.x', 'VOUCHER'),
-('2016-12-02', 'SettleTselDet_03_25000(695)02-12-2016_02-12-2016.x', 'VOUCHER'),
-('2016-12-02', 'SettleTselDet_03_50000(695)02-12-2016_02-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Des 2016.xlsx', 'ARINDO'),
-('2016-12-03', 'MKMSettleLoket_03122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-03', 'SettleP2HSUM_03-12-2016.xlsx', 'JASTEL'),
-('2016-12-03', 'SettlePDAMPPOBDet(695)03-12-2016_03-12-2016(1).xls', 'PDAM'),
-('2016-12-03', 'SettlePDAMPPOBDet(695)03-12-2016_03-12-2016.xlsx', 'PDAM'),
-('2016-12-03', 'SettleTselDet_03_0(695)03-12-2016_03-12-2016.xlsx', 'VOUCHER'),
-('2016-12-03', 'SettleTselDet_03_10000(695)03-12-2016_03-12-2016.x', 'VOUCHER'),
-('2016-12-03', 'SettleTselDet_03_50000(695)03-12-2016_03-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 2 Des 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 2 Des 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 3 Des 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'SettlePAYTVDet_03_20(695)02-12-2016_02-12-2016.xls', 'TRANSVISION'),
-('0000-00-00', 'Arindo 27 Des 2016.xlsx', 'ARINDO'),
-('2016-12-20', 'MKMSettleLoket_27122016_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2016-12-27', 'MKMSettleLoket_27122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-27', 'SettleP2HSUM_27-12-2016.xlsx', 'JASTEL'),
-('2016-12-27', 'SettlePAYTVDet_03_20(695)27-12-2016_27-12-2016.xls', 'TRANSVISION'),
-('2016-12-27', 'SettlePDAMPPOBDet(695)27-12-2016_27-12-2016(1).xls', 'PDAM'),
-('2016-12-27', 'SettlePDAMPPOBDet(695)27-12-2016_27-12-2016.xlsx', 'PDAM'),
-('2016-12-27', 'SettleTselDet_03_0(695)27-12-2016_27-12-2016.xlsx', 'VOUCHER'),
-('2016-12-27', 'SettleTselDet_03_10000(695)27-12-2016_27-12-2016.x', 'VOUCHER'),
-('2016-12-27', 'SettleTselDet_03_20000(695)27-12-2016_27-12-2016.x', 'VOUCHER'),
-('2016-12-27', 'SettleTselDet_03_50000(695)27-12-2016_27-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 27 Des 2016.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 28 Des 2016.xlsx', 'ARINDO'),
-('2016-12-28', 'MKMSettleLoket_28122016_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2016-12-28', 'SettleP2HSUM_28-12-2016.xlsx', 'JASTEL'),
-('2016-12-28', 'SettlePDAMPPOBDet(695)28-12-2016_28-12-2016(1).xls', 'PDAM'),
-('2016-12-28', 'SettlePDAMPPOBDet(695)28-12-2016_28-12-2016.xlsx', 'PDAM'),
-('2016-12-28', 'SettleTselDet_03_0(695)28-12-2016_28-12-2016.xlsx', 'VOUCHER'),
-('2016-12-28', 'SettleTselDet_03_10000(695)28-12-2016_28-12-2016.x', 'VOUCHER'),
-('2016-12-28', 'SettleTselDet_03_100000(695)28-12-2016_28-12-2016.', 'VOUCHER'),
-('2016-12-28', 'SettleTselDet_03_20000(695)28-12-2016_28-12-2016.x', 'VOUCHER'),
-('2016-12-28', 'SettleTselDet_03_25000(695)28-12-2016_28-12-2016.x', 'VOUCHER'),
-('2016-12-28', 'SettleTselDet_03_50000(695)28-12-2016_28-12-2016.x', 'VOUCHER'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)16-05-2017_16-05-2017(1).xls', 'PDAM'),
-('2017-05-16', 'SettlePDAMPPOBDet(695)16-05-2017_16-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'Arindo 16 Mei  2017.xlsx', 'ARINDO'),
-('2017-05-16', 'MKMSettleLoket_16052017_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2017-05-16', 'SettleP2HSUM_16-05-2017.xlsx', 'JASTEL'),
-('2017-05-16', 'SettlePAYTVDet_03_20(695)16-05-2017_16-05-2017.xls', 'TRANSVISION'),
-('2017-05-16', 'SettleTselDet_03_0(695)16-05-2017_16-05-2017.xlsx', 'VOUCHER'),
-('2017-05-16', 'SettleTselDet_03_10000(695)16-05-2017_16-05-2017.x', 'VOUCHER'),
-('2017-05-16', 'SettleTselDet_03_20000(695)16-05-2017_16-05-2017.x', 'VOUCHER'),
-('2017-05-16', 'SettleTselDet_03_25000(695)16-05-2017_16-05-2017.x', 'VOUCHER'),
-('2017-05-16', 'SettleTselDet_03_50000(695)16-05-2017_16-05-2017.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 17 Mei  2017.xlsx', 'ARINDO'),
-('2017-05-17', 'MKMSettleLoket_17052017_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2017-05-17', 'SettleP2HSUM_17-05-2017.xlsx', 'JASTEL'),
-('2017-05-17', 'SettlePAYTVDet_03_20(695)17-05-2017_17-05-2017.xls', 'TRANSVISION'),
-('2017-05-17', 'SettleTselDet_03_0(695)17-05-2017_17-05-2017.xlsx', 'VOUCHER'),
-('2017-05-17', 'SettleTselDet_03_10000(695)17-05-2017_17-05-2017.x', 'VOUCHER'),
-('2017-05-17', 'SettleTselDet_03_100000(695)17-05-2017_17-05-2017.', 'VOUCHER'),
-('2017-05-17', 'SettleTselDet_03_20000(695)17-05-2017_17-05-2017.x', 'VOUCHER'),
-('2017-05-17', 'SettleTselDet_03_25000(695)17-05-2017_17-05-2017.x', 'VOUCHER'),
-('2017-05-17', 'SettleTselDet_03_50000(695)17-05-2017_17-05-2017.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 18 Mei  2017.xlsx', 'ARINDO'),
-('2017-05-18', 'MKMSettleLoket_18052017_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2017-05-18', 'MKMSettleLoket_18052017_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2017-05-18', 'SettleP2HSUM_18-05-2017.xlsx', 'JASTEL'),
-('2017-05-18', 'SettlePAYTVDet_03_20(695)18-05-2017_18-05-2017.xls', 'TRANSVISION'),
-('2017-05-18', 'SettleTselDet_03_0(695)18-05-2017_18-05-2017.xlsx', 'VOUCHER'),
-('2017-05-18', 'SettleTselDet_03_10000(695)18-05-2017_18-05-2017.x', 'VOUCHER'),
-('2017-05-18', 'SettleTselDet_03_100000(695)18-05-2017_18-05-2017.', 'VOUCHER'),
-('2017-05-18', 'SettleTselDet_03_20000(695)18-05-2017_18-05-2017.x', 'VOUCHER'),
-('2017-05-18', 'SettleTselDet_03_25000(695)18-05-2017_18-05-2017.x', 'VOUCHER'),
-('2017-05-18', 'SettleTselDet_03_50000(695)18-05-2017_18-05-2017.x', 'VOUCHER'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)17-05-2017_17-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)18-05-2017_18-05-2017.xlsx', 'PDAM'),
-('0000-00-00', 'arindo 12 Juli 2017.xlsx', 'ARINDO'),
-('2017-07-12', 'MKMSettleLoket_12072017_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2017-07-12', 'MKMSettleLoket_12072017_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2017-07-12', 'SettleP2HSUM_12-07-2017.xlsx', 'JASTEL'),
-('2017-07-12', 'SettlePAYTVDet_03_20(695)12-07-2017_12-07-2017.xls', 'TRANSVISION'),
-('2017-07-12', 'SettlePDAMPPOBDet(695)12-07-2017_12-07-2017.xlsx', 'PDAM'),
-('2017-07-12', 'SettleThreeDet_03_10000(695)12-07-2017_12-07-2017.', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_0(695)12-07-2017_12-07-2017.xlsx', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_10000(695)12-07-2017_12-07-2017.x', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_100000(695)12-07-2017_12-07-2017.', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_20000(695)12-07-2017_12-07-2017.x', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_25000(695)12-07-2017_12-07-2017.x', 'VOUCHER'),
-('2017-07-12', 'SettleTselDet_03_50000(695)12-07-2017_12-07-2017.x', 'VOUCHER'),
-('0000-00-00', 'arindo 5 Juli 2017.xlsx', 'ARINDO'),
-('2017-07-05', 'MKMSettleLoket_05072017_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2017-07-05', 'MKMSettleLoket_05072017_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2017-07-05', 'SettleP2HSUM_05-07-2017.xlsx', 'JASTEL'),
-('2017-07-05', 'SettlePAYTVDet_03_20(695)05-07-2017_05-07-2017.xls', 'TRANSVISION'),
-('2017-07-05', 'SettlePAYTVDet_03_55(695)05-07-2017_05-07-2017.xls', 'INDOVISION'),
-('2017-07-05', 'SettlePDAMPPOBDet(695)05-07-2017_05-07-2017.xlsx', 'PDAM'),
-('2017-07-05', 'SettleThreeDet_03_10000(695)05-07-2017_05-07-2017.', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_0(695)05-07-2017_05-07-2017.xlsx', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_10000(695)05-07-2017_05-07-2017.x', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_100000(695)05-07-2017_05-07-2017.', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_20000(695)05-07-2017_05-07-2017.x', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_25000(695)05-07-2017_05-07-2017.x', 'VOUCHER'),
-('2017-07-05', 'SettleTselDet_03_50000(695)05-07-2017_05-07-2017.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Mar 2018.xlsx', 'ARINDO'),
-('2018-03-01', 'MKMSettleLoket_01032018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-03-01', 'SettleP2HSUM_01-03-2018.xlsx', 'JASTEL'),
-('2018-03-01', 'SettlePAYTVDet_03_20(695)01-03-2018_01-03-2018.xls', 'TRANSVISION'),
-('2018-03-01', 'SettlePDAMPPOBDet(695)01-03-2018_01-03-2018.xlsx', 'PDAM'),
-('2018-03-01', 'SettleThreeDet_03_10000(695)01-03-2018_01-03-2018.', 'VOUCHER'),
-('2018-03-01', 'SettleTselDet_03_0(695)01-03-2018_01-03-2018.xlsx', 'VOUCHER'),
-('2018-03-01', 'SettleTselDet_03_10000(695)01-03-2018_01-03-2018.x', 'VOUCHER'),
-('2018-03-01', 'SettleTselDet_03_20000(695)01-03-2018_01-03-2018.x', 'VOUCHER'),
-('2018-03-01', 'SettleTselDet_03_25000(695)01-03-2018_01-03-2018.x', 'VOUCHER'),
-('2018-03-01', 'SettleTselDet_03_50000(695)01-03-2018_01-03-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 2 Mar 2018.xlsx', 'ARINDO'),
-('2018-03-02', 'MKMSettleLoket_02032018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-03-02', 'SettleP2HSUM_02-03-2018.xlsx', 'JASTEL'),
-('2018-03-02', 'SettlePDAMPPOBDet(695)02-03-2018_02-03-2018.xlsx', 'PDAM'),
-('2018-03-02', 'SettleTselDet_03_0(695)02-03-2018_02-03-2018.xlsx', 'VOUCHER'),
-('2018-03-02', 'SettleTselDet_03_10000(695)02-03-2018_02-03-2018.x', 'VOUCHER'),
-('2018-03-02', 'SettleTselDet_03_20000(695)02-03-2018_02-03-2018.x', 'VOUCHER'),
-('2018-03-02', 'SettleTselDet_03_50000(695)02-03-2018_02-03-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Mei  2018.xlsx', 'ARINDO'),
-('2018-05-03', 'SettleP2HSUM_03-05-2018.xlsx', 'JASTEL'),
-('2018-05-03', 'SettlePDAMPPOBDet(695)03-05-2018_03-05-2018.xlsx', 'PDAM'),
-('2018-05-03', 'SettleThreeDet_03_10000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_0(695)03-05-2018_03-05-2018.xlsx', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_10000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_100000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_20000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_25000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_50000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Mei  2018.xlsx', 'ARINDO'),
-('2018-05-03', 'SettleP2HSUM_03-05-2018.xlsx', 'JASTEL'),
-('2018-05-03', 'SettlePDAMPPOBDet(695)03-05-2018_03-05-2018.xlsx', 'PDAM'),
-('2018-05-03', 'SettleThreeDet_03_10000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_0(695)03-05-2018_03-05-2018.xlsx', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_10000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_100000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_20000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_25000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_50000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Mei  2018.xlsx', 'ARINDO'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-05-03', 'SettleP2HSUM_03-05-2018.xlsx', 'JASTEL'),
-('2018-05-03', 'SettlePDAMPPOBDet(695)03-05-2018_03-05-2018.xlsx', 'PDAM'),
-('2018-05-03', 'SettleThreeDet_03_10000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_0(695)03-05-2018_03-05-2018.xlsx', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_10000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_100000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_20000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_25000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_50000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 3 Mei  2018.xlsx', 'ARINDO'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2018-05-03', 'SettleP2HSUM_03-05-2018.xlsx', 'JASTEL'),
-('2018-05-03', 'SettlePDAMPPOBDet(695)03-05-2018_03-05-2018.xlsx', 'PDAM'),
-('2018-05-03', 'SettleThreeDet_03_10000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_0(695)03-05-2018_03-05-2018.xlsx', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_10000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_100000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_20000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_25000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_50000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('0000-00-00', 'Arindo 3 Mei  2018.xlsx', 'ARINDO'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2018-05-03', 'MKMSettleLoket_03052018_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2018-05-03', 'SettleP2HSUM_03-05-2018.xlsx', 'JASTEL'),
-('2018-05-03', 'SettlePDAMPPOBDet(695)03-05-2018_03-05-2018.xlsx', 'PDAM'),
-('2018-05-03', 'SettleThreeDet_03_10000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_0(695)03-05-2018_03-05-2018.xlsx', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_10000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_100000(695)03-05-2018_03-05-2018.', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_20000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_25000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('2018-05-03', 'SettleTselDet_03_50000(695)03-05-2018_03-05-2018.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Okt 2018.xlsx', 'ARINDO'),
-('2018-10-01', 'MKMSettleLoket_01102018_D3_KopDadaliBDG (1).xlsx', 'PLN'),
-('2018-10-01', 'MKMSettleLoket_01102018_D3_KopDadaliBDG (2).xlsx', 'PLN'),
-('2018-10-01', 'SettleP2HSUM_01-10-2018.xlsx', 'JASTEL'),
-('2018-10-01', 'SettlePAYTVDet_03_20(695)01-10-2018_01-10-2018.xls', 'TRANSVISION'),
-('2018-10-01', 'SettlePDAMPPOBDet(695)01-10-2018_01-10-2018.xlsx', 'PDAM'),
-('2018-10-01', 'SettleTselDet_03_0(695)01-10-2018_01-10-2018.xlsx', 'VOUCHER'),
-('2018-10-01', 'SettleTselDet_03_10000(695)01-10-2018_01-10-2018.x', 'VOUCHER'),
-('2018-10-01', 'SettleTselDet_03_100000(695)01-10-2018_01-10-2018.', 'VOUCHER'),
-('2018-10-01', 'SettleTselDet_03_20000(695)01-10-2018_01-10-2018.x', 'VOUCHER'),
-('2018-10-01', 'SettleTselDet_03_25000(695)01-10-2018_01-10-2018.x', 'VOUCHER'),
-('0000-00-00', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER');
-INSERT INTO `upload` (`tanggal`, `nama`, `pen`) VALUES
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('0000-00-00', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('0000-00-00', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('0000-00-00', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Agust 2019.xlsx', 'ARINDO'),
-('2019-08-01', 'MKMSettleLoket_01082019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-08-01', 'SettleP2HSUM_01-08-2019.xlsx', 'JASTEL'),
-('2019-08-01', 'SettlePDAMPPOBDet(695)01-08-2019_01-08-2019.xlsx', 'PDAM'),
-('2019-08-01', 'SettleTselDet_03_0(695)01-08-2019_01-08-2019.xlsx', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_10000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_100000(695)01-08-2019_01-08-2019.', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_20000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_25000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
-('2019-08-01', 'SettleTselDet_03_50000(695)01-08-2019_01-08-2019.x', 'VOUCHER'),
 ('0000-00-00', 'Arindo 1 Okt 2019.xlsx', 'ARINDO'),
 ('2019-10-01', 'MKMSettleLoket_01102019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
 ('2019-10-01', 'MKMSettleLoket_01102019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
@@ -3554,82 +2474,46 @@ INSERT INTO `upload` (`tanggal`, `nama`, `pen`) VALUES
 ('2019-10-01', 'SettleTselDet_03_20000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
 ('2019-10-01', 'SettleTselDet_03_25000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
 ('2019-10-01', 'SettleTselDet_03_50000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
-('0000-00-00', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
-('2019-09-30', 'SettleP2HSUM_30-09-2019.xlsx', 'JASTEL'),
-('2019-09-30', 'SettlePDAMPPOBDet(695)30-09-2019_30-09-2019.xlsx', 'PDAM'),
-('2019-09-30', 'SettleTselDet_03_0(695)30-09-2019_30-09-2019.xlsx', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_10000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_100000(695)30-09-2019_30-09-2019.', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_20000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_25000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_50000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 30 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
-('2019-09-30', 'SettleP2HSUM_30-09-2019.xlsx', 'JASTEL'),
-('2019-09-30', 'SettlePDAMPPOBDet(695)30-09-2019_30-09-2019.xlsx', 'PDAM'),
-('2019-09-30', 'SettleTselDet_03_0(695)30-09-2019_30-09-2019.xlsx', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_10000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_100000(695)30-09-2019_30-09-2019.', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_20000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_25000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_50000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 30 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
-('2019-09-30', 'SettleP2HSUM_30-09-2019.xlsx', 'JASTEL'),
-('2019-09-30', 'SettlePDAMPPOBDet(695)30-09-2019_30-09-2019.xlsx', 'PDAM'),
-('2019-09-30', 'SettleTselDet_03_0(695)30-09-2019_30-09-2019.xlsx', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_10000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_100000(695)30-09-2019_30-09-2019.', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_20000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_25000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_50000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('0000-00-00', 'MKMSettleLoket_28092019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-09-28', 'SettleP2HSUM_28-09-2019.xlsx', 'JASTEL'),
-('0000-00-00', 'Arindo 28 Sept 2019.xlsx', 'ARINDO'),
-('0000-00-00', 'Arindi 28 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-28', 'MKMSettleLoket_28092019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-09-28', 'SettleP2HSUM_28-09-2019.xlsx', 'JASTEL'),
-('2019-09-28', 'SettleTselDet_03_10000(695)28-09-2019_28-09-2019.x', 'VOUCHER'),
-('2019-09-28', 'SettleTselDet_03_100000(695)28-09-2019_28-09-2019.', 'VOUCHER'),
-('0000-00-00', 'Arindi 28 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-28', 'MKMSettleLoket_28092019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-09-28', 'SettleP2HSUM_28-09-2019.xlsx', 'JASTEL'),
-('2019-09-28', 'SettleTselDet_03_10000(695)28-09-2019_28-09-2019.x', 'VOUCHER'),
-('2019-09-28', 'SettleTselDet_03_100000(695)28-09-2019_28-09-2019.', 'VOUCHER'),
-('0000-00-00', 'SettleTselDet_03_20000(695)29-09-2019_29-09-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindi 30 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2019-09-30', 'MKMSettleLoket_30092019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
-('2019-09-30', 'SettleP2HSUM_30-09-2019.xlsx', 'JASTEL'),
-('2019-09-30', 'SettlePDAMPPOBDet(695)30-09-2019_30-09-2019.xlsx', 'PDAM'),
-('2019-09-30', 'SettleTselDet_03_0(695)30-09-2019_30-09-2019.xlsx', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_10000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_100000(695)30-09-2019_30-09-2019.', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_20000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_25000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('2019-09-30', 'SettleTselDet_03_50000(695)30-09-2019_30-09-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindi 28 Sept 2019.xlsx', 'ARINDO'),
-('2019-09-28', 'MKMSettleLoket_28092019_D3_KopDadaliBDG.xlsx', 'PLN'),
-('2019-09-28', 'SettleP2HSUM_28-09-2019.xlsx', 'JASTEL'),
-('2019-09-28', 'SettleTselDet_03_10000(695)28-09-2019_28-09-2019.x', 'VOUCHER'),
-('2019-09-28', 'SettleTselDet_03_100000(695)28-09-2019_28-09-2019.', 'VOUCHER'),
-('0000-00-00', 'MKMSettleLoket_01102019_D3_KopDadaliBDG(1).xlsx', 'PLN'),
-('2019-10-01', 'MKMSettleLoket_01102019_D3_KopDadaliBDG(2).xlsx', 'PLN'),
-('2019-10-01', 'SettleP2HSUM_01-10-2019.xlsx', 'JASTEL'),
-('2019-10-01', 'SettlePDAMPPOBDet(695)01-10-2019_01-10-2019.xlsx', 'PDAM'),
-('2019-10-01', 'SettleTselDet_03_0(695)01-10-2019_01-10-2019.xlsx', 'VOUCHER'),
-('2019-10-01', 'SettleTselDet_03_20000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
-('2019-10-01', 'SettleTselDet_03_25000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
-('2019-10-01', 'SettleTselDet_03_50000(695)01-10-2019_01-10-2019.x', 'VOUCHER'),
-('0000-00-00', 'Arindo 1 Okt 2019.xlsx', 'ARINDO');
+('0000-00-00', 'Arindo 2 Okt 2019.xlsx', 'ARINDO'),
+('2019-10-02', 'MKMSettleLoket_02102019_D3_KopDadaliBDG.xlsx', 'PLN'),
+('2019-10-02', 'SettleP2HSUM_02-10-2019.xlsx', 'JASTEL'),
+('2019-10-02', 'SettlePDAMPPOBDet(695)02-10-2019_02-10-2019.xlsx', 'PDAM'),
+('2019-10-02', 'SettleTselDet_03_0(695)02-10-2019_02-10-2019.xlsx', 'VOUCHER'),
+('2019-10-02', 'SettleTselDet_03_100000(695)02-10-2019_02-10-2019.', 'VOUCHER'),
+('2019-10-02', 'SettleTselDet_03_20000(695)02-10-2019_02-10-2019.x', 'VOUCHER'),
+('2019-10-02', 'SettleTselDet_03_25000(695)02-10-2019_02-10-2019.x', 'VOUCHER'),
+('2019-10-02', 'SettleTselDet_03_50000(695)02-10-2019_02-10-2019.x', 'VOUCHER'),
+('0000-00-00', 'Arindo 3 Okt 2019.xlsx', 'ARINDO'),
+('2019-10-03', 'MKMSettleLoket_03102019_D3_KopDadaliBDG.xlsx', 'PLN'),
+('2019-10-03', 'SettleP2HSUM_03-10-2019.xlsx', 'JASTEL'),
+('2019-10-03', 'SettlePAYTVDet_03_20(695)03-10-2019_03-10-2019.xls', 'TRANSVISION'),
+('2019-10-03', 'SettlePDAMPPOBDet(695)03-10-2019_03-10-2019.xlsx', 'PDAM'),
+('2019-10-03', 'SettleTselDet_03_0(695)03-10-2019_03-10-2019.xlsx', 'VOUCHER'),
+('2019-10-03', 'SettleTselDet_03_100000(695)03-10-2019_03-10-2019.', 'VOUCHER'),
+('2019-10-03', 'SettleTselDet_03_20000(695)03-10-2019_03-10-2019.x', 'VOUCHER'),
+('2019-10-03', 'SettleTselDet_03_25000(695)03-10-2019_03-10-2019.x', 'VOUCHER'),
+('0000-00-00', 'Arindo 4 Okt 2019.xlsx', 'ARINDO'),
+('2019-10-04', 'MKMSettleLoket_04102019_D3_KopDadaliBDG.xlsx', 'PLN'),
+('2019-10-04', 'SettleP2HSUM_04-10-2019.xlsx', 'JASTEL'),
+('2019-10-04', 'SettlePAYTVDet_03_20(695)04-10-2019_04-10-2019.xls', 'TRANSVISION'),
+('2019-10-04', 'SettlePDAMPPOBDet(695)04-10-2019_04-10-2019.xlsx', 'PDAM'),
+('2019-10-04', 'SettleTselDet_03_0(695)04-10-2019_04-10-2019.xlsx', 'VOUCHER'),
+('2019-10-04', 'SettleTselDet_03_20000(695)04-10-2019_04-10-2019.x', 'VOUCHER'),
+('2019-10-04', 'SettleTselDet_03_25000(695)04-10-2019_04-10-2019.x', 'VOUCHER'),
+('2019-10-04', 'SettleTselDet_03_50000(695)04-10-2019_04-10-2019.x', 'VOUCHER'),
+('0000-00-00', 'Arindo 5 Okt 2019.xlsx', 'ARINDO'),
+('2019-10-05', 'MKMSettleLoket_05102019_D3_KopDadaliBDG.xlsx', 'PLN'),
+('2019-10-05', 'SettleP2HSUM_05-10-2019.xlsx', 'JASTEL'),
+('2019-10-05', 'SettlePDAMPPOBDet(695)05-10-2019_05-10-2019.xlsx', 'PDAM'),
+('2019-10-05', 'SettleTselDet_03_0(695)05-10-2019_05-10-2019.xlsx', 'VOUCHER'),
+('2019-10-05', 'SettleTselDet_03_20000(695)05-10-2019_05-10-2019.x', 'VOUCHER'),
+('0000-00-00', 'MKMSettleLoket_06102019_D3_KopDadaliBDG.xlsx', 'PLN'),
+('2019-10-06', 'SettleP2HSUM_06-10-2019.xlsx', 'JASTEL');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -3641,7 +2525,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `nama`, `password`, `tipe_user`) VALUES
@@ -3651,7 +2535,7 @@ INSERT INTO `user` (`id_user`, `username`, `nama`, `password`, `tipe_user`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `voucher`
+-- Table structure for table `voucher`
 --
 
 CREATE TABLE `voucher` (
@@ -3672,10 +2556,208 @@ CREATE TABLE `voucher` (
   `kode_biller` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `voucher`
+--
+
+INSERT INTO `voucher` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `user`, `denom`, `no_telp`, `nama_cust`, `amount`, `surcharge`, `fee_ca`, `total_kopeg`, `kode_biller`) VALUES
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 'cimahi2', 0, '08122001162', 'SUMXXXXXXXXXXXXXXXXXXXXXXXXH S', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 'cimahi2', 0, '08122001161', 'SUMXXXXXXXXXXXXXXXXXINI', 82896, 0, 1500, 81396, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082115460496', 'SALXXXXXXXNJI', 111411, 0, 1500, 109911, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '081313154966', 'AGUXXXXXXXXXADI', 197312, 0, 1500, 195812, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08122355788', 'VIVXXXXXXXXXARA', 60500, 0, 1500, 59000, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112486699', 'YUDXXXXXXXNTO', 3892, 0, 1500, 2392, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '081322061597', 'LULXXXXXXANA', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman2', 0, '081221218870', 'RSXXXXXX', 277266, 0, 1500, 275766, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 'cimahi2', 0, '085222095268', 'HERXXXXXXONO', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 0, '085102802830', 'HIDXXXXXXXXXXJAT', 88000, 0, 1500, 86500, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081320308952', 'BAMXX', 67716, 0, 1500, 66216, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 0, '081320139525', 'RD XXXXXXXXXXXWAN', 165000, 0, 1500, 163500, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '081322332377', 'ESTXXXXXXXXXXXXSIH', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 'jatinangor', 0, '08112162668', 'SOEXXXXXXXDIT', 80003, 0, 1500, 78503, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '081321295395', 'YUSXXXX', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '081268337748', 'JAYXXXXXXXXXXXXXXXXSTH', 413003, 0, 1500, 411503, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '0811209354', 'HRXXXXXXXXXXNDI', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081223486965', 'MARXXXXXXXXXXXXXXXXXXXRTA', 66055, 0, 1500, 64555, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '085100187767', 'TAOXXXXXXXXXYAT', 82500, 0, 1500, 81000, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08112287789', 'DINXXXXXXXXXXARI', 107734, 0, 1500, 106234, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08112220984', 'KEMXXXXXXXXXXEIN', 81015, 0, 1500, 79515, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '085222922512', 'KARXXXXXXXXXXXXXXXXXXXYAH', 71104, 0, 1500, 69604, 1001),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 'ddl_cclengka', 20000, '082216426867', 'SN 0051003908776341', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 'cimahi2', 20000, '085102119069', 'SN 0051003909586677', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 20000, '081386255079', 'SN 0051003910173247', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 20000, '082117342283', 'SN 0051003910290973', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 'jatinangor', 25000, '082311311107', 'SN 0051003908941128', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-01', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 50000, '082217259911', 'SN 0051003909044667', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '08112431199', 'MOHXXXXXXXXXXXXXXDIQ', 93478, 0, 1500, 91978, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '085107087723', 'NENXXXXXXXXXXXXXXXXXRIA', 140013, 0, 1500, 138513, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082316993922', 'OTOXXXXXXXXXXMAN', 287760, 0, 1500, 286260, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '082117444709', 'SUGXXXXXXXOTO', 66649, 0, 1500, 65149, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '081394602437', 'NURXXXXXXH', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082126403215', 'HERXXXXXXXXA', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 'windu1', 0, '085220726970', 'SUSXXXXXXXORO', 165000, 0, 1500, 163500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112205142', 'EDYXXXXXXXNTO', 118921, 0, 1500, 117421, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 0, '081321473205', 'LILXXXXXXXXXXXXXXXXXXX HJ', 135905, 0, 1500, 134405, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '082126605617', 'SRIXXXANI', 105844, 0, 1500, 104344, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '08112282804', 'BUDXXXXXXXXNTO', 38390, 0, 1500, 36890, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081222682466', 'TITXXXXXXXATI', 161755, 0, 1500, 160255, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '08112231971', 'DUDXXXXXWAN', 114158, 0, 1500, 112658, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '0811228766', 'ENDXXXXXXXXXXINI', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '08122152279', 'PASXXXXEDY', 613956, 0, 1500, 612456, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112092211', 'ADEXXXXHAN', 192264, 0, 1500, 190764, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112224110', 'HERXXXXXXXXXRYA', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '0811208605', 'YAYXXXXXXAYU', 332745, 0, 1500, 331245, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 'gegerkalong1', 0, '08112231124', 'WAHXXXXXXXXXXXXXXX PD', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112433233', 'HAIXXXXXXISA', 65787, 0, 1500, 64287, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112158405', 'DEDXXXXXXXRDI', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 100000, '08122469658', 'SN 0051003913593417', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 20000, '085221993299', 'SN 0051003913906693', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 20000, '085221993299', 'SN 0051003913907714', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1091', 'D3_BKR', 'bkr2', 25000, '085105655000', 'SN 0051003913196544', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 25000, '081223418000', 'SN 0051003913637592', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 'cicalengka1', 50000, '081320371962', 'SN 0051003913204268', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1091', 'D3_BKR', 'bkr2', 50000, '085100644948', 'SN 0051003913224182', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 50000, '085101870563', 'SN 0051003913242315', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 'gegerkalong1', 50000, '085101796464', 'SN 0051003913244459', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-02', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 'cicalengka1', 50000, '085105172333', 'SN 0051003914579505', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura', 0, '08112331171', 'KANXXXXXXXXXXXXXXXXXXXXATU', 909038, 0, 1500, 907538, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 'windu2', 0, '081320424910', 'DEDXXXXXXADI', 59020, 0, 1500, 57520, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1097', 'D3_Cimahi', 'cimahi2', 0, '08112210577', 'MUHXXXXXXXXXIEF', 92576, 0, 1500, 91076, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112031282', 'GUNXXXXXXXXXXXXXXXXXX RA', 78208, 0, 1500, 76708, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 'windu2', 0, '08112012017', 'JAYXXXXXXKRI', 165264, 0, 1500, 163764, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081320381188', 'IWAXXXXXXXXWAN', 95777, 0, 1500, 94277, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '082126729372', 'GINXXXXXXXXXXINI', 70202, 0, 1500, 68702, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 'soreang', 0, '081321415999', 'DRSXXXXXXXXXXXXXNRY', 334837, 0, 1500, 333337, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '0811206521', 'RONXXXXXXXMAN', 92620, 0, 1500, 91120, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '08112317882', 'ARIXXXXXXXXNTO', 169224, 0, 1500, 167724, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112160300', 'ARIXXXXPIN', 112266, 0, 1500, 110766, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081222720672', 'ENDXXXXXXXXXXXXXXWAN', 84190, 0, 1500, 82690, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08122158380', 'HANXXXXXXXXANG', 67287, 0, 1500, 65787, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082317371933', 'DIDXXXXXXXXXI', 109413, 0, 1500, 107913, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo1', 0, '081321996656', 'HJXXXXXXXXXXXXXXXXXX IR', 54827, 0, 1500, 53327, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08122322888', 'BUDXXXXXXXXXXXXXWAN', 119504, 0, 1500, 118004, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 'lembang', 0, '081321167764', 'BULXXXXXXXXXXXDRS', 49500, 0, 1500, 48000, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '08112355111', 'USU', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '081322923754', 'MAIXXXXXXXXXA', 198000, 0, 1500, 196500, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '08112027474', 'ASEXXXXXXMAT', 170500, 0, 1500, 169000, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman2', 0, '082119446003', 'PEPXXXXXXXXXXXXXXXXXXXNDI', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '081321428762', 'YAYXXXXXXXXXXXYAT', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '0811203434', 'SJAXXXXXXXXXXXXXXXXXDR', 282095, 0, 1500, 280595, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 0, '0811233634', 'KARXXXXXXXXXXXXXXXXXXXXXXXMEN', 150183, 0, 1500, 148683, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '085220660666', 'MUGXXXXXXXITO', 104896, 0, 1500, 103396, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '08122126809', 'TINXXXXXXXXXXXINI', 67716, 0, 1500, 66216, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '081223761932', 'ASEXXXXXMAT', 80522, 0, 1500, 79022, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '08112287210', 'HIRXXXXXXXXXXXXAWA', 638566, 0, 1500, 637066, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081313142560', 'IMAXXXXXXINI', 123527, 0, 1500, 122027, 1001),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1109', 'D3_Jatinangor', 'jatinangor', 100000, '085240100676', 'SN 0051003917036733', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 'cicalengka1', 100000, '081224662801', 'SN 0051003917696082', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1100', 'D3_Cicalengka', 'cicalengka1', 100000, '082119812536', 'SN 0051003917697535', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 100000, '081217807036', 'SN 0051003918451875', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 100000, '081217807036', 'SN 0051003918453427', 99000, 0, 1600, 97400, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 20000, '081222580019', 'SN 0051003918243871', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 20000, '081323595100', 'SN 0051003918245213', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1098', 'D3_Geger Kalong', 'gegerkalong1', 20000, '085104654310', 'SN 0051003918303646', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-03', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 'lembang', 25000, '085100284598', 'SN 0051003917039047', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman2', 0, '0811224041', 'HRSXXXXXXXXXXUMO', 122056, 0, 1500, 120556, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 0, '0811217698', 'SANXXXXXXXXXWAN', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 0, '08122325878', 'SANXXXXXXXXXWAN', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1107', 'D3_Soreang', 'soreang', 0, '08122341414', 'LELXXXXXXXANA', 130240, 0, 1500, 128740, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 'windu2', 0, '08122015054', 'DRSXXXXXXXXXXXXDJI', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1092', 'D3_Windu', 'windu1', 0, '08122035514', 'WIEXXXXXXXANI', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '08122011014', 'ENDXXXXXXXXXXXX HJ', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082128403005', 'IINXXXXXINI', 115148, 0, 1500, 113648, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '082126832422', 'USMXXXXXMAN', 69003, 0, 1500, 67503, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '08112231869', 'DADXXX', 169455, 0, 1500, 167955, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1104', 'D3_Sumedang', 'sumedang2', 0, '081394329177', 'DARXXXXXXXXXELI', 135740, 0, 1500, 134240, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi2', 0, '081320261071', 'RITXXXXXXXXXXXXGDO', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '082320401693', 'HJ XXXXXXXXXXNTI', 66000, 0, 1500, 64500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08122036055', 'ADEXXXXXAGA', 401299, 0, 1500, 399799, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182464', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182466', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182469', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182472', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182474', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182476', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182479', 'RABXXXXXXXXXXAYA', 110001, 0, 1500, 108501, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182483', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182484', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182489', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182490', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182491', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182494', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182497', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182499', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182514', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182516', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182520', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182522', 'RABXXXXXXXXXXAYA', 110001, 0, 1500, 108501, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182528', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182530', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112182551', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '081214324423', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112292271', 'RABXXXXXXXXXXAYA', 220000, 0, 1500, 218500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209218', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 41250, 0, 1500, 39750, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209219', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209226', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209227', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209231', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209235', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 68750, 0, 1500, 67250, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209236', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209239', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209240', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209241', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209242', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112209245', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112293586', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112294764', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112294766', 'RABXXXXXXXXXXXXXXXXXXXXXXXE G', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291554', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291556', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291557', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291565', 'RABXXXXXXXXXXAYA', 110000, 0, 1500, 108500, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291642', 'RABXXXXXXXXXXAYA', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08112291643', 'RABXXXXXXXXXXAYA', 27500, 0, 1500, 26000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 0, '08122306039', 'TJEXXXXXXXXJAY', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 0, '08122301899', 'YUSXXXXXXTJI', 1115839, 0, 1500, 1114339, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '081220276515', 'TEDXXXXXXXXXXXXXADI', 136917, 0, 1500, 135417, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '0811217813', 'I  XXXXXRTO', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '08122105226', 'BOAXXXXXXXXXXXXXXXXXXXXXSH', 115577, 0, 1500, 114077, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman2', 0, '081220581313', 'YULXXXXXXIAH', 620350, 0, 1500, 618850, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman2', 0, '08112441992', 'IBRXXXXXXXAMA', 98480, 0, 1500, 96980, 1001),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo2', 20000, '081320119926', 'SN 0051003920860302', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 20000, '082214901116', 'SN 0051003921165983', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 20000, '082321232350', 'SN 0051003921180609', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 25000, '081223649947', 'SN 0051003921175321', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 25000, '085221350830', 'SN 0051003921934891', 26000, 0, 1000, 25000, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 50000, '081223649957', 'SN 0051003921171912', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1089', 'D3_Setia Budi', 'setiabudi1', 50000, '085103259973', 'SN 0051003921173644', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 50000, '081281831739', 'SN 0051003922137177', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1091', 'D3_BKR', 'bkr2', 50000, '081224544360', 'SN 0051003922286647', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 50000, '082216854669', 'SN 0051003922306447', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-04', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 50000, '081310005468', 'SN 0051003922308214', 51000, 0, 1300, 49700, 1002),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '08122013061', 'SAYXXXXXXXALI', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '081322656688', 'HASXXXXXSAN', 65725, 0, 1500, 64225, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo1', 0, '081322191961', 'EMUXXXXXXXADI', 41421, 0, 1500, 39921, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 0, '08112008475', 'RUDXXXXXXXXXXXXXF', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '082117496902', 'SRIXXXXXEKI', 114430, 0, 1500, 112930, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 0, '081322509877', 'MARXXXXXXXXXXXXXXATI', 70290, 0, 1500, 68790, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '081321545052', 'HASXXXXXXXXXXXXXXNDA', 55000, 0, 1500, 53500, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '0811229067', 'AYIXXXXXXXXXXXXXXXA D', 67382, 0, 1500, 65882, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08122022655', 'SUSXXXXXXXXXMAN', 38500, 0, 1500, 37000, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08122047735', 'NINXXXXXXXXXXX K', 236604, 0, 1500, 235104, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08122004766', 'WATXXXXXXXXXXXXMAN', 237138, 0, 1500, 235638, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1094', 'D3_Ujung Berung', 'ujungberung2', 0, '08122022657', 'SEBXXXIAN', 88858, 0, 1500, 87358, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '08122227394', 'HJXXXXXXXXXXXENI', 49500, 0, 1500, 48000, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 0, '08122350422', 'INNX', 49500, 0, 1500, 48000, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1095', 'D3_Cijaura', 'cijaura2', 0, '081221883716', 'MIMXXXXXXXINI', 119702, 0, 1500, 118202, 1001),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1096', 'D3_Kopo', 'kopo1', 20000, '085222222187', 'SN 0051003924938827', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 20000, '082120639836', 'SN 0051003924940853', 21000, 0, 900, 20100, 1002),
+(3, '2019-10-05', '695', 'D3_Kop Dadali BDG', '1090', 'D3_Rajawali', 'rajawali2', 20000, '082120639836', 'SN 0051003924941751', 21000, 0, 900, 20100, 1002);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `voucher_smart`
+-- Table structure for table `voucher_smart`
 --
 
 CREATE TABLE `voucher_smart` (
@@ -3699,7 +2781,7 @@ CREATE TABLE `voucher_smart` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `voucher_tri`
+-- Table structure for table `voucher_tri`
 --
 
 CREATE TABLE `voucher_tri` (
@@ -3720,25 +2802,10 @@ CREATE TABLE `voucher_tri` (
   `kode_biller` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `voucher_tri`
---
-
-INSERT INTO `voucher_tri` (`divre`, `tanggal`, `kode_kopegtel`, `kopegtel`, `kode_loket`, `loket`, `user`, `denom`, `no_telp`, `nama_cust`, `amount`, `surcharge`, `fee_ca`, `total_kopeg`, `kode_biller`) VALUES
-(3, '2016-11-23', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '089647083626', 'SN 20161123151734054695', 11000, 0, 900, 10100, 66),
-(3, '2016-12-13', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '089647083626', 'SN 20161213100611371568', 11000, 0, 900, 10100, 66),
-(3, '2017-07-12', '695', 'D3_Kop Dadali BDG', '1106', 'D3_Lembang', 'lembang', 10000, '089685080365', 'SN 20170712092227147248', 11000, 0, 900, 10100, 66),
-(3, '2017-07-05', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong2', 10000, '089514351967', 'SN 20170705091549949324', 11000, 0, 900, 10100, 66),
-(3, '2018-03-01', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '089673786578', 'SN 20180301141759679190', 11000, 0, 900, 10100, 66),
-(3, '2018-03-01', '695', 'D3_Kop Dadali BDG', '1087', 'D3_Supratman', 'supratman3', 10000, '0895330800473', 'SN 20180301142526126021', 11000, 0, 900, 10100, 66),
-(3, '2018-05-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '0895332561901', 'SN 20180503081017817132', 11000, 0, 900, 10100, 66),
-(3, '2018-05-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '0895635368223', 'SN 20180503081042842816', 11000, 0, 900, 10100, 66),
-(3, '2018-05-03', '695', 'D3_Kop Dadali BDG', '1115', 'D3_Lembong', 'lembong3', 10000, '089529036355', 'SN 20180503081107867712', 11000, 0, 900, 10100, 66);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `voucher_tsel`
+-- Table structure for table `voucher_tsel`
 --
 
 CREATE TABLE `voucher_tsel` (
@@ -3764,95 +2831,107 @@ CREATE TABLE `voucher_tsel` (
 --
 
 --
--- Indeks untuk tabel `arindo_tempat`
+-- Indexes for table `arindo_tempat`
 --
 ALTER TABLE `arindo_tempat`
   ADD PRIMARY KEY (`kode_user`);
 
 --
--- Indeks untuk tabel `biaya_pln`
+-- Indexes for table `biaya_pln`
 --
 ALTER TABLE `biaya_pln`
   ADD PRIMARY KEY (`biaya_admin`);
 
 --
--- Indeks untuk tabel `fax`
+-- Indexes for table `fax`
 --
 ALTER TABLE `fax`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `fee_pdam`
+-- Indexes for table `fee_pdam`
 --
 ALTER TABLE `fee_pdam`
   ADD PRIMARY KEY (`pdam`);
 
 --
--- Indeks untuk tabel `harga_pulsa`
+-- Indexes for table `harga_pulsa`
 --
 ALTER TABLE `harga_pulsa`
   ADD PRIMARY KEY (`kode_pulsa`);
 
 --
--- Indeks untuk tabel `kaliuser`
+-- Indexes for table `kaliuser`
 --
 ALTER TABLE `kaliuser`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kode_awal`
+-- Indexes for table `kode_awal`
 --
 ALTER TABLE `kode_awal`
   ADD PRIMARY KEY (`nomor_awal`);
 
 --
--- Indeks untuk tabel `lokasi`
+-- Indexes for table `lokasi`
 --
 ALTER TABLE `lokasi`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indeks untuk tabel `rk`
+-- Indexes for table `lokasi2`
+--
+ALTER TABLE `lokasi2`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- Indexes for table `rk`
 --
 ALTER TABLE `rk`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `fax`
+-- AUTO_INCREMENT for table `fax`
 --
 ALTER TABLE `fax`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `kaliuser`
+-- AUTO_INCREMENT for table `kaliuser`
 --
 ALTER TABLE `kaliuser`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT untuk tabel `lokasi`
+-- AUTO_INCREMENT for table `lokasi`
 --
 ALTER TABLE `lokasi`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT untuk tabel `rk`
+-- AUTO_INCREMENT for table `lokasi2`
+--
+ALTER TABLE `lokasi2`
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT for table `rk`
 --
 ALTER TABLE `rk`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
