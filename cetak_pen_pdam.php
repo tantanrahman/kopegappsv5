@@ -83,7 +83,7 @@
                     $c = 0;
                     if ($tanggal1==$tanggal2)
                     {
-                    $query=mysql_query("select lokasi.lokasi as pdlokasi, pdam.tanggal as pdtanggal,  lokasi.loket as pdloket, sum(pdam.bill) as pdbill, sum(pdam.total_kopeg) as pdpendapatan, ceiling(pdam.fee_admin/pdam.bill) as pdfee from lokasi left join pdam on lokasi.loket = pdam.loket where pdam.tanggal = '$tampil_date' or pdam.tanggal is NULL group by lokasi.lokasi, fee_admin,bill");
+                    $query=mysql_query("SELECT lokasi.lokasi as pdlokasi, pdam.tanggal as pdtanggal,  lokasi.loket as pdloket, sum(pdam.bill) as pdbill, sum(pdam.total_kopeg) as pdpendapatan, ceiling(pdam.fee_admin/pdam.bill) as pdfee from lokasi left join pdam on lokasi.loket = pdam.loket where pdam.tanggal = '$tampil_date' or pdam.tanggal is NULL group by lokasi.lokasi, fee_admin,bill");
 
                     
                     }

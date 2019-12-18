@@ -134,7 +134,7 @@ if(! $ambildata )
                 if($tanggal1==$tanggal2) {
                     echo $tanggal1;
                 } else {
-                    echo "$tanggal1 - $tanggal2";
+                    echo "$tanggal1";
                 }
             ?>
         </b>
