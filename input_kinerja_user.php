@@ -27,7 +27,7 @@
     $konek = mysqli_connect('localhost','root','','kopeg');
             mysql_select_db('kopeg');
 
-    $query = "select tempat from lokasi";
+    $query = "select tempat_pisah from lokasi";
     $execute = mysql_query($query,$koneksi);
     $no=1;
 ?>
@@ -47,7 +47,7 @@
             </thead>
             <?php
                 while ($row=mysql_fetch_array($execute, MYSQL_ASSOC)) {
-                    echo 	"<tr><th class='tx'>{$row['tempat']}</th><td><input type=text class='form-control' name='user[]'>
+                    echo 	"<tr><th class='tx'>{$row['tempat_pisah']}</th><td><input type=text class='form-control' name='user[]'>
                             <input type=hidden name='loket[]' value={$row['loket']}>
                             </td></tr>"; 
                 }
