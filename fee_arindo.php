@@ -28,7 +28,7 @@
                     <td>
                     <input class="form-control" id="datepicker" autocomplete="off" type="text" name="nilai" placeholder="Tanggal">
                     </td>
-                    <td class="col-md-1"></td>
+                    <td></td>
                     <td>
                         <select name="kode_user" class="form-control">
                           <?php

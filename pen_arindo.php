@@ -1,3 +1,9 @@
+<style type="text/css">
+	table td,th 
+	{
+		font-size: 9pt!important;
+	}
+</style>
 <?php 
     error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED); 
     $tanggal1 =$_POST['nilai'];

@@ -27,7 +27,7 @@
     $konek = mysqli_connect('localhost','root','','kopeg');
             mysql_select_db('kopeg');
 
-    $query = "select tempat_pisah from lokasi";
+    $query = "SELECT tempat_pisah from LOKASI GROUP BY tempat_pisah ";
     $execute = mysql_query($query,$koneksi);
     $no=1;
 ?>

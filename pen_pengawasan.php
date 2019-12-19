@@ -235,8 +235,10 @@ $tampilfeepdam =  number_format($row['feepdam'], $jumlah_desimal, $pemisah_desim
 $tampilpenvoucher =  number_format($row['penvoucher'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
 $tampilfeevoucher =  number_format($row['feevoucher'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
 
-$titipan = $row['titipan'];
-$talangan = $row['talangan'];
+$titipan = number_format($row['titipan'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
+
+$talangan = number_format($row['talangan'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
+
 
 
 $tampiljumlahjastel =  number_format($row['jumlahjastel'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
@@ -252,8 +254,8 @@ $tampilselisih =  number_format($selisih, $jumlah_desimal, $pemisah_desimal, $pe
 	
 	echo "
 
-				<td align='center'>$i</td>
-				<td>{$row['tempat']}</td>
+				<td align='right'>$i</td>
+				<td align='right'>{$row['tempat']}</td>
 
 				
 				
@@ -264,8 +266,8 @@ $tampilselisih =  number_format($selisih, $jumlah_desimal, $pemisah_desimal, $pe
 $lima = $total - $titipan - $talangan;
 $hasiltitipan = $hasiltitipan +$titipan;
 $hasiltalangan = $hasiltalangan + $talangan;
-			echo "<td>$titipan</td>
-				<td>$talangan</td>";
+			echo "<td align='right'>$titipan</td>
+				<td align='right'>$talangan</td>";
 			$tujuh=$row['jumlah_rk']-$lima;
 			$tampillima =  number_format($lima, $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);
 			echo "<td align='right'>$tampiljumlah</td>
@@ -436,8 +438,8 @@ $datatitipan = mysql_fetch_array($carititipan,MYSQL_ASSOC);
 		<td></td>
 		<td></td>
 		<td align="right"><?php echo $transfer1; ?></td>
-		<td></td>
-		<td></td>
+		<td ></td>
+		<td align='right'></td>
 		<?php 
 		$saldo = $saldo + $data['transfer1'];
 		$tampilsaldo =  number_format($saldo, $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan);

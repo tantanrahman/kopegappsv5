@@ -23,20 +23,19 @@
                                 ?>
                                 </select>
                             </td>
-                        <td class="col-md-3">
-                        <select name="tahun" class="form-control">
-                        <option selected="selected">Tahun</option>
-						<?php
-							;
-							for ($tahun=2015;$tahun<=2050;$tahun++)
-							{
-								echo "<option value='$tahun'>$tahun</option>";
-							}
-						?>
-						</select>
-                        </td>
-                        
-                    </tr>
+                            <td>
+                                <select name="tahun" class="form-control">
+                                <option selected="selected">Tahun</option>
+                                <?php
+                                    ;
+                                    for ($tahun=2015;$tahun<=2050;$tahun++)
+                                    {
+                                        echo "<option value='$tahun'>$tahun</option>";
+                                    }
+                                ?>
+                                </select>
+                            </td>
+                        </tr>
                 </table>
                 <br>
                 <button type="submit" class="btn btn-primary" name="filter"><i class="fa fa-print fa-fw"></i> CETAK COLFEE FINNET</button>
@@ -59,7 +58,7 @@
                             ?>
                             </select>
                         </td>
-                        <td class="col-md-3">
+                        <td>
                         <select name="tahun" class="form-control">
                         <option selected="selected">Tahun</option>
                         <?php
@@ -100,7 +99,7 @@
                             ?>
                             </select>
                         </td>
-                        <td class="col-md-3">
+                        <td>
                         <select name="tahun" class="form-control">
                         <option selected="selected">Tahun</option>
 						<?php

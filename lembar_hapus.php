@@ -19,6 +19,7 @@
                                     <option value = "sopp"> SOPP </option>
                                     <option value = "voucher"> VOUCHER </option>
                                     <option value = "indovision"> INDOVISION </option>
+                                    <option value = "arindo_trx"> ARINDO </option>
                                     <option value = "transvision"> TRANSVISION </option>
                                 </select>
                             </td>
@@ -38,7 +39,19 @@
                     <form action="index.php?id=13" method="POST">   
                         <input class="form-control" autocomplete="off" type="text" id="datepicker2" name="nilai1" placeholder="Masukan Tanggal">
                         <br>
-                        <button type="submit" name="semua" class="btn btn-sm btn-danger"><b>HAPUS</b></button>
+                        <button type="submit" name="kosong" class="btn btn-sm btn-danger" onclick="return confirm('SEMUA TABLE DATABASE AKAN DIHAPUS')"><b>HAPUS</b></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h4><font color="red">KOSONGKAN KESELURUHAN TABLE DATABASE</font></h4>
+                    <form action="index.php?id=13" method="POST">   
+                        <input type="submit" name="kosong" value="KOSONGKAN" class="btn btn-danger" onclick="return confirm('KOSONGKAN DATABASE')"/>
                     </form>
                 </div>
             </div>

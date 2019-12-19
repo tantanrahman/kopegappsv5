@@ -55,14 +55,14 @@ left join
 <thead class="header">
 
 	<tr>
-		<th>No</th>
-		<th>Usser</th>
-		<th>Nama User</th>
+		<th>NO</th>
+		<th>USSER</th>
+		<th>NAMA USER</th>
 		<th>SOPP</th>
 		<th>PLN</th>
 		<th>PDAM</th>
-		<th>Voucher</th>
-		<th>Jumlah</th>
+		<th>VOUCHER</th>
+		<th>JUMLAH</th>
 	</tr>
 	</thead>
 <?php

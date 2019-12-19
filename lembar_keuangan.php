@@ -17,7 +17,6 @@
                 <div class="card-body">
                     <h4>REKAP PENDAPATAN</h4>
                     <br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRekap">LIHAT</a>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalCetakRekapPendapatan">CETAK</a>
                 </div>
             </div>
