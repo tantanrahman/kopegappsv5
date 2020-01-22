@@ -6,7 +6,7 @@
         <div class="col-md-4 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Per Loket</h4>
+                    <h4>PER LOKET</h4>
                     <hr>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalLoket">LIHAT</a>
                 </div>
@@ -15,7 +15,7 @@
         <div class="col-md-4 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Per User</h4>
+                    <h4>PER USER</h4>
                     <hr>
                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalUser">LIHAT</a>
                 </div>
@@ -24,7 +24,7 @@
         <div class="col-md-4 grid-margin stretch-card">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4>Input User/Loket</h4>
+                    <h4>INPUT USER</h4>
                     <hr>
                     <a href="index.php?id=29" class="btn btn-primary">PILIH</a>
                 </div>

@@ -41,15 +41,15 @@ $date = explode("-", $tanggal1);
                     $tampil_date2 = implode("-", $arr2);
 
 $sql ="SELECT A.tempat_pisah, A.lokasi,A.jum_sopp,B.jum_pln,C.jum_pdam,D.jum_arindo,E.jum_voucher from
-(select lokasi.tempat_pisah,lokasi.lokasi,sum(sopp.trx) as jum_sopp from lokasi left join sopp on lokasi.loket=sopp.user AND  (tanggal between '$tampil_date' AND '$tampil_date2') group by lokasi.tempat_pisah) as A
+(select lokasi.tempat_pisah,lokasi.lokasi,sum(sopp.trx) as jum_sopp from lokasi left join sopp on lokasi.loket=sopp.user AND  (tanggal between '$tampil_date' AND '$tampil_date2') group by lokasi.lokasi) as A
 left join
-(select lokasi.tempat_pisah,lokasi.lokasi,sum(pln.trx) as jum_pln from lokasi left join pln on lokasi.loket=pln.loket AND  (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.tempat_pisah) as B on (A.lokasi=B.lokasi)
+(select lokasi.tempat_pisah,lokasi.lokasi,sum(pln.trx) as jum_pln from lokasi left join pln on lokasi.loket=pln.loket AND  (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.lokasi) as B on (A.lokasi=B.lokasi)
 left join
-(select lokasi.tempat_pisah,lokasi.lokasi,sum(pdam.trx) as jum_pdam from lokasi left join pdam on lokasi.loket = pdam.loket and (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.tempat_pisah) as C on (B.lokasi=C.lokasi)
+(select lokasi.tempat_pisah,lokasi.lokasi,sum(pdam.trx) as jum_pdam from lokasi left join pdam on lokasi.loket = pdam.loket and (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.lokasi) as C on (B.lokasi=C.lokasi)
 left join
-(select lokasi.tempat_pisah,lokasi.lokasi,sum(arindo_trx.total_lembar) as jum_arindo from lokasi left join arindo_trx on lokasi.user = arindo_trx.kode_user and (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.tempat_pisah) as D on (C.lokasi=D.lokasi)
+(select lokasi.tempat_pisah,lokasi.lokasi,sum(arindo_trx.total_lembar) as jum_arindo from lokasi left join arindo_trx on lokasi.user = arindo_trx.kode_user and (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.lokasi) as D on (C.lokasi=D.lokasi)
 left join
-(select lokasi.tempat_pisah,lokasi.lokasi,count(voucher.total_kopeg) as jum_voucher from lokasi left join voucher on lokasi.loket=voucher.user AND (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.tempat_pisah) as E on (D.lokasi=E.lokasi)";
+(select lokasi.tempat_pisah,lokasi.lokasi,count(voucher.total_kopeg) as jum_voucher from lokasi left join voucher on lokasi.loket=voucher.user AND (tanggal between '$tampil_date' AND '$tampil_date2')  group by lokasi.lokasi) as E on (D.lokasi=E.lokasi)";
 
 ?>
 <table id="mytable" class="table table-bordered table-hover mb-3">
@@ -81,7 +81,7 @@ while($row = mysql_fetch_array($ambildata, MYSQL_ASSOC))
 
 	echo "<tr>";
 	echo "<td  align='center'>$i</td>";
-	echo "<td>{$row['tempat_pisah']}</td>";
+	echo "<td>{$row['lokasi']}</td>";
 	echo "<td align='right'>".number_format($row['jum_sopp'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan)."</td>";
 	echo "<td align='right'>".number_format($row['jum_pln'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan)."</td>";
 	echo "<td align='right'>".number_format($row['jum_pdam'], $jumlah_desimal, $pemisah_desimal, $pemisah_ribuan)."</td>";

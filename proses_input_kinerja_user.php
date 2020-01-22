@@ -26,8 +26,4 @@ for ($i=0;$i<count($_POST['user']);$i++)
 			
 	}
 
-?>
-    <script language="JavaScript">
-            window.alert ("Berhasil Menambah Data Kinerja User");
-            window.location.href="index.php?id=29";
-    </script>
+echo "<center>Berhasil Ubah data user</center>";
