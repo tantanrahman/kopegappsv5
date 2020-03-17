@@ -39,7 +39,7 @@
                     <form action="index.php?id=13" method="POST">   
                         <input class="form-control" autocomplete="off" type="text" id="datepicker2" name="nilai1" placeholder="Masukan Tanggal">
                         <br>
-                        <button type="submit" name="kosong" class="btn btn-sm btn-danger" onclick="return confirm('SEMUA TABLE DATABASE AKAN DIHAPUS')"><b>HAPUS</b></button>
+                        <button type="submit" name="semua" class="btn btn-sm btn-danger" onclick="return confirm('SEMUA TABLE DATABASE AKAN DIHAPUS')"><b>HAPUS</b></button>
                     </form>
                 </div>
             </div>
